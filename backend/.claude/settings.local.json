@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/Arbythecoder/Desktop/afodamspropertylimited/frontend/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
