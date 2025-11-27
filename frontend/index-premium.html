@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afodams Property - Luxury Real Estate in Nigeria</title>
+    <meta name="description" content="Discover premium properties in Lagos, Abuja, and across Nigeria. Your trusted partner for luxury real estate.">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Bootstrap (Keep for grid system) -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Original Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- NEW: Premium Design System -->
+    <link href="css/premium-design-system.css" rel="stylesheet">
+
+    <style>
+        /* Additional page-specific styles */
+        .stat-card {
+            background: white;
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: var(--luxury-gold);
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--soft-black);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PREMIUM NAVBAR with Glassmorphism -->
+    <nav class="navbar navbar-expand-lg glass-navbar fixed-top">
+        <div class="container-fluid container-premium">
+            <a class="navbar-brand d-flex align-items-center" href="index-premium.html">
+                <div class="icon p-2 me-2">
+                    <img src="img/afodams-new.jpg" alt="Afodams Property" style="width: 40px; height: 40px; border-radius: 8px;">
+                </div>
+                <h1 class="m-0 text-gradient-gold" style="font-size: 1.5rem;">Afodams Property</h1>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#properties">Properties</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-3">
+                        <a href="login.html" class="btn-premium btn-outline-gold">Sign In</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a href="admin-dashboard.html" class="btn-premium btn-gold">
+                            <i class="fas fa-plus me-2"></i>List Property
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PREMIUM HERO SECTION with Video Background -->
+    <section class="hero-premium" id="home">
+        <!-- Video Background (Replace with actual property video) -->
+        <video class="hero-video-bg" autoplay muted loop playsinline>
+            <source src="https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c0fd273d2c6d9a064f3ae35579b2bbdf&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+        </video>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content" data-animate>
+            <div class="mb-3">
+                <span class="badge-premium">Premium Properties in Nigeria</span>
+            </div>
+            <h1 class="hero-title">
+                Discover Your <br>
+                <span class="text-gradient-gold">Dream Home</span>
+            </h1>
+            <p class="hero-subtitle">
+                Luxury real estate in Lagos, Abuja, and across Nigeria
+            </p>
+
+            <!-- Premium Search Bar -->
+            <div class="search-bar-premium mt-5">
+                <i class="fas fa-search" style="color: var(--luxury-gold); font-size: 20px; margin-left: 16px;"></i>
+                <input type="text" placeholder="Search by location, property type, or price..." id="searchInput">
+                <select class="form-select border-0" style="max-width: 200px;">
+                    <option>For Sale</option>
+                    <option>For Rent</option>
+                </select>
+                <button class="search-btn-premium" onclick="searchProperties()">
+                    <i class="fas fa-search me-2"></i>Search
+                </button>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="mt-5 d-flex justify-content-center gap-5 flex-wrap" data-animate>
+                <div class="text-center">
+                    <div class="stat-number text-white" data-counter="500">0</div>
+                    <div class="stat-label text-white">Properties</div>
+                </div>
+                <div class="text-center">
+                    <div class="stat-number text-white" data-counter="1200">0</div>
+                    <div class="stat-label text-white">Happy Clients</div>
+                </div>
+                <div class="text-center">
+                    <div class="stat-number text-white" data-counter="50">0</div>
+                    <div class="stat-label text-white">Expert Agents</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 3;">
+            <a href="#featured" style="color: white; text-decoration: none;">
+                <i class="fas fa-chevron-down float-animation" style="font-size: 2rem;"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- FEATURED PROPERTIES SECTION -->
+    <section class="section-premium" id="featured">
+        <div class="container-premium">
+            <div class="text-center mb-large" data-animate>
+                <span class="text-accent text-gold">FEATURED LISTINGS</span>
+                <h2 class="mt-3">Premium Properties</h2>
+                <p class="lead">Discover our handpicked selection of luxury homes</p>
+            </div>
+
+            <!-- Property Grid -->
+            <div class="grid-premium" id="propertyGrid">
+                <!-- Properties will be loaded here dynamically -->
+                <!-- Example Property Card -->
+                <div class="property-card-premium" data-animate>
+                    <div class="property-image-wrapper">
+                        <img data-src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800" alt="Luxury Villa">
+                        <div class="badge-premium">Featured</div>
+
+                        <!-- Wishlist Button -->
+                        <button class="btn-premium btn-luxury" style="position: absolute; top: 16px; left: 16px; padding: 8px 12px; border-radius: 8px;">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-success">For Sale</span>
+                            <span class="text-gold"><i class="fas fa-map-marker-alt me-1"></i> Lekki, Lagos</span>
+                        </div>
+
+                        <h4>Luxury 5-Bedroom Villa</h4>
+                        <p class="text-muted">
+                            Stunning modern villa with ocean views, private pool, and smart home features.
+                        </p>
+
+                        <div class="property-price">₦150,000,000</div>
+
+                        <div class="d-flex gap-4 mb-3">
+                            <span><i class="fas fa-bed text-gold me-2"></i>5 Beds</span>
+                            <span><i class="fas fa-bath text-gold me-2"></i>6 Baths</span>
+                            <span><i class="fas fa-ruler-combined text-gold me-2"></i>450 m²</span>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button class="btn-premium btn-gold flex-fill" onclick="viewProperty('1')">
+                                View Details
+                            </button>
+                            <button class="btn-premium btn-outline-gold" onclick="contactAgent('1')">
+                                <i class="fas fa-phone"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more property cards here... -->
+            </div>
+
+            <div class="text-center mt-5" data-animate>
+                <a href="property-list.html" class="btn-premium btn-luxury btn-lg">
+                    View All Properties <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US SECTION -->
+    <section class="section-premium" style="background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%); color: white;">
+        <div class="container-premium">
+            <div class="text-center mb-large" data-animate>
+                <span class="text-accent text-gold">WHY CHOOSE US</span>
+                <h2 class="mt-3 text-white">Your Trusted Real Estate Partner</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4" data-animate>
+                    <div class="glass-card text-center" style="height: 100%;">
+                        <div class="mb-4">
+                            <i class="fas fa-shield-alt" style="font-size: 3rem; color: var(--luxury-gold);"></i>
+                        </div>
+                        <h4 class="text-white">100% Verified</h4>
+                        <p style="color: rgba(255, 255, 255, 0.8);">
+                            All properties are thoroughly verified and legally documented.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-animate>
+                    <div class="glass-card text-center" style="height: 100%;">
+                        <div class="mb-4">
+                            <i class="fas fa-headset" style="font-size: 3rem; color: var(--luxury-gold);"></i>
+                        </div>
+                        <h4 class="text-white">24/7 Support</h4>
+                        <p style="color: rgba(255, 255, 255, 0.8);">
+                            Our expert agents are always available to assist you.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-animate>
+                    <div class="glass-card text-center" style="height: 100%;">
+                        <div class="mb-4">
+                            <i class="fas fa-award" style="font-size: 3rem; color: var(--luxury-gold);"></i>
+                        </div>
+                        <h4 class="text-white">Award Winning</h4>
+                        <p style="color: rgba(255, 255, 255, 0.8);">
+                            Recognized as Nigeria's leading property platform.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="section-premium text-center" style="background: var(--gradient-gold); color: var(--premium-black);">
+        <div class="container-premium" data-animate>
+            <h2 style="font-size: 3rem;">Ready to Find Your Dream Home?</h2>
+            <p class="lead mb-4">Join thousands of satisfied homeowners who found their perfect property with us.</p>
+            <div class="d-flex gap-3 justify-content-center">
+                <button class="btn-premium btn-luxury btn-lg" onclick="location.href='property-list.html'">
+                    Browse Properties
+                </button>
+                <button class="btn-premium btn-outline-gold btn-lg" style="background: var(--premium-black); border-color: var(--premium-black); color: var(--luxury-gold);" onclick="location.href='contact.html'">
+                    Contact Us
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIUM FOOTER -->
+    <footer style="background: var(--premium-black); color: white; padding: 60px 0 20px;">
+        <div class="container-premium">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="text-gold mb-3">Afodams Property</h5>
+                    <p style="color: rgba(255, 255, 255, 0.7);">
+                        Your trusted partner for premium real estate in Nigeria. We help you find your dream home.
+                    </p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="btn-premium btn-gold" style="padding: 10px 14px; border-radius: 50%;">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="btn-premium btn-gold" style="padding: 10px 14px; border-radius: 50%;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="btn-premium btn-gold" style="padding: 10px 14px; border-radius: 50%;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="text-gold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">About Us</a></li>
+                        <li class="mb-2"><a href="property-list.html" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">Properties</a></li>
+                        <li class="mb-2"><a href="contact.html" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">Contact</a></li>
+                        <li class="mb-2"><a href="privacy-policy.html" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="text-gold mb-3">Contact</h5>
+                    <p style="color: rgba(255, 255, 255, 0.7);">
+                        <i class="fas fa-map-marker-alt me-2 text-gold"></i>
+                        149 Ogudu Road, Lagos, Nigeria
+                    </p>
+                    <p style="color: rgba(255, 255, 255, 0.7);">
+                        <i class="fas fa-phone me-2 text-gold"></i>
+                        +234 911 525 8580
+                    </p>
+                    <p style="color: rgba(255, 255, 255, 0.7);">
+                        <i class="fas fa-envelope me-2 text-gold"></i>
+                        afodamsproperty@gmail.com
+                    </p>
+                </div>
+            </div>
+
+            <hr style="border-color: rgba(255, 255, 255, 0.1); margin: 40px 0 20px;">
+
+            <div class="text-center" style="color: rgba(255, 255, 255, 0.5);">
+                <p class="mb-0">&copy; 2025 Afodams Property Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- NEW: Premium Animations -->
+    <script src="js/premium-animations.js"></script>
+
+    <!-- Property Loading Script -->
+    <script src="js/config.js"></script>
+    <script src="js/properties.js"></script>
+
+    <script>
+        // Search functionality
+        function searchProperties() {
+            const searchTerm = document.getElementById('searchInput').value;
+            PremiumAnimations.showToast(`Searching for: ${searchTerm}`, 'success');
+            // Add actual search logic here
+            setTimeout(() => {
+                window.location.href = `property-list.html?search=${encodeURIComponent(searchTerm)}`;
+            }, 1000);
+        }
+
+        // View property details
+        function viewProperty(id) {
+            window.location.href = `property-details.html?id=${id}`;
+        }
+
+        // Contact agent
+        function contactAgent(id) {
+            PremiumAnimations.showToast('Connecting you with an agent...', 'info');
+            // Add actual contact logic here
+        }
+
+        // Load properties dynamically
+        async function loadFeaturedProperties() {
+            try {
+                const response = await fetch(`${API_URL}/properties?limit=6&featured=true`);
+                const properties = await response.json();
+
+                const grid = document.getElementById('propertyGrid');
+                grid.innerHTML = ''; // Clear existing content
+
+                properties.forEach(property => {
+                    const card = createPropertyCard(property);
+                    grid.appendChild(card);
+                });
+            } catch (error) {
+                console.error('Error loading properties:', error);
+            }
+        }
+
+        // Create property card element
+        function createPropertyCard(property) {
+            const card = document.createElement('div');
+            card.className = 'property-card-premium';
+            card.setAttribute('data-animate', '');
+
+            card.innerHTML = `
+                <div class="property-image-wrapper">
+                    <img data-src="${property.images[0]}" alt="${property.title}">
+                    ${property.featured ? '<div class="badge-premium">Featured</div>' : ''}
+                </div>
+                <div class="p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="badge bg-success">${property.status}</span>
+                        <span class="text-gold"><i class="fas fa-map-marker-alt me-1"></i> ${property.location}</span>
+                    </div>
+                    <h4>${property.title}</h4>
+                    <p class="text-muted">${property.description.substring(0, 100)}...</p>
+                    <div class="property-price">₦${property.price.toLocaleString()}</div>
+                    <div class="d-flex gap-4 mb-3">
+                        <span><i class="fas fa-bed text-gold me-2"></i>${property.bedrooms} Beds</span>
+                        <span><i class="fas fa-bath text-gold me-2"></i>${property.bathrooms} Baths</span>
+                        <span><i class="fas fa-ruler-combined text-gold me-2"></i>${property.size} m²</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button class="btn-premium btn-gold flex-fill" onclick="viewProperty('${property._id}')">
+                            View Details
+                        </button>
+                        <button class="btn-premium btn-outline-gold" onclick="contactAgent('${property._id}')">
+                            <i class="fas fa-phone"></i>
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            return card;
+        }
+
+        // Load properties when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            // Uncomment when backend is ready
+            // loadFeaturedProperties();
+        });
+    </script>
+</body>
+</html>

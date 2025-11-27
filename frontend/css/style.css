@@ -1,0 +1,366 @@
+:root {
+    --bs-primary: #fd7e14; /* Orange */
+    --bs-secondary: #4e3b31; /* Brown */
+    --bs-success: #D4AF37; /* Gold for success alerts */
+    --bs-info: #D4AF37; /* Gold for info alerts */
+    --bs-warning: #D4AF37; /* Gold for warning alerts */
+    --bs-danger: #4e3b31; /* Brown for danger alerts */
+    --bs-light: #ffffff; /* White for light elements */
+    --bs-dark: #000000; /* Black for dark elements */
+}
+
+/* Override button colors */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: #ffffff; /* White text */
+}
+
+.btn-secondary {
+    background-color: var(--bs-secondary);
+    border-color: var(--bs-secondary);
+    color: #ffffff; /* White text */
+}
+
+/* Get Started Button */
+.btn-get-started {
+    background-color: black !important;
+    color: #FFD700 !important; /* Gold text */
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-get-started:hover {
+    background-color: #FFD700 !important; /* Gold */
+    color: black !important;
+}
+
+/* Override link colors */
+a {
+    color: var(--bs-primary);
+}
+
+a:hover {
+    color: var(--bs-success); /* Gold on hover instead of green */
+}
+
+/* Override alert colors */
+.alert-success {
+    background-color: var(--bs-primary);
+    color: var(--bs-light);
+}
+
+.alert-danger {
+    background-color: var(--bs-danger);
+    color: var(--bs-light);
+}
+
+/* Customize navbar colors */
+.navbar {
+    max-width: 1200px; /* Adjust width */
+    margin: 0 auto; /* Center navbar */
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+}
+
+.navbar-brand h1 {
+    font-size: 24px; /* Make title readable */
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Fix dropdown */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Ensures dropdown opens on hover */
+}
+
+.dropdown-menu {
+    border-radius: 5px;
+    border: none;
+}
+
+.navbar-light .navbar-brand {
+    color: var(--bs-primary);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--bs-secondary);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--bs-success); /* Gold on hover */
+}
+
+/* Header Section */
+.header {
+    background-color: #D97706; /* Luxury Orange */
+    color: white; /* Ensures text is readable */
+    padding: 50px 0;
+}
+
+.header h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+}
+
+.header h1 span {
+    color: #FFD700; /* Gold for the highlight */
+}
+
+.header p {
+    font-size: 18px;
+    color: white; /* Maintains readability */
+}
+
+/* Carousel Image Styling */
+.owl-carousel-item img {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 400px; /* Adjust to fit the design */
+}
+
+/* Custom styles */
+.custom-text-color {
+    color: var(--bs-dark) !important; /* Black color */
+}
+
+.card {
+    border: 1px solid var(--bs-secondary);
+}
+
+.card-header {
+    background-color: var(--bs-light);
+    color: var(--bs-dark);
+}
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+}
+
+/* Spinner styles */
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Search Section - Blend with Header */
+.container-fluid.bg-primary {
+    background-color: #1A1A1A !important; /* Match header dark theme */
+}
+
+/* Search Inputs - Refined look */
+.form-control, .form-select {
+    background-color: #2A2A2A; /* Darker background */
+    color: white; /* White text */
+    border: 1px solid #FFD700; /* Gold border for elegance */
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Light placeholder */
+}
+
+/* Search Button */
+.btn-dark {
+    background-color: #FFD700 !important; /* Gold */
+    color: #1A1A1A !important; /* Dark text for contrast */
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-dark:hover {
+    background-color: #E6C200 !important; /* Slightly darker gold on hover */
+}
+
+/* Additional styles for text-primary class */
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+/* Additional styles for display-5 class */
+.display-5 {
+    color: var(--bs-primary);
+}
+
+/* Styling for Property Cards */
+.property-card {
+    background-color: #f8f9fa;
+    border: 2px solid #d4af37; /* Luxury gold */
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.property-card:hover {
+    background-color: #d4af37;
+    transform: scale(1.05);
+    color: white !important;
+}
+
+/* Styling for Property Icons */
+.property-icon {
+    font-size: 50px;
+    color: #d4af37; /* Luxury gold */
+}
+
+.property-card:hover .property-icon {
+    color: white;
+}
+
+/* Custom styles for the call to action section */
+.call-to-action {
+    background-color: var(--bs-light); /* White for the background */
+    color: var(--bs-dark); /* Black text */
+}
+
+.call-to-action h1 {
+    color: var(--bs-primary); /* Orange for the heading */
+}
+
+.call-to-action p {
+    color: var(--bs-secondary); /* Brown for the paragraph text */
+}
+
+.call-to-action .btn-primary {
+    background-color: var(--bs-primary); /* Orange for buttons */
+    border-color: var(--bs-primary);
+}
+
+.call-to-action .btn-dark {
+    background-color: var(--bs-dark); /* Black for dark buttons */
+    color: var(--bs-light); /* White text */
+}
+
+/* Custom styles for the team section */
+.team-item {
+    border: 1px solid var(--bs-secondary);
+    background-color: var(--bs-light);
+}
+
+/* Custom styles for the testimonial section */
+.testimonial-item {
+    background-color: var(--bs-light); /* Light background for testimonial items */
+    border: 1px solid var(--bs-secondary); /* Border color */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.testimonial-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.testimonial-item p {
+    color: var(--bs-dark); /* Dark text for readability */
+    font-size: 16px; /* Font size for testimonial text */
+}
+
+.testimonial-item h6 {
+    color: var(--bs-primary); /* Orange for client names */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+.testimonial-item small {
+    color: var(--bs-secondary); /* Brown for profession titles */
+}
+
+/* Carousel Dots Styles */
+.owl-carousel .owl-dots {
+    margin-top: 20px; /* Space between testimonials and dots */
+}
+
+.owl-carousel .owl-dot {
+    background: var(--bs-primary); /* Orange for the dots */
+    opacity: 1; /* Ensure visibility */
+}
+
+.owl-carousel .owl-dot.active {
+    background: var(--bs-success); /* Gold for active dot */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #F9F9F9; /* Light background */
+    border-top: 2px solid #D4AF37; /* Gold border */
+}
+
+.footer h5 {
+    color: #000; /* Dark text for headings */
+}
+
+.footer p {
+    color: #000; /* Dark text for paragraphs */
+}
+
+.footer a {
+    color: #fd7e14; /* Orange for links */
+}
+
+.footer a:hover {
+    color: #D4AF37; /* Gold on hover */
+}
+
+.btn-primary {
+    background-color: #D4AF37; /* Gold for the button */
+    border-color: #D4AF37; /* Gold border */
+    color: #000; /* Dark text for contrast */
+}
+
+.btn-primary:hover {
+    background-color: #FFD700; /* Slightly lighter gold on hover */
+    color: #000; /* Dark text for contrast */
+}
+
+/* Ensure consistency in buttons across the site */
+.btn-outline-dark {
+    border-color: #D4AF37; /* Gold border for social buttons */
+    color: #D4AF37; /* Gold text */
+}
+
+.btn-outline-dark:hover {
+    background-color: #D4AF37; /* Gold background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Override button colors */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: #ffffff; /* White text */
+}
+
+/* Header Section */
+.header {
+    background-color: #D97706; /* Luxury Orange */
+    color: white; /* Ensures text is readable */
+    padding: 50px 0;
+}
+
+/* Form Control Styling */
+.form-control {
+    width: 100%; /* Ensure full width */
+    padding: 15px; /* Increase padding for comfort */
+}

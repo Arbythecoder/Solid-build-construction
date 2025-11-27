@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Afodams Property Limited</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+   <!-- Latest Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Latest Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <div class="container-fluid nav-bar bg-transparent">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+                    <div class="icon p-2 me-2">
+                        <img class="img-fluid" src="./frontend/img/afodams-new.jpg" alt="Icon" style="width: 30px; height: 30px;">
+                    </div>
+                    <h1 class="m-0 text-primary">Afodams Property Limited</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Property</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="property-list.html" class="dropdown-item">Property List</a>
+                                <a href="property-type.html" class="dropdown-item">Property Type</a>
+                                <a href="property-agent.html" class="dropdown-item">Property Agent</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="404.html" class="dropdown-item">404 Error</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Landlord</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="landlord-verify.html" class="dropdown-item">Verify Landlord</a>
+                                <a href="landlord-list.html" class="dropdown-item">List Property</a>
+                            </div>
+                        </div>
+                        <a href="tenant.html" class="nav-item nav-link">Tenant</a>
+                        <a href="agent.html" class="nav-item nav-link">Agent</a>
+                    </div>
+                    <a href="" class="btn btn-primary px-3 d-none d-lg-flex">Add Property</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Signup Form Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="wow fadeInUp" data-wow-delay="0.1s">
+                            <h1 class="mb-4 text-center">Create Your Account</h1>
+                            <p class="text-center mb-4">Join Afodams Property Limited to start finding your dream property</p>
+
+                            <!-- Message Alert -->
+                            <div id="messageAlert" style="display: none;"></div>
+
+                            <form id="signupForm">
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                            <label for="name">Full Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                            <label for="email">Email Address</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="password" class="form-control" id="password" placeholder="Password" required minlength="6">
+                                            <label for="password">Password (min 6 characters)</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
+                                            <label for="confirmPassword">Confirm Password</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="role">
+                                                <option value="user" selected>Regular User (Looking for property)</option>
+                                                <option value="landlord">Landlord (I have properties to list)</option>
+                                            </select>
+                                            <label for="role">I am a...</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary w-100 py-3" type="submit">Create Account</button>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <p>Already have an account? <a href="login.html">Login here</a></p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Signup Form End -->
+
+<!-- Why Choose Us Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="mb-3">Why Join Us?</h1>
+            <p>Create an account to access exclusive property listings, save favorites, and get personalized recommendations.</p>
+        </div>
+        <div class="row g-4">
+            <!-- Apartment -->
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                <a class="cat-item d-block text-center rounded p-3 property-card" href="">
+                    <div class="rounded p-4">
+                        <div class="icon mb-3">
+                            <i class="fas fa-building property-icon"></i>
+                        </div>
+                        <h6>Apartment</h6>
+                        <span>Afodams Property</span>
+                    </div>
+                </a>
+            </div>
+            <!-- Villa -->
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                <a class="cat-item d-block text-center rounded p-3 property-card" href="">
+                    <div class="rounded p-4">
+                        <div class="icon mb-3">
+                            <i class="fas fa-home property-icon"></i>
+                        </div>
+                        <h6>Villa</h6>
+                        <span>Afodams Property</span>
+                    </div>
+                </a>
+            </div>
+            <!-- Home -->
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                <a class="cat-item d-block text-center rounded p-3 property-card" href="">
+                    <div class="rounded p-4">
+                        <div class="icon mb-3">
+                            <i class="fas fa-house-user property-icon"></i>
+                        </div>
+                        <h6>Home</h6>
+                        <span>Afodams Property</span>
+                    </div>
+                </a>
+            </div>
+            <!-- Office -->
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                <a class="cat-item d-block text-center rounded p-3 property-card" href="">
+                    <div class="rounded p-4">
+                        <div class="icon mb-3">
+                            <i class="fas fa-city property-icon"></i>
+                        </div>
+                        <h6>Office</h6>
+                        <span>Afodams Property</span>
+                    </div>
+                </a>
+            </div>
+            <!-- Building -->
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                <a class="cat-item d-block text-center rounded p-3 property-card" href="">
+                    <div class="rounded p-4">
+                        <div class="icon mb-3">
+                            <i class="fas fa-landmark property-icon"></i>
+                        </div>
+                        <h6>Building</h6>
+                        <span>Afodams Property</span>
+                    </div>
+                </a>
+            </div>
+            <!-- Townhouse -->
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                <a class="cat-item d-block text-center rounded p-3 property-card" href="">
+                    <div class="rounded p-4">
+                        <div class="icon mb-3">
+                            <i class="fas fa-house-chimney property-icon"></i>
+                        </div>
+                        <h6>Townhouse</h6>
+                        <span>Afodams Property</span>
+                    </div>
+                </a>
+            </div>
+            <!-- Shop -->
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                <a class="cat-item d-block text-center rounded p-3 property-card" href="">
+                    <div class="rounded p-4">
+                        <div class="icon mb-3">
+                            <i class="fas fa-store property-icon"></i>
+                        </div>
+                        <h6>Shop</h6>
+                        <span>Afodams Property</span>
+                    </div>
+                </a>
+            </div>
+            <!-- Garage -->
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                <a class="cat-item d-block text-center rounded p-3 property-card" href="">
+                    <div class="rounded p-4">
+                        <div class="icon mb-3">
+                            <i class="fas fa-warehouse property-icon"></i>
+                        </div>
+                        <h6>Garage</h6>
+                        <span>Afodams Property</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Category End -->
+
+<!-- About Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <!-- Carousel Start -->
+                <div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="img-fluid w-100" src="img/about.jpg" alt="About Image 1" style="height: 400px; object-fit: cover;">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid w-100" src="img/property-3.jpg" alt="About Image 2" style="height: 400px; object-fit: cover;">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid w-100" src="img/property-2.jpg" alt="About Image 3" style="height: 400px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- Carousel End -->
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <h1 class="mb-4">Discover Your Dream Property with Us</h1>
+                <p class="mb-4">At [Your Company Name], we specialize in providing exceptional property solutions that cater to your needs. Whether you're looking to buy, sell, or rent, our dedicated team is here to guide you every step of the way.</p>
+                <p><i class="fa fa-check text-primary me-3"></i>Expert guidance in property sales and acquisitions</p>
+                <p><i class="fa fa-check text-primary me-3"></i>Comprehensive property management services</p>
+                <p><i class="fa fa-check text-primary me-3"></i>Tailored rental solutions for every budget</p>
+                <p><i class="fa fa-check text-primary me-3"></i>Strategic joint ventures to maximize your investments</p>
+                <a class="btn btn-primary py-3 px-5 mt-3" href="">Learn More About Us</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About End -->
+         
+<!-- Property List Start -->
+<!-- Property List Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-0 gx-5 align-items-end">
+            <div class="col-lg-6">
+                <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
+                    <h1 class="mb-3">Property Listing</h1>
+                    <p>Find the perfect property in Lagos and across Nigeria, from luxurious apartments to commercial spaces.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 text-start text-lg-end wow slideInRight" data-wow-delay="0.1s">
+                <ul class="nav nav-pills d-inline-flex justify-content-end mb-5">
+                    <li class="nav-item me-2">
+                        <a class="btn btn-outline-warning active" data-bs-toggle="pill" href="#all-properties">Featured</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="btn btn-outline-warning" data-bs-toggle="pill" href="#for-sale">For Sale</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="btn btn-outline-warning" data-bs-toggle="pill" href="#for-rent">For Rent</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content">
+            <div id="all-properties" class="tab-pane fade show p-0 active">
+                <div class="row g-4">
+                    <!-- All Property Listings -->
+                    <!-- Property Card 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="property-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid" src="img/property-1.jpg" alt=""></a>
+                                <div class="bg-warning rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sale</div>
+                                <div class="bg-white rounded-top text-warning position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Apartment</div>
+                            </div>
+                            <div class="p-4 pb-0">
+                                <h5 class="text-warning mb-3">₦150,000,000</h5>
+                                <a class="d-block h5 mb-2" href="">Luxury 3-Bedroom Apartment</a>
+                                <p><i class="fa fa-map-marker-alt text-warning me-2"></i>Ikoyi, Lagos, Nigeria</p>
+                            </div>
+                            <div class="d-flex border-top">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-warning me-2"></i>250 sqm</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-warning me-2"></i>3 Bed</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-bath text-warning me-2"></i>2 Bath</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Card 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="property-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid" src="img/property-2.jpg" alt=""></a>
+                                <div class="bg-warning rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sale</div>
+                                <div class="bg-white rounded-top text-warning position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Villa</div>
+                            </div>
+                            <div class="p-4 pb-0">
+                                <h5 class="text-warning mb-3">₦250,000,000</h5>
+                                <a class="d-block h5 mb-2" href="">Luxury Villa</a>
+                                <p><i class="fa fa-map-marker-alt text-warning me-2"></i>Victoria Island, Lagos, Nigeria</p>
+                            </div>
+                            <div class="d-flex border-top">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-warning me-2"></i>400 sqm</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-warning me-2"></i>4 Bed</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-bath text-warning me-2"></i>3 Bath</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Card 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="property-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid" src="img/property-3.jpg" alt=""></a>
+                                <div class="bg-warning rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sale</div>
+                                <div class="bg-white rounded-top text-warning position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Office Space</div>
+                            </div>
+                            <div class="p-4 pb-0">
+                                <h5 class="text-warning mb-3">₦250,000,000</h5>
+                                <a class="d-block h5 mb-2" href="">Modern Commercial Office</a>
+                                <p><i class="fa fa-map-marker-alt text-warning me-2"></i>Ikeja GRA, Lagos, Nigeria</p>
+                            </div>
+                            <div class="d-flex border-top">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-warning me-2"></i>500 sqm</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-warning me-2"></i>N/A</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-bath text-warning me-2"></i>N/A</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Card 4 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="property-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid" src="img/property-4.jpg" alt=""></a>
+                                <div class="bg-warning rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sale</div>
+                                <div class="bg-white rounded-top text-warning position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Penthouse</div>
+                            </div>
+                            <div class="p-4 pb-0">
+                                <h5 class="text-warning mb-3">₦300,000,000</h5>
+                                <a class="d-block h5 mb-2" href="">Luxury Penthouse</a>
+                                <p><i class="fa fa-map-marker-alt text-warning me-2"></i>Ikoyi, Lagos, Nigeria</p>
+                            </div>
+                            <div class="d-flex border-top">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-warning me-2"></i>350 sqm</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-warning me-2"></i>4 Bed</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-bath text-warning me-2"></i>3 Bath</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Card 5 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="property-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid" src="img/property-5.jpg" alt=""></a>
+                                <div class="bg-warning rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sale</div>
+                                <div class="bg-white rounded-top text-warning position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Townhouse</div>
+                            </div>
+                            <div class="p-4 pb-0">
+                                <h5 class="text-warning mb-3">₦200,000,000</h5>
+                                <a class="d-block h5 mb-2" href="">Modern Townhouse</a>
+                                <p><i class="fa fa-map-marker-alt text-warning me-2"></i>Victoria Island, Lagos, Nigeria</p>
+                            </div>
+                            <div class="d-flex border-top">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-warning me-2"></i>300 sqm</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-warning me-2"></i>3 Bed</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-bath text-warning me-2"></i>2 Bath</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Card 6 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="property-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a>
+                                <div class="bg-warning rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sale</div>
+                                <div class="bg-white rounded-top text-warning position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Land</div>
+                            </div>
+                            <div class="p-4 pb-0">
+                                <h5 class="text-warning mb-3">₦100,000,000</h5>
+                                <a class="d-block h5 mb-2" href="">Prime Land for Sale</a>
+                                <p><i class="fa fa-map-marker-alt text-warning me-2"></i>Ikorodu, Nigeria</p>
+                            </div>
+                            <div class="d-flex border-top">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-warning me-2"></i>1000 Sqft</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-warning me-2"></i>N/A</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-bath text-warning me-2"></i>N/A</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Card 7 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="property-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid" src="img/property-3.jpg" alt=""></a>
+                                <div class="bg-warning rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Rent</div>
+                                <div class="bg-white rounded-top text-warning position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Villa</div>
+                            </div>
+                            <div class="p-4 pb-0">
+                                <h5 class="text-warning mb-3">₦3,500,000/year</h5>
+                                <a class="d-block h5 mb-2" href="">Spacious 4-Bedroom Villa</a>
+                                <p><i class="fa fa-map-marker-alt text-warning me-2"></i>Victoria Island, Lagos, Nigeria</p>
+                            </div>
+                            <div class="d-flex border-top">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-warning me-2"></i>400 sqm</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-warning me-2"></i>4 Bed</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-bath text-warning me-2"></i>3 Bath</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Card 8 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="property-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid" src="img/property-5.jpg" alt=""></a>
+                                <div class="bg-warning rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Rent</div>
+                                <div class="bg-white rounded-top text-warning position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Shop</div>
+                            </div>
+                            <div class="p-4 pb-0">
+                                <h5 class="text-warning mb-3">₦500,000/year</h5>
+                                <a class="d-block h5 mb-2" href="">Luxury Shop Space</a>
+                                <p><i class="fa fa-map-marker-alt text-warning me-2"></i>Wuse 2, Abuja, Nigeria</p>
+                            </div>
+                            <div class="d-flex border-top">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-warning me-2"></i>500 Sqft</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-warning me-2"></i>1 Room</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-bath text-warning me-2"></i>1 Bath</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Card 9 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="property-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid" src="img/property-2.jpg" alt=""></a>
+                                <div class="bg-warning rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Rent</div>
+                                <div class="bg-white rounded-top text-warning position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Condo</div>
+                            </div>
+                            <div class="p-4 pb-0">
+                                <h5 class="text-warning mb-3">₦10,000,000/year</h5>
+                                <a class="d-block h5 mb-2" href="">Luxury Condo in Ikeja</a>
+                                <p><i class="fa fa-map-marker-alt text-warning me-2"></i>123 Condo Lane, Ikeja, Nigeria</p>
+                            </div>
+                            <div class="d-flex border-top">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-warning me-2"></i>1500 Sqft</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-warning me-2"></i>4 Bed</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-bath text-warning me-2"></i>3 Bath</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Card 10 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="property-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid" src="img/property-1.jpg" alt=""></a>
+                                <div class="bg-warning rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Rent</div>
+                                <div class="bg-white rounded-top text-warning position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Apartment</div>
+                            </div>
+                            <div class="p-4 pb-0">
+                                <h5 class="text-warning mb-3">₦5,000,000/year</h5>
+                                <a class="d-block h5 mb-2" href="">Elegant Apartment</a>
+                                <p><i class="fa fa-map-marker-alt text-warning me-2"></i>Surulere, Lagos, Nigeria</p>
+                            </div>
+                            <div class="d-flex border-top">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-warning me-2"></i>1200 Sqft</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-warning me-2"></i>3 Bed</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-bath text-warning me-2"></i>2 Bath</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Card 11 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="property-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a>
+                                <div class="bg-warning rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Rent</div>
+                                <div class="bg-white rounded-top text-warning position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Duplex</div>
+                            </div>
+                            <div class="p-4 pb-0">
+                                <h5 class="text-warning mb-3">₦8,000,000/year</h5>
+                                <a class="d-block h5 mb-2" href="">Stylish Duplex</a>
+                                <p><i class="fa fa-map-marker-alt text-warning me-2"></i>Lekki Phase 1, Lagos, Nigeria</p>
+                            </div>
+                            <div class="d-flex border-top">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-warning me-2"></i>1800 Sqft</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-warning me-2"></i>4 Bed</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-bath text-warning me-2"></i>3 Bath</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Card 12 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="property-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid" src="img/property-3.jpg" alt=""></a>
+                                <div class="bg-warning rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Rent</div>
+                                <div class="bg-white rounded-top text-warning position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Commercial Space</div>
+                            </div>
+                            <div class="p-4 pb-0">
+                                <h5 class="text-warning mb-3">₦1,200,000/year</h5>
+                                <a class="d-block h5 mb-2" href="">Prime Commercial Space</a>
+                                <p><i class="fa fa-map-marker-alt text-warning me-2"></i>Yaba, Lagos, Nigeria</p>
+                            </div>
+                            <div class="d-flex border-top">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-warning me-2"></i>1000 Sqft</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-warning me-2"></i>N/A</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-bath text-warning me-2"></i>N/A</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <a class="btn btn-warning py-3 px-5 text-black" href="">Browse More Properties</a>
+                </div>
+            </div>
+            <div id="for-sale" class="tab-pane fade p-0">
+                <div class="row g-4">
+                    <!-- Repeat Property Cards for Sale -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="property-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid" src="img/property-1.jpg" alt=""></a>
+                                <div class="bg-warning rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sale</div>
+                                <div class="bg-white rounded-top text-warning position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Apartment</div>
+                            </div>
+                            <div class="p-4 pb-0">
+                                <h5 class="text-warning mb-3">₦150,000,000</h5>
+                                <a class="d-block h5 mb-2" href="">Luxury 3-Bedroom Apartment</a>
+                                <p><i class="fa fa-map-marker-alt text-warning me-2"></i>Ikoyi, Lagos, Nigeria</p>
+                            </div>
+                            <div class="d-flex border-top">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-warning me-2"></i>250 sqm</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-warning me-2"></i>3 Bed</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-bath text-warning me-2"></i>2 Bath</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Continue adding other properties for sale -->
+                </div>
+                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <a class="btn btn-warning py-3 px-5 text-black" href="">Browse More Properties</a>
+                </div>
+            </div>
+            <div id="for-rent" class="tab-pane fade p-0">
+                <div class="row g-4">
+                    <!-- Repeat Property Cards for Rent -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="property-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid" src="img/property-4.jpg" alt=""></a>
+                                <div class="bg-warning rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Rent</div>
+                                <div class="bg-white rounded-top text-warning position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Villa</div>
+                            </div>
+                            <div class="p-4 pb-0">
+                                <h5 class="text-warning mb-3">₦3,500,000/year</h5>
+                                <a class="d-block h5 mb-2" href="">Spacious 4-Bedroom Villa</a>
+                                <p><i class="fa fa-map-marker-alt text-warning me-2"></i>Victoria Island, Lagos, Nigeria</p>
+                            </div>
+                            <div class="d-flex border-top">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-warning me-2"></i>400 sqm</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-warning me-2"></i>4 Bed</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-bath text-warning me-2"></i>3 Bath</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Continue adding other properties for rent -->
+                </div>
+                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <a class="btn btn-warning py-3 px-5 text-black" href="">Browse More Properties</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Property List End -->
+
+       <!-- Call to Action Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="bg-light rounded p-3 call-to-action">
+            <div class="bg-white rounded p-4" style="border: 1px dashed rgba(221, 221, 221, .5)">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="img-fluid rounded w-100" src="img/call-to-action.jpg" alt="">
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="mb-4">
+                            <h1 class="mb-3 text-primary">Connect with Our Expert Agents Today!</h1>
+                            <p>Your dream property is just a call away! Let our certified agents guide you through the best options tailored to your needs. Experience dedicated service and expert advice.</p>
+                        </div>
+                        <a href="" class="btn btn-primary py-3 px-4 me-2"><i class="fa fa-phone-alt me-2"></i>Make A Call</a>
+                        <a href="" class="btn btn-dark py-3 px-4"><i class="fa fa-calendar-alt me-2"></i>Get Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Call to Action End -->
+
+<!-- Team Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="mb-3">Meet Our Property Agents</h1>
+            <p>Our dedicated team of professionals is here to assist you in finding the perfect property. With expertise in real estate, we ensure a seamless experience tailored to your needs.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="team-item rounded overflow-hidden">
+                    <div class="position-relative">
+                        <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center p-4 mt-3">
+                        <h5 class="fw-bold mb-0">Taofik Oyesiji</h5>
+                        <small>Partner</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="team-item rounded overflow-hidden">
+                    <div class="position-relative">
+                        <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center p-4 mt-3">
+                        <h5 class="fw-bold mb-0">Afolabi Damilare</h5>
+                        <small>Property Developer</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="team-item rounded overflow-hidden">
+                    <div class="position-relative">
+                        <img class="img-fluid" src="img/team-3.jpg" alt="">
+                        <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center p-4 mt-3">
+                        <h5 class="fw-bold mb-0">Oluwaseun Ajayi</h5>
+                        <small>Architect</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="team-item rounded overflow-hidden">
+                    <div class="position-relative">
+                        <img class="img-fluid" src="img/team-4.jpg" alt="">
+                        <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center p-4 mt-3">
+                        <h5 class="fw-bold mb-0">Jeje Armstrong</h5>
+                        <small>Adminisstrative Officer </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+       <!-- Testimonial Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="mb-3">What Our Clients Say!</h1>
+            <p>We take pride in delivering exceptional service to our clients. Here's what they have to say about us.</p>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+            <div class="testimonial-item bg-light rounded p-3">
+                <div class="bg-white border rounded p-4">
+                    <p>"Afodams Property  helped me find my dream home! Their team was professional and attentive throughout the process."</p>
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 45px; height: 45px;">
+                        <div class="ps-3">
+                            <h6 class="fw-bold mb-1">Chinonso Obi</h6>
+                            <small>Software Engineer</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-item bg-light rounded p-3">
+                <div class="bg-white border rounded p-4">
+                    <p>"I had a fantastic experience with Afodams! They guided me every step of the way, and I couldn't be happier with my new office space!"</p>
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 45px; height: 45px;">
+                        <div class="ps-3">
+                            <h6 class="fw-bold mb-1">Emily Johnson</h6>
+                            <small>Business Owner</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-item bg-light rounded p-3">
+                <div class="bg-white border rounded p-4">
+                    <p>"The team at Afodams Property is outstanding! They understood my needs and found the perfect property for my family."</p>
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg" style="width: 45px; height: 45px;">
+                        <div class="ps-3">
+                            <h6 class="fw-bold mb-1">Samuel Adeyemi</h6>
+                            <small>Architect</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-item bg-light rounded p-3">
+                <div class="bg-white border rounded p-4">
+                    <p>"I highly recommend Afodams Property ! They made the process seamless and stress-free. Truly professionals!"</p>
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-4.jpg" style="width: 45px; height: 45px;">
+                        <div class="ps-3">
+                            <h6 class="fw-bold mb-1">Jessica Smith</h6>
+                            <small>Real Estate Investor</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-white footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">Get In Touch</h5>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>149 Ogudu Road, Lagos, Nigeria</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+234 911 525 8580</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>afodamsproperty@gmail.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">Quick Links</h5>
+                <a class="btn btn-link text-white-50" href="">About Us</a>
+                <a class="btn btn-link text-white-50" href="">Contact Us</a>
+                <a class="btn btn-link text-white-50" href="">Our Services</a>
+                <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">Photo Gallery</h5>
+                <div class="row g-2 pt-2">
+                    <div class="col-4">
+                        <img class="img-fluid rounded bg-light p-1" src="img/property-1.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid rounded bg-light p-1" src="img/property-2.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid rounded bg-light p-1" src="img/property-3.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid rounded bg-light p-1" src="img/property-4.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid rounded bg-light p-1" src="img/property-5.jpg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid rounded bg-light p-1" src="img/property-6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">Newsletter</h5>
+                <p>Stay updated with our latest properties and offers.</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                    <a href="signup.html" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">Afodams Property Limited</a>, All Rights Reserved. 
+                    <span class="text-white-50"> | Your Custom Text Here</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <a href="">Home</a>
+                        <a href="">Cookies</a>
+                        <a href="">Help</a>
+                        <a href="">FAQs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Auth Javascript -->
+    <script src="js/auth.js"></script>
+
+    <!-- Signup Form Handler -->
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const submitBtn = e.target.querySelector('button[type="submit"]');
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const role = document.getElementById('role').value;
+
+            // Clear previous messages
+            clearMessages('messageAlert');
+
+            // Validate passwords match
+            if (password !== confirmPassword) {
+                showError('messageAlert', 'Passwords do not match');
+                return;
+            }
+
+            // Show loading
+            showLoading(submitBtn);
+
+            // Attempt registration
+            const result = await Auth.register(name, email, password, role);
+
+            // Hide loading
+            hideLoading(submitBtn);
+
+            if (result.success) {
+                showSuccess('messageAlert', 'Registration successful! Redirecting...');
+
+                // Redirect based on user role
+                setTimeout(() => {
+                    if (result.user.role === 'landlord') {
+                        window.location.href = '/landlord-list.html';
+                    } else {
+                        window.location.href = '/index.html';
+                    }
+                }, 1500);
+            } else {
+                showError('messageAlert', result.error);
+            }
+        });
+    </script>
+</body>
+
+</html>

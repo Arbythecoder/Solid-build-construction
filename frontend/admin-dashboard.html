@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Admin Dashboard - Afodams Property</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Admin Dashboard" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .sidebar {
+            min-height: 100vh;
+            background: #f8f9fa;
+            padding: 20px;
+            border-right: 1px solid #dee2e6;
+        }
+        .stat-card {
+            border-left: 4px solid #00B98E;
+            transition: transform 0.2s;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .table-responsive {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-2 sidebar">
+                <div class="d-flex align-items-center mb-4">
+                    <img src="img/afodams-new.jpg" alt="Logo" style="width: 40px; height: 40px;" class="me-2">
+                    <h5 class="mb-0">Admin Panel</h5>
+                </div>
+                <hr>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#dashboard">
+                            <i class="fa fa-dashboard me-2"></i>Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#properties">
+                            <i class="fa fa-building me-2"></i>Properties
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#agents">
+                            <i class="fa fa-users me-2"></i>Agents
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#landlords">
+                            <i class="fa fa-user-tie me-2"></i>Landlords
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tenants">
+                            <i class="fa fa-user me-2"></i>Tenants
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inquiries">
+                            <i class="fa fa-envelope me-2"></i>Inquiries
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <a href="index.html" class="btn btn-outline-primary btn-sm">
+                    <i class="fa fa-home me-2"></i>Back to Website
+                </a>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-10 p-4">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2>Admin Dashboard</h2>
+                    <div>
+                        <span id="adminName" class="me-3">Welcome, Admin</span>
+                        <button class="btn btn-outline-danger btn-sm" onclick="logout()">
+                            <i class="fa fa-sign-out me-1"></i>Logout
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Stats Cards -->
+                <div class="row mb-4">
+                    <div class="col-md-3">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <p class="text-muted mb-1">Total Properties</p>
+                                        <h3 id="totalProperties">0</h3>
+                                    </div>
+                                    <div class="text-primary">
+                                        <i class="fa fa-building fa-2x"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <p class="text-muted mb-1">Total Agents</p>
+                                        <h3 id="totalAgents">0</h3>
+                                    </div>
+                                    <div class="text-success">
+                                        <i class="fa fa-users fa-2x"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <p class="text-muted mb-1">Total Landlords</p>
+                                        <h3 id="totalLandlords">0</h3>
+                                    </div>
+                                    <div class="text-warning">
+                                        <i class="fa fa-user-tie fa-2x"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <p class="text-muted mb-1">Total Inquiries</p>
+                                        <h3 id="totalInquiries">0</h3>
+                                    </div>
+                                    <div class="text-info">
+                                        <i class="fa fa-envelope fa-2x"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add Property Section -->
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0"><i class="fa fa-plus-circle me-2"></i>Add New Property</h5>
+                    </div>
+                    <div class="card-body">
+                        <form id="addPropertyForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Property Title</label>
+                                    <input type="text" class="form-control" id="propTitle" required>
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Price (₦)</label>
+                                    <input type="number" class="form-control" id="propPrice" required>
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Status</label>
+                                    <select class="form-select" id="propStatus" required>
+                                        <option value="For Sale">For Sale</option>
+                                        <option value="For Rent">For Rent</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Type</label>
+                                    <select class="form-select" id="propType" required>
+                                        <option value="Apartment">Apartment</option>
+                                        <option value="Villa">Villa</option>
+                                        <option value="Home">Home</option>
+                                        <option value="Office">Office</option>
+                                        <option value="Building">Building</option>
+                                        <option value="Townhouse">Townhouse</option>
+                                        <option value="Shop">Shop</option>
+                                        <option value="Garage">Garage</option>
+                                        <option value="Land">Land</option>
+                                        <option value="Penthouse">Penthouse</option>
+                                        <option value="Duplex">Duplex</option>
+                                        <option value="Condo">Condo</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Location</label>
+                                    <input type="text" class="form-control" id="propLocation" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Area (sqm)</label>
+                                    <input type="number" class="form-control" id="propArea">
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Bedrooms</label>
+                                    <input type="number" class="form-control" id="propBedrooms" value="0">
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Bathrooms</label>
+                                    <input type="number" class="form-control" id="propBathrooms" value="0">
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Featured</label>
+                                    <select class="form-select" id="propFeatured">
+                                        <option value="false">No</option>
+                                        <option value="true">Yes</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">Image URL</label>
+                                    <input type="text" class="form-control" id="propImage" placeholder="img/property-1.jpg">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Description</label>
+                                    <textarea class="form-control" id="propDescription" rows="3"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="fa fa-save me-2"></i>Add Property
+                                    </button>
+                                    <button type="reset" class="btn btn-secondary ms-2">Reset</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Recent Inquiries -->
+                <div class="card">
+                    <div class="card-header bg-info text-white">
+                        <h5 class="mb-0"><i class="fa fa-envelope me-2"></i>Recent Inquiries</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Message</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="inquiriesTable">
+                                    <tr>
+                                        <td colspan="4" class="text-center">Loading...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Auth Helper -->
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+
+    <!-- Admin Dashboard Script -->
+    <script>
+        // API_URL is loaded from config.js
+
+        // Check if user is admin
+        if (!Auth.isLoggedIn()) {
+            window.location.href = 'login.html';
+        } else {
+            const user = Auth.getUser();
+            if (user.role !== 'admin') {
+                alert('Access denied. Admin only.');
+                window.location.href = 'index.html';
+            }
+            document.getElementById('adminName').textContent = `Welcome, ${user.name}`;
+        }
+
+        function logout() {
+            Auth.logout();
+        }
+
+        // Load dashboard stats
+        async function loadStats() {
+            try {
+                const [properties, agents, landlords, inquiries] = await Promise.all([
+                    fetch(`${API_URL}/properties`, { headers: Auth.getAuthHeaders() }).then(r => r.json()),
+                    fetch(`${API_URL}/agents`, { headers: Auth.getAuthHeaders() }).then(r => r.json()),
+                    fetch(`${API_URL}/landlords`, { headers: Auth.getAuthHeaders() }).then(r => r.json()),
+                    fetch(`${API_URL}/inquiries`, { headers: Auth.getAuthHeaders() }).then(r => r.json())
+                ]);
+
+                document.getElementById('totalProperties').textContent = properties.length || 0;
+                document.getElementById('totalAgents').textContent = agents.length || 0;
+                document.getElementById('totalLandlords').textContent = landlords.length || 0;
+                document.getElementById('totalInquiries').textContent = inquiries.length || 0;
+
+                // Load recent inquiries
+                loadInquiries(inquiries);
+            } catch (error) {
+                console.error('Error loading stats:', error);
+            }
+        }
+
+        function loadInquiries(inquiries) {
+            const tbody = document.getElementById('inquiriesTable');
+            if (!inquiries || inquiries.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="4" class="text-center">No inquiries yet</td></tr>';
+                return;
+            }
+
+            tbody.innerHTML = inquiries.slice(0, 10).map(inq => `
+                <tr>
+                    <td>${inq.name}</td>
+                    <td>${inq.email}</td>
+                    <td>${inq.message.substring(0, 50)}...</td>
+                    <td>${new Date(inq.createdAt || Date.now()).toLocaleDateString()}</td>
+                </tr>
+            `).join('');
+        }
+
+        // Handle Add Property Form
+        document.getElementById('addPropertyForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const propertyData = {
+                title: document.getElementById('propTitle').value,
+                price: parseFloat(document.getElementById('propPrice').value),
+                status: document.getElementById('propStatus').value,
+                type: document.getElementById('propType').value,
+                location: document.getElementById('propLocation').value,
+                area: parseInt(document.getElementById('propArea').value) || 0,
+                bedrooms: parseInt(document.getElementById('propBedrooms').value) || 0,
+                bathrooms: parseInt(document.getElementById('propBathrooms').value) || 0,
+                featured: document.getElementById('propFeatured').value === 'true',
+                description: document.getElementById('propDescription').value,
+                images: [document.getElementById('propImage').value || 'img/property-1.jpg']
+            };
+
+            try {
+                const response = await fetch(`${API_URL}/properties`, {
+                    method: 'POST',
+                    headers: Auth.getAuthHeaders(),
+                    body: JSON.stringify(propertyData)
+                });
+
+                if (response.ok) {
+                    alert('Property added successfully!');
+                    document.getElementById('addPropertyForm').reset();
+                    loadStats(); // Refresh stats
+                } else {
+                    const error = await response.json();
+                    alert('Failed to add property: ' + (error.message || 'Unknown error'));
+                }
+            } catch (error) {
+                alert('Error adding property: ' + error.message);
+                console.error('Error:', error);
+            }
+        });
+
+        // Load stats on page load
+        loadStats();
+    </script>
+</body>
+
+</html>

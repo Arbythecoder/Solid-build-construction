@@ -5,7 +5,7 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/afodams-property/', // GitHub Pages base path
+  base: '/afodams-web/', // GitHub Pages base path (repo name)
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
