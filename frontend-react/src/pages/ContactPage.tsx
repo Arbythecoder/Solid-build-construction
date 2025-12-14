@@ -7,6 +7,7 @@ import {
 import Button from '../components/ui/Button'
 import toast from 'react-hot-toast'
 import { inquiryAPI } from '../services/api'
+import ChatBot from '../components/ui/ChatBot'
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -513,6 +514,8 @@ const ContactPage = () => {
           </motion.div>
         </div>
       </section>
+      {/* ChatBot - Floating */}
+      <ChatBot />
     </div>
   )
 }

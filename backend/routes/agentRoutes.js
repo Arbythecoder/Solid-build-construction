@@ -1,7 +1,9 @@
 const express = require("express");
 const multer = require("multer");
+const jwt = require("jsonwebtoken");
 const router = express.Router();
 const Agent = require("../models/Agent");
+const User = require("../models/User");
 const { protect } = require("../middleware/authMiddleware");
 
 // Configure multer for file uploads
@@ -30,7 +32,22 @@ const upload = multer({
 // Register a new agent
 router.post("/register", upload.single("idCard"), async (req, res) => {
     try {
-        const { fullName, email, phone, homeAddress, officeAddress } = req.body;
+        const { fullName, email, password, phone, homeAddress, officeAddress } = req.body;
+
+        // Validation
+        if (!fullName || !email || !password || !phone) {
+            return res.status(400).json({ message: "Please provide all required fields" });
+        }
+
+        if (password.length < 6) {
+            return res.status(400).json({ message: "Password must be at least 6 characters" });
+        }
+
+        // Check if user already exists
+        const existingUser = await User.findOne({ email });
+        if (existingUser) {
+            return res.status(400).json({ message: "User with this email already exists" });
+        }
 
         // Check if agent already exists
         const existingAgent = await Agent.findOne({ email });
@@ -38,24 +55,46 @@ router.post("/register", upload.single("idCard"), async (req, res) => {
             return res.status(400).json({ message: "Agent with this email already exists" });
         }
 
+        // Create User account (for login)
+        const user = await User.create({
+            name: fullName,
+            email,
+            password,
+            role: "agent",
+            phone
+        });
+
+        // Create Agent profile
         const agent = await Agent.create({
             name: fullName,
             email,
             phone,
             homeAddress,
             officeAddress,
-            idCard: req.file ? `/uploads/${req.file.filename}` : null
+            idCard: req.file ? `/uploads/${req.file.filename}` : null,
+            userId: user._id
         });
 
+        // Generate JWT token
+        const token = jwt.sign(
+            { userId: user._id, role: user.role },
+            process.env.JWT_SECRET,
+            { expiresIn: "7d" }
+        );
+
         res.status(201).json({
-            message: "Agent registered successfully. We will verify your details and get back to you shortly.",
-            agent: {
-                id: agent._id,
-                name: agent.name,
-                email: agent.email
+            message: "Agent registered successfully. You can now login!",
+            token,
+            user: {
+                id: user._id,
+                name: user.name,
+                email: user.email,
+                role: user.role,
+                agentId: agent._id
             }
         });
     } catch (error) {
+        console.error("Agent registration error:", error);
         res.status(500).json({ message: "Server error", error: error.message });
     }
 });

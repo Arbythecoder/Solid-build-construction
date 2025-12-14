@@ -1,12 +1,29 @@
 const express = require("express");
+const jwt = require("jsonwebtoken");
 const router = express.Router();
 const Tenant = require("../models/Tenant");
+const User = require("../models/User");
 const { protect } = require("../middleware/authMiddleware");
 
 // Register a new tenant
 router.post("/register", async (req, res) => {
     try {
-        const { name, email, phone, address, propertyInterest } = req.body;
+        const { name, email, password, phone, address, propertyInterest } = req.body;
+
+        // Validation
+        if (!name || !email || !password) {
+            return res.status(400).json({ message: "Please provide all required fields" });
+        }
+
+        if (password.length < 6) {
+            return res.status(400).json({ message: "Password must be at least 6 characters" });
+        }
+
+        // Check if user already exists
+        const existingUser = await User.findOne({ email });
+        if (existingUser) {
+            return res.status(400).json({ message: "User with this email already exists" });
+        }
 
         // Check if tenant already exists
         const existingTenant = await Tenant.findOne({ email });
@@ -14,23 +31,46 @@ router.post("/register", async (req, res) => {
             return res.status(400).json({ message: "Tenant with this email already exists" });
         }
 
+        // Create User account (for login)
+        const user = await User.create({
+            name,
+            email,
+            password,
+            role: "tenant",
+            phone,
+            address
+        });
+
+        // Create Tenant profile
         const tenant = await Tenant.create({
             name,
             email,
             phone,
             address,
-            propertyInterest
+            propertyInterest,
+            userId: user._id
         });
 
+        // Generate JWT token
+        const token = jwt.sign(
+            { userId: user._id, role: user.role },
+            process.env.JWT_SECRET,
+            { expiresIn: "7d" }
+        );
+
         res.status(201).json({
-            message: "Tenant registered successfully",
-            tenant: {
-                id: tenant._id,
-                name: tenant.name,
-                email: tenant.email
+            message: "Tenant registered successfully. You can now login!",
+            token,
+            user: {
+                id: user._id,
+                name: user.name,
+                email: user.email,
+                role: user.role,
+                tenantId: tenant._id
             }
         });
     } catch (error) {
+        console.error("Tenant registration error:", error);
         res.status(500).json({ message: "Server error", error: error.message });
     }
 });

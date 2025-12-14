@@ -4,6 +4,9 @@ import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Button from '../components/ui/Button'
 import PropertyCard from '../components/ui/PropertyCard'
+import WhatsAppButton from '../components/ui/WhatsAppButton'
+import AppComingSoon from '../components/sections/AppComingSoon'
+import ServicesSection from '../components/sections/ServicesSection'
 
 const HomePage = () => {
   const navigate = useNavigate()
@@ -513,6 +516,15 @@ const HomePage = () => {
           </motion.div>
         </div>
       </section>
+      {/* Our Services Section */}
+      <ServicesSection />
+
+
+      {/* Mobile App Coming Soon Section */}
+      <AppComingSoon />
+
+      {/* WhatsApp Button - Floating */}
+      <WhatsAppButton />
     </div>
   )
 }

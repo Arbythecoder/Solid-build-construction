@@ -32,6 +32,13 @@ const server = http.createServer(app);
 // Initialize Socket.io
 const io = initializeSocket(server);
 
+// Validate critical environment variables
+if (!process.env.JWT_SECRET) {
+    console.error("❌ FATAL ERROR: JWT_SECRET is not defined");
+    console.log("Please set JWT_SECRET in your .env file");
+    process.exit(1);
+}
+
 // Connect to MongoDB
 connectDB();
 
@@ -44,10 +51,34 @@ app.use(xss());
 app.use(mongoSanitize());
 app.use(hpp());
 
-// CORS
+// CORS - Allow frontend from multiple sources
+const allowedOrigins = [
+    "http://localhost:5173",
+    "http://localhost:3000",
+    "https://arbythecoder.github.io",
+    process.env.CORS_ORIGIN
+].filter(Boolean);
+
 app.use(cors({
-    origin: process.env.CORS_ORIGIN || "http://localhost:5173",
-    credentials: true
+    origin: function (origin, callback) {
+        // Allow requests with no origin (Postman, mobile apps, curl)
+        if (!origin) return callback(null, true);
+
+        // Check if origin is allowed
+        if (allowedOrigins.some(allowed => origin.startsWith(allowed))) {
+            callback(null, true);
+        } else {
+            // In development, allow all origins
+            if (process.env.NODE_ENV !== 'production') {
+                callback(null, true);
+            } else {
+                callback(new Error('Not allowed by CORS'));
+            }
+        }
+    },
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 // Body parser
@@ -65,7 +96,7 @@ const limiter = rateLimit({
     max: 100,
     message: "Too many requests from this IP, please try again later"
 });
-app.use("/auth", limiter);
+app.use("/api/auth", limiter);
 
 // API Documentation
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec, {

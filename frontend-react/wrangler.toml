@@ -1,0 +1,14 @@
+# Cloudflare Pages Configuration for Afodams Property
+
+name = "afodams-property"
+compatibility_date = "2024-01-01"
+
+[build]
+command = "npm run build"
+output_directory = "dist"
+
+[build.environment]
+NODE_VERSION = "18"
+
+# Custom domain will be configured in Cloudflare dashboard
+# Add your domain: afodamsproperty.com (or whatever domain client has)
