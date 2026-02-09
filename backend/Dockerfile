@@ -1,4 +1,4 @@
-# Dockerfile for Afodams Property Backend
+# Dockerfile for Solid Build Construction Limited Backend
 
 FROM node:18-alpine
 

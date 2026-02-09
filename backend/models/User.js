@@ -32,6 +32,45 @@ const userSchema = new mongoose.Schema({
     profileImage: String,
     phone: String,
     address: String,
+    
+    // Landlord-specific fields
+    numberOfProperties: String,
+    propertyTypes: [String],
+    hearAboutUs: String,
+    
+    // Tenant-specific fields
+    occupation: String,
+    employer: String,
+    monthlyIncome: String,
+    preferredLocation: String,
+    moveInDate: Date,
+    
+    // Investor-specific fields
+    investorToken: {
+        type: String,
+        unique: true,
+        sparse: true // Only required for investors
+    },
+    investmentBudget: String,
+    investmentGoal: String,
+    riskTolerance: {
+        type: String,
+        enum: ['low', 'moderate', 'high']
+    },
+    investmentHorizon: String,
+    
+    // Agent-specific fields
+    yearsOfExperience: String,
+    currentEmployer: String,
+    licenseNumber: String,
+    specialization: [String],
+    motivation: String,
+    agentStatus: {
+        type: String,
+        enum: ['pending', 'approved', 'rejected'],
+        default: 'pending'
+    },
+    
     createdAt: {
         type: Date,
         default: Date.now

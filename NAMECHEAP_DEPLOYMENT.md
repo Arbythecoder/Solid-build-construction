@@ -18,10 +18,10 @@ Since you have a Namecheap domain, here's how to connect it to your deployed web
 ```powershell
 cd frontend-react
 npm run build
-wrangler pages deploy dist --project-name=afodams-property
+wrangler pages deploy dist --project-name=Solid Build-property
 ```
 
-✅ You'll get: `https://afodams-property.pages.dev`
+✅ You'll get: `https://Solid Build-property.pages.dev`
 
 ---
 
@@ -34,7 +34,7 @@ cd backend
 fly deploy
 ```
 
-✅ You'll get: `https://afodams-backend.fly.dev`
+✅ You'll get: `https://Solid Build-backend.fly.dev`
 
 ---
 
@@ -56,7 +56,7 @@ Go to "Advanced DNS" tab and add:
 ```
 Type: CNAME
 Host: @
-Value: afodams-property.pages.dev
+Value: Solid Build-property.pages.dev
 TTL: Automatic
 ```
 
@@ -64,7 +64,7 @@ TTL: Automatic
 ```
 Type: CNAME
 Host: www
-Value: afodams-property.pages.dev
+Value: Solid Build-property.pages.dev
 TTL: Automatic
 ```
 
@@ -72,7 +72,7 @@ TTL: Automatic
 ```
 Type: CNAME
 Host: api
-Value: afodams-backend.fly.dev
+Value: Solid Build-backend.fly.dev
 TTL: Automatic
 ```
 
@@ -83,8 +83,8 @@ TTL: Automatic
 **4. Add Domain in Cloudflare:**
 
 ```powershell
-wrangler pages domain add yourdomain.com --project-name=afodams-property
-wrangler pages domain add www.yourdomain.com --project-name=afodams-property
+wrangler pages domain add yourdomain.com --project-name=Solid Build-property
+wrangler pages domain add www.yourdomain.com --project-name=Solid Build-property
 ```
 
 **5. Add Certificate in Fly.io:**
@@ -158,7 +158,7 @@ wrangler pages secret put VITE_API_URL
 Rebuild and redeploy:
 ```powershell
 npm run build
-wrangler pages deploy dist --project-name=afodams-property
+wrangler pages deploy dist --project-name=Solid Build-property
 ```
 
 ---
@@ -232,14 +232,14 @@ wrangler pages deploy dist --project-name=afodams-property
 # 1. Deploy Frontend
 cd frontend-react
 npm run build
-wrangler pages deploy dist --project-name=afodams-property
+wrangler pages deploy dist --project-name=Solid Build-property
 
 # 2. Deploy Backend
 cd ../backend
 fly deploy
 
 # 3. Add custom domain
-wrangler pages domain add yourdomain.com --project-name=afodams-property
+wrangler pages domain add yourdomain.com --project-name=Solid Build-property
 fly certs add api.yourdomain.com
 
 # 4. Update API URL
@@ -249,7 +249,7 @@ wrangler pages secret put VITE_API_URL
 # 5. Redeploy frontend
 cd ../frontend-react
 npm run build
-wrangler pages deploy dist --project-name=afodams-property
+wrangler pages deploy dist --project-name=Solid Build-property
 ```
 
 ---

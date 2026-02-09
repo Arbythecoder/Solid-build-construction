@@ -1,4 +1,4 @@
-# 🚀 AFODAMS PROPERTY - GO LIVE GUIDE
+# 🚀 Solid Build Construction Limited - GO LIVE GUIDE
 
 **Status:** ✅ PRODUCTION READY
 **Date:** November 2025
@@ -69,14 +69,14 @@ This will:
 
 4. **Set Environment Variables:**
    ```
-   MONGO_URI=mongodb+srv://forfashionpassion690_db_user:SLXc5rx1y1eKzbU2@afodamscluster.5aauutk.mongodb.net/afodams-properties?retryWrites=true&w=majority&appName=Afodamscluster
+   MONGO_URI=mongodb+srv://forfashionpassion690_db_user:SLXc5rx1y1eKzbU2@Solid Buildcluster.5aauutk.mongodb.net/Solid Build-properties?retryWrites=true&w=majority&appName=Solid Buildcluster
    JWT_SECRET=43c3d8cb8b59e724943b5a2a0287b9c54b78eaa363f931dd5c5acd760318bdc4
    NODE_ENV=production
    PORT=5000
    CORS_ORIGIN=*
    ```
 
-5. **Copy your Render URL:** `https://afodams-property.onrender.com`
+5. **Copy your Render URL:** `https://Solid Build-property.onrender.com`
 
 #### B. Deploy Frontend to Vercel
 
@@ -90,11 +90,11 @@ This will:
 
 4. **Environment Variables:**
    ```
-   VITE_API_URL=https://afodams-property.onrender.com
+   VITE_API_URL=https://Solid Build-property.onrender.com
    ```
 
 5. **Deploy!**
-   - Your site will be live at: `https://afodams-property.vercel.app`
+   - Your site will be live at: `https://Solid Build-property.vercel.app`
 
 ---
 
@@ -122,19 +122,19 @@ sudo apt install nginx -y
 # (Use FileZilla, SCP, or Git)
 
 # 5. Install backend dependencies
-cd /var/www/afodams/backend
+cd /var/www/Solid Build/backend
 npm install
 
 # 6. Install PM2 (Process Manager)
 sudo npm install -g pm2
 
 # 7. Start the server
-pm2 start server.production.js --name afodams
+pm2 start server.production.js --name Solid Build
 pm2 save
 pm2 startup
 
 # 8. Configure Nginx
-sudo nano /etc/nginx/sites-available/afodams
+sudo nano /etc/nginx/sites-available/Solid Build
 ```
 
 **Nginx Configuration:**
@@ -156,7 +156,7 @@ server {
 
 ```bash
 # Enable site
-sudo ln -s /etc/nginx/sites-available/afodams /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/Solid Build /etc/nginx/sites-enabled/
 sudo nginx -t
 sudo systemctl restart nginx
 
@@ -308,9 +308,9 @@ sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
 
 ---
 
-## 📱 WHAT MAKES AFODAMS BETTER
+## 📱 WHAT MAKES Solid Build BETTER
 
-| Feature | Rightmove (UK) | Afodams |
+| Feature | Rightmove (UK) | Solid Build |
 |---------|---------------|---------|
 | **Property Listings** | ✅ | ✅ |
 | **Search & Filters** | 12 filters | ✅ 20+ filters |
@@ -328,7 +328,7 @@ sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
 | **Mobile Experience** | Good | ✅ Excellent |
 | **Design Quality** | Standard | ✅ Premium Luxury |
 
-**Winner:** ✅ **AFODAMS!**
+**Winner:** ✅ **Solid Build!**
 
 ---
 
@@ -390,9 +390,9 @@ sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
 - Emergency: Contact development team
 
 **Client Information:**
-- Company: Afodams Property Limited
+- Company: Solid Build Construction Limited
 - Address: 149 Ogudu Road, Lagos, Nigeria
-- Email: afodamsproperty@gmail.com
+- Email: Solid Buildproperty@gmail.com
 - Phone: +234 911 525 8580
 
 ---
@@ -440,6 +440,6 @@ Track these after launch:
 
 ---
 
-**🇳🇬 Let's make Afodams the #1 property platform in Nigeria! 🇳🇬**
+**🇳🇬 Let's make Solid Build the #1 property platform in Nigeria! 🇳🇬**
 
 **GOOD LUCK WITH THE LAUNCH!** 🎊🎉🚀

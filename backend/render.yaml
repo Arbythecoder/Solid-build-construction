@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: afodams-backend
+    name: solidbuild-backend
     env: node
     plan: free
     buildCommand: npm install

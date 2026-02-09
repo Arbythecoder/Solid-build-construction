@@ -77,7 +77,7 @@ const TenantSignup = () => {
             Tenant Registration
           </h1>
           <p className="text-xl text-gray-300">
-            Find your perfect home with Afodams Property
+            Find your perfect home with Solid Build Construction Limited
           </p>
         </motion.div>
 

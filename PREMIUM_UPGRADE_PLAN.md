@@ -1,4 +1,4 @@
-# 🚀 AFODAMS PROPERTY - 1000x PREMIUM UPGRADE PLAN
+# 🚀 Solid Build Construction Limited - 1000x PREMIUM UPGRADE PLAN
 ## Transform to World-Class UK-Level Premium Platform
 
 **Goal:** Create a premium property platform that exceeds UK luxury real estate websites with authentic African imagery and world-class functionality.
@@ -671,13 +671,13 @@ const options = {
   definition: {
     openapi: '3.0.0',
     info: {
-      title: 'Afodams Property API',
+      title: 'Solid Build Construction Limited API',
       version: '1.0.0',
       description: 'Premium Property Management API'
     },
     servers: [
       {
-        url: 'https://api.afodamsproperty.com',
+        url: 'https://api.Solid Buildproperty.com',
       },
     ],
   },
@@ -765,8 +765,8 @@ jobs:
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "afodams-property"
-          heroku_email: "admin@afodamsproperty.com"
+          heroku_app_name: "Solid Build-property"
+          heroku_email: "admin@Solid Buildproperty.com"
 ```
 
 ### 14. **MONITORING & LOGGING** 📈

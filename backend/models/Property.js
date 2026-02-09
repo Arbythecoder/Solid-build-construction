@@ -18,9 +18,20 @@ const propertySchema = new mongoose.Schema({
     },
     status: {
         type: String,
-        enum: ['available', 'rented', 'sold', 'featured'],
-        default: 'available'
+        enum: ['pending', 'approved', 'rejected', 'rented', 'sold'],
+        default: 'pending'
     },
+    approvedBy: {
+        type: mongoose.Schema.ObjectId,
+        ref: 'User'
+    },
+    approvedAt: Date,
+    rejectedBy: {
+        type: mongoose.Schema.ObjectId,
+        ref: 'User'
+    },
+    rejectedAt: Date,
+    rejectionReason: String,
     isPremium: {
         type: Boolean,
         default: false

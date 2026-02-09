@@ -8,7 +8,7 @@
 
 ## 🎯 WHAT I BUILT TODAY
 
-While you're fixing MongoDB, I built **4 production-ready premium components** that will make Afodams better than any UK property site.
+While you're fixing MongoDB, I built **4 production-ready premium components** that will make Solid Build better than any UK property site.
 
 ---
 
@@ -31,7 +31,7 @@ While you're fixing MongoDB, I built **4 production-ready premium components** t
 
 ### Why It's Better:
 - **Rightmove:** Basic calculator, GBP only
-- **Afodams:** Advanced Nigerian Naira calculator with real-time updates
+- **Solid Build:** Advanced Nigerian Naira calculator with real-time updates
 
 ### Preview:
 ```
@@ -73,7 +73,7 @@ While you're fixing MongoDB, I built **4 production-ready premium components** t
 
 ### Why It's Better:
 - **Rightmove:** NO investment calculator
-- **Afodams:** Professional investor-grade analytics
+- **Solid Build:** Professional investor-grade analytics
 
 ### Metrics Calculated:
 - Total Return on Investment (%)
@@ -140,7 +140,7 @@ While you're fixing MongoDB, I built **4 production-ready premium components** t
 
 ### Why It's Better:
 - **Rightmove:** 12 filters, no Nigerian-specific features
-- **Afodams:** 20+ filters, includes BQ, Generator, Gated Estate, etc.
+- **Solid Build:** 20+ filters, includes BQ, Generator, Gated Estate, etc.
 
 ### UI Features:
 - Slide-in panel (not dropdown)
@@ -180,7 +180,7 @@ While you're fixing MongoDB, I built **4 production-ready premium components** t
 
 ### Why It's Better:
 - **Rightmove:** Basic gallery, limited zoom
-- **Afodams:** Professional lightbox with full controls
+- **Solid Build:** Professional lightbox with full controls
 
 ### Preview:
 ```
@@ -206,9 +206,9 @@ Lightbox:
 
 ---
 
-## 📊 COMPARISON: AFODAMS VS RIGHTMOVE
+## 📊 COMPARISON: Solid Build VS RIGHTMOVE
 
-| Feature | Rightmove | Zoopla | Afodams |
+| Feature | Rightmove | Zoopla | Solid Build |
 |---------|-----------|--------|---------|
 | **Mortgage Calculator** | Basic (GBP) | Basic | ✅ Advanced (₦) |
 | **ROI Calculator** | ❌ None | ❌ None | ✅ Full analytics |
@@ -323,7 +323,7 @@ Once MongoDB is fixed, I can:
 ### Why It's Better:
 - **Rightmove:** Basic comparison, max 2 properties
 - **Zoopla:** Limited comparison features
-- **Afodams:** 3 properties, automatic best value detection, export & share
+- **Solid Build:** 3 properties, automatic best value detection, export & share
 
 ### Preview:
 ```
@@ -408,7 +408,7 @@ Once MongoDB is fixed, I can:
 ### Why It's Better:
 - **Rightmove:** Basic "schools and transport" list
 - **Zoopla:** Limited area info, no ratings
-- **Afodams:** Comprehensive intelligence with scores, ratings, commute calculator
+- **Solid Build:** Comprehensive intelligence with scores, ratings, commute calculator
 
 ### Preview:
 ```
@@ -498,7 +498,7 @@ I'll immediately:
 4. ✅ Fix any bugs
 5. ✅ Deploy to production
 
-**Then Afodams will have features that Rightmove DOESN'T have!** 🚀
+**Then Solid Build will have features that Rightmove DOESN'T have!** 🚀
 
 ---
 
@@ -511,4 +511,4 @@ I'll immediately:
 - Full testing suite
 - Production deployment
 
-Let's make Afodams the #1 property platform in Nigeria! 🇳🇬
+Let's make Solid Build the #1 property platform in Nigeria! 🇳🇬

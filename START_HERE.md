@@ -1,4 +1,4 @@
-# 🚀 START HERE - Afodams Property Platform
+# 🚀 START HERE - Solid Build Construction Limited Platform
 
 **Last Updated:** November 17, 2025
 **Status:** Ready to build Week 1 features
@@ -50,7 +50,7 @@ docker run -d -p 27017:27017 --name mongodb mongo
 
 Then update **backend/.env**:
 ```
-MONGO_URI=mongodb://localhost:27017/afodams-properties
+MONGO_URI=mongodb://localhost:27017/Solid Build-properties
 ```
 
 ---
@@ -66,7 +66,7 @@ npm start
 **You should see:**
 ```
 ✅ MongoDB Connected Successfully
-📍 Database: afodams-properties
+📍 Database: Solid Build-properties
 Server running in production mode on port 5000
 ```
 
@@ -97,7 +97,7 @@ node seed-database.js
 
 **Test Accounts Created:**
 ```
-Admin:     admin@afodams.com / Admin123!
+Admin:     admin@Solid Build.com / Admin123!
 Landlord:  landlord@test.com / Test123456
 Tenant:    tenant@test.com / Test123456
 Investor:  investor@test.com / Test123456
@@ -146,7 +146,7 @@ This tests:
 
 **4. Login as Admin**
 - Logout
-- Login with: admin@afodams.com / Admin123!
+- Login with: admin@Solid Build.com / Admin123!
 - Go to Admin Dashboard
 - See pending property approval queue
 - Approve or reject properties

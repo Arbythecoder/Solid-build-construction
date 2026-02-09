@@ -85,7 +85,7 @@ const PropertyComparison = ({
     if (navigator.share) {
       try {
         await navigator.share({
-          title: 'Property Comparison - Afodams',
+          title: 'Property Comparison - Solid Build',
           text: `Compare: ${propertyTitles}`,
           url: window.location.href,
         })

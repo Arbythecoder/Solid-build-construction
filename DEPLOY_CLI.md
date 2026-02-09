@@ -39,7 +39,7 @@ fly version
 ### Login to Cloudflare
 
 ```powershell
-cd C:\Users\Arbythecoder\Desktop\afodamspropertylimited\frontend-react
+cd C:\Users\Arbythecoder\Desktop\Solid Buildpropertylimited\frontend-react
 wrangler login
 ```
 
@@ -52,26 +52,26 @@ This will open browser → Login to Cloudflare account
 npm run build
 
 # Deploy to Cloudflare Pages
-wrangler pages deploy dist --project-name=afodams-property
+wrangler pages deploy dist --project-name=Solid Build-property
 ```
 
 **First time setup:**
 - Wrangler will ask: "Create a new project?"
 - Answer: **Yes**
-- Project name: `afodams-property`
+- Project name: `Solid Build-property`
 - Production branch: `main`
 
 **Output:**
 ```
 ✨ Success! Deployed to Cloudflare Pages!
-🌐 https://afodams-property.pages.dev
+🌐 https://Solid Build-property.pages.dev
 ```
 
 ### Set Environment Variables (if needed)
 
 ```powershell
 wrangler pages secret put VITE_API_URL
-# Enter: https://afodams-backend.fly.dev
+# Enter: https://Solid Build-backend.fly.dev
 ```
 
 ---
@@ -81,7 +81,7 @@ wrangler pages secret put VITE_API_URL
 ### Login to Fly.io
 
 ```powershell
-cd C:\Users\Arbythecoder\Desktop\afodamspropertylimited\backend
+cd C:\Users\Arbythecoder\Desktop\Solid Buildpropertylimited\backend
 fly auth login
 ```
 
@@ -94,7 +94,7 @@ fly launch --no-deploy
 ```
 
 **Answer the prompts:**
-- App name: `afodams-backend` (or auto-generated)
+- App name: `Solid Build-backend` (or auto-generated)
 - Region: `Frankfurt (fra)` or closest to Nigeria
 - Setup Postgres database? → **No**
 - Setup Redis? → **No**
@@ -112,7 +112,7 @@ fly secrets set MONGO_URI="your_mongodb_atlas_connection_string"
 fly secrets set JWT_SECRET="your_super_secret_jwt_key_32_characters_minimum"
 
 # CORS (REQUIRED)
-fly secrets set CORS_ORIGIN="https://afodams-property.pages.dev"
+fly secrets set CORS_ORIGIN="https://Solid Build-property.pages.dev"
 
 # Node Environment
 fly secrets set NODE_ENV="production"
@@ -120,7 +120,7 @@ fly secrets set NODE_ENV="production"
 
 **Example MongoDB URI:**
 ```
-fly secrets set MONGO_URI="mongodb+srv://username:password@cluster.mongodb.net/afodams"
+fly secrets set MONGO_URI="mongodb+srv://username:password@cluster.mongodb.net/Solid Build"
 ```
 
 ### Deploy Backend
@@ -135,7 +135,7 @@ fly deploy
 ==> Pushing image to fly
 ==> Deploying to Fly.io
 ✅ Deployed successfully!
-🌐 https://afodams-backend.fly.dev
+🌐 https://Solid Build-backend.fly.dev
 ```
 
 ### Check Deployment Status
@@ -154,14 +154,14 @@ fly logs
 ```powershell
 cd ../frontend-react
 wrangler pages secret put VITE_API_URL
-# Enter: https://afodams-backend.fly.dev
+# Enter: https://Solid Build-backend.fly.dev
 ```
 
 ### Redeploy Frontend
 
 ```powershell
 npm run build
-wrangler pages deploy dist --project-name=afodams-property
+wrangler pages deploy dist --project-name=Solid Build-property
 ```
 
 ---
@@ -172,7 +172,7 @@ wrangler pages deploy dist --project-name=afodams-property
 
 **Via CLI:**
 ```powershell
-wrangler pages domain add afodamsproperty.com --project-name=afodams-property
+wrangler pages domain add Solid Buildproperty.com --project-name=Solid Build-property
 ```
 
 **Or via Dashboard:**
@@ -184,13 +184,13 @@ wrangler pages domain add afodamsproperty.com --project-name=afodams-property
 
 **Via CLI:**
 ```powershell
-fly certs add api.afodamsproperty.com
+fly certs add api.Solid Buildproperty.com
 ```
 
 This creates SSL certificate automatically.
 
 **Update DNS:**
-- Add CNAME: `api` → `afodams-backend.fly.dev`
+- Add CNAME: `api` → `Solid Build-backend.fly.dev`
 
 ---
 
@@ -200,16 +200,16 @@ This creates SSL certificate automatically.
 
 ```powershell
 # View deployments
-wrangler pages deployment list --project-name=afodams-property
+wrangler pages deployment list --project-name=Solid Build-property
 
 # View logs
-wrangler pages deployment tail --project-name=afodams-property
+wrangler pages deployment tail --project-name=Solid Build-property
 
 # Rollback to previous version
-wrangler pages deployment rollback --project-name=afodams-property
+wrangler pages deployment rollback --project-name=Solid Build-property
 
 # Delete deployment
-wrangler pages delete --project-name=afodams-property
+wrangler pages delete --project-name=Solid Build-property
 ```
 
 ### Fly.io
@@ -234,10 +234,10 @@ fly scale count 2
 fly dashboard metrics
 
 # Restart app
-fly apps restart afodams-backend
+fly apps restart Solid Build-backend
 
 # Destroy app
-fly apps destroy afodams-backend
+fly apps destroy Solid Build-backend
 ```
 
 ---
@@ -250,7 +250,7 @@ fly apps destroy afodams-backend
 cd frontend-react
 git pull origin main
 npm run build
-wrangler pages deploy dist --project-name=afodams-property
+wrangler pages deploy dist --project-name=Solid Build-property
 ```
 
 ### Update Backend
@@ -326,7 +326,7 @@ fly secrets list
 **App not starting:**
 ```powershell
 # View recent logs
-fly logs --app afodams-backend
+fly logs --app Solid Build-backend
 
 # Common issue: Missing MONGO_URI
 fly secrets set MONGO_URI="your_connection_string"
@@ -352,10 +352,10 @@ fly secrets set MONGO_URI="your_connection_string"
 
 After deployment:
 
-**Frontend:** https://afodams-property.pages.dev
-**Backend:** https://afodams-backend.fly.dev
-**API Docs:** https://afodams-backend.fly.dev/api-docs
-**Health Check:** https://afodams-backend.fly.dev/health
+**Frontend:** https://Solid Build-property.pages.dev
+**Backend:** https://Solid Build-backend.fly.dev
+**API Docs:** https://Solid Build-backend.fly.dev/api-docs
+**Health Check:** https://Solid Build-backend.fly.dev/health
 
 ---
 
@@ -366,7 +366,7 @@ Save this as `deploy.bat` in project root:
 ```batch
 @echo off
 echo ========================================
-echo  DEPLOYING AFODAMS PROPERTY
+echo  DEPLOYING Solid Build Construction Limited
 echo ========================================
 echo.
 
@@ -376,7 +376,7 @@ call npm run build
 echo.
 
 echo Deploying Frontend to Cloudflare...
-call wrangler pages deploy dist --project-name=afodams-property
+call wrangler pages deploy dist --project-name=Solid Build-property
 echo.
 
 echo Deploying Backend to Fly.io...
@@ -388,8 +388,8 @@ echo ========================================
 echo  DEPLOYMENT COMPLETE!
 echo ========================================
 echo.
-echo Frontend: https://afodams-property.pages.dev
-echo Backend: https://afodams-backend.fly.dev
+echo Frontend: https://Solid Build-property.pages.dev
+echo Backend: https://Solid Build-backend.fly.dev
 echo.
 pause
 ```

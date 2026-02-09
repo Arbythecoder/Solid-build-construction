@@ -6,15 +6,15 @@ This guide will help you push frontend and backend to separate GitHub repositori
 
 ## 📁 Repository Structure
 
-**Frontend Repo:** `afodams-frontend`
+**Frontend Repo:** `Solid Build-frontend`
 - Contains: `frontend-react/` folder
 - Deploy to: GitHub Pages
-- URL: `https://arbythecoder.github.io/afodams-frontend/`
+- URL: `https://arbythecoder.github.io/Solid Build-frontend/`
 
-**Backend Repo:** `afodams-backend`
+**Backend Repo:** `Solid Build-backend`
 - Contains: `backend/` folder
 - Deploy to: Render.com
-- URL: `https://afodams-backend.onrender.com`
+- URL: `https://Solid Build-backend.onrender.com`
 
 ---
 
@@ -23,22 +23,22 @@ This guide will help you push frontend and backend to separate GitHub repositori
 ### A. Create Frontend Repository
 
 1. Go to: https://github.com/new
-2. **Repository name:** `afodams-frontend`
-3. **Description:** `Afodams Property Limited - Frontend (React + TypeScript)`
+2. **Repository name:** `Solid Build-frontend`
+3. **Description:** `Solid Build Construction Limited - Frontend (React + TypeScript)`
 4. **Visibility:** Public
 5. **DO NOT** initialize with README, .gitignore, or license
 6. Click **"Create repository"**
-7. **COPY the URL:** `https://github.com/Arbythecoder/afodams-frontend.git`
+7. **COPY the URL:** `https://github.com/Arbythecoder/Solid Build-frontend.git`
 
 ### B. Create Backend Repository
 
 1. Go to: https://github.com/new
-2. **Repository name:** `afodams-backend`
-3. **Description:** `Afodams Property Limited - Backend API (Node.js + MongoDB)`
+2. **Repository name:** `Solid Build-backend`
+3. **Description:** `Solid Build Construction Limited - Backend API (Node.js + MongoDB)`
 4. **Visibility:** Public
 5. **DO NOT** initialize with README, .gitignore, or license
 6. Click **"Create repository"**
-7. **COPY the URL:** `https://github.com/Arbythecoder/afodams-backend.git`
+7. **COPY the URL:** `https://github.com/Arbythecoder/Solid Build-backend.git`
 
 ---
 
@@ -70,7 +70,7 @@ git init
 git add .
 git commit -m "Initial commit: React frontend"
 git branch -M main
-git remote add origin https://github.com/Arbythecoder/afodams-frontend.git
+git remote add origin https://github.com/Arbythecoder/Solid Build-frontend.git
 git push -u origin main
 ```
 
@@ -81,7 +81,7 @@ git init
 git add .
 git commit -m "Initial commit: Node.js backend API"
 git branch -M main
-git remote add origin https://github.com/Arbythecoder/afodams-backend.git
+git remote add origin https://github.com/Arbythecoder/Solid Build-backend.git
 git push -u origin main
 ```
 

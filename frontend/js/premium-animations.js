@@ -1,5 +1,5 @@
 /**
- * AFODAMS PROPERTY - PREMIUM ANIMATIONS & INTERACTIONS
+ * Solid Build Construction Limited - PREMIUM ANIMATIONS & INTERACTIONS
  * World-Class Luxury Real Estate Platform
  * Advanced animations without external libraries (Vanilla JS)
  */

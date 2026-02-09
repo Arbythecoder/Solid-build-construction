@@ -50,7 +50,7 @@ app.use('/api/tenants', require('./routes/tenantRoutes'));
 
 // Health check
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', message: 'Afodams Property API is running' });
+  res.json({ status: 'ok', message: 'Solid Build Construction Limited API is running' });
 });
 
 // Serve React Frontend in production

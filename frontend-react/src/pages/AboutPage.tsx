@@ -42,7 +42,7 @@ const AboutPage = () => {
 
   const team = [
     {
-      name: 'Chief Adewale Afodams',
+      name: 'Chief Adewale Solid Build',
       role: 'Founder & CEO',
       image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400',
       bio: 'Over 15 years of experience in Nigerian real estate market.'
@@ -68,7 +68,7 @@ const AboutPage = () => {
   ]
 
   const milestones = [
-    { year: '2014', event: 'Afodams Property founded in Lagos' },
+    { year: '2014', event: 'Solid Build Construction Limited founded in Lagos' },
     { year: '2016', event: 'Expanded to Abuja and Port Harcourt' },
     { year: '2018', event: 'Launched digital property platform' },
     { year: '2020', event: 'Celebrated 500th successful transaction' },
@@ -100,7 +100,7 @@ const AboutPage = () => {
               <span className="text-gradient-gold">Property Partner</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              For over a decade, Afodams Property has been helping Nigerians find their dream homes,
+              For over a decade, Solid Build Construction Limited has been helping Nigerians find their dream homes,
               make smart investments, and build wealth through real estate.
             </p>
           </motion.div>
@@ -150,7 +150,7 @@ const AboutPage = () => {
               </h2>
               <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
                 <p>
-                  Afodams Property Limited was founded with a simple mission: to make property
+                  Solid Build Construction Limited Limited was founded with a simple mission: to make property
                   ownership accessible, transparent, and stress-free for every Nigerian.
                 </p>
                 <p>
@@ -373,7 +373,7 @@ const AboutPage = () => {
               Why Choose Us
             </span>
             <h2 className="text-4xl font-playfair font-bold mt-3">
-              The Afodams Advantage
+              The Solid Build Advantage
             </h2>
           </motion.div>
 
@@ -445,7 +445,7 @@ const AboutPage = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-6 h-6 text-premium-black" />
-                <span className="text-premium-black font-semibold">afodamsproperty@gmail.com</span>
+                <span className="text-premium-black font-semibold">Solid Buildproperty@gmail.com</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-6 h-6 text-premium-black" />

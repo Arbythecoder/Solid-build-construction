@@ -1,4 +1,4 @@
-# Afodams Property Limited
+# Solid Build Construction Limited
 
 A comprehensive real estate property management platform for Nigeria with world-class features.
 
@@ -75,9 +75,9 @@ npm run dev
 
 | Role | Email | Password |
 |------|-------|----------|
-| Admin | admin@afodamsproperty.com | Admin@123 |
-| Landlord | landlord1@afodams.com | Landlord@123 |
-| Tenant | tenant@afodams.com | Tenant@123 |
+| Admin | admin@Solid Buildproperty.com | Admin@123 |
+| Landlord | landlord1@Solid Build.com | Landlord@123 |
+| Tenant | tenant@Solid Build.com | Tenant@123 |
 
 ## API Documentation
 
@@ -96,7 +96,7 @@ Once backend is running, visit:
 ## Project Structure
 
 ```
-afodamspropertylimited/
+Solid Buildpropertylimited/
 ├── backend/                # Express API
 │   ├── config/            # DB, Socket, Swagger configs
 │   ├── controllers/       # Business logic
@@ -131,4 +131,4 @@ MIT License - See LICENSE file
 
 ## Support
 
-For issues, email: support@afodamsproperty.com
+For issues, email: support@Solid Buildproperty.com

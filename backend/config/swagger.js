@@ -4,12 +4,12 @@ const options = {
   definition: {
     openapi: '3.0.0',
     info: {
-      title: 'Afodams Property Limited API',
+      title: 'Solid Build Construction Limited API',
       version: '1.0.0',
       description: 'A comprehensive real estate property management API for Nigeria',
       contact: {
-        name: 'Afodams Property Limited',
-        email: 'support@afodamsproperty.com'
+        name: 'Solid Build Construction Limited',
+        email: 'support@solidbuild.com'
       }
     },
     servers: [
@@ -18,7 +18,7 @@ const options = {
         description: 'Development server'
       },
       {
-        url: 'https://api.afodamsproperty.com',
+        url: 'https://api.solidbuild.com',
         description: 'Production server'
       }
     ],

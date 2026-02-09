@@ -1,4 +1,4 @@
-# 🏠 Afodams Property - Premium React App
+# 🏠 Solid Build Construction Limited - Premium React App
 
 ## 🚀 WORLD-CLASS Real Estate Platform
 
@@ -391,13 +391,13 @@ npm run build -- --force
 
 ## 🤝 Contributing
 
-This is a private project for Afodams Property Limited.
+This is a private project for Solid Build Construction Limited.
 
 ---
 
 ## 📄 License
 
-© 2025 Afodams Property Limited. All rights reserved.
+© 2025 Solid Build Construction Limited. All rights reserved.
 
 ---
 

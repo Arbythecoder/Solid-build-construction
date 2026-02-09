@@ -23,13 +23,13 @@ start http://localhost:3000
 
 **Terminal 1 - Backend:**
 ```powershell
-cd C:\Users\Arbythecoder\Desktop\afodamspropertylimited\backend
+cd C:\Users\Arbythecoder\Desktop\Solid Buildpropertylimited\backend
 node server.js
 ```
 
 **Terminal 2 - Frontend:**
 ```powershell
-cd C:\Users\Arbythecoder\Desktop\afodamspropertylimited\frontend-react
+cd C:\Users\Arbythecoder\Desktop\Solid Buildpropertylimited\frontend-react
 npm start
 ```
 
@@ -138,7 +138,7 @@ After starting both servers:
 🚀 Server running in development mode on port 5000
 📚 API Docs available at http://localhost:5000/api-docs
 ✅ MongoDB Connected Successfully
-📍 Database: afodams-properties
+📍 Database: Solid Build-properties
 ```
 
 ### Frontend Terminal:

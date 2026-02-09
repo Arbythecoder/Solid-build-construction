@@ -1,7 +1,7 @@
 # 🚀 START HERE - Deploy Your Website in 15 Minutes!
 
 **Current Status:** ✅ Code is ready and pushed to GitHub
-**Your Goal:** Get your website live at `https://arbythecoder.github.io/afodams-web/`
+**Your Goal:** Get your website live at `https://arbythecoder.github.io/Solid Build-web/`
 
 ---
 
@@ -19,11 +19,11 @@
    - **FREE** tier (M0)
    - **AWS** provider
    - **Frankfurt (eu-central-1)** region (closest to Nigeria)
-   - Name: `afodams-cluster`
+   - Name: `Solid Build-cluster`
    - Click **"Create Deployment"**
 
 5. **Security Setup** (appears automatically):
-   - **Username:** `afodams_admin`
+   - **Username:** `Solid Build_admin`
    - **Password:** Click "Autogenerate Secure Password" → **COPY THIS PASSWORD!**
    - Click **"Create Database User"**
 
@@ -38,13 +38,13 @@
    - Select **"Drivers"** → **"Node.js"**
    - **COPY** the connection string (looks like):
    ```
-   mongodb+srv://afodams_admin:<password>@afodams-cluster.xxxxx.mongodb.net/
+   mongodb+srv://Solid Build_admin:<password>@Solid Build-cluster.xxxxx.mongodb.net/
    ```
    - Replace `<password>` with the password you copied in step 5
-   - Add database name at the end: `/afodams`
+   - Add database name at the end: `/Solid Build`
    - **Final string should look like:**
    ```
-   mongodb+srv://afodams_admin:YOUR_PASSWORD@afodams-cluster.xxxxx.mongodb.net/afodams
+   mongodb+srv://Solid Build_admin:YOUR_PASSWORD@Solid Build-cluster.xxxxx.mongodb.net/Solid Build
    ```
    - **SAVE THIS STRING! You'll need it in Step 2!**
 
@@ -60,12 +60,12 @@
 
 4. **Connect Repository:**
    - Click **"Configure account"** → Select your GitHub account
-   - Find and select: **"afodams-web"**
+   - Find and select: **"Solid Build-web"**
    - Click **"Connect"**
 
 5. **Render auto-detects configuration!** You should see:
    ```
-   ✅ Name: afodams-backend
+   ✅ Name: Solid Build-backend
    ✅ Build Command: cd backend && npm install
    ✅ Start Command: cd backend && npm start
    ✅ Instance Type: Free
@@ -83,11 +83,11 @@
 7. **Click "Create Web Service"**
    - Wait 3-5 minutes for deployment
    - **When you see "Live ✅"** at the top, you're done!
-   - **COPY YOUR URL:** `https://afodams-backend-XXXX.onrender.com`
+   - **COPY YOUR URL:** `https://Solid Build-backend-XXXX.onrender.com`
 
 8. **TEST IT:**
    - Click on your URL
-   - Add `/health` to the end: `https://afodams-backend-XXXX.onrender.com/health`
+   - Add `/health` to the end: `https://Solid Build-backend-XXXX.onrender.com/health`
    - Should see: **"Healthy"** or **{"status": "ok"}**
    - ✅ Backend is live!
 
@@ -95,7 +95,7 @@
 
 ### 3️⃣ DEPLOY FRONTEND TO GITHUB PAGES (3 minutes)
 
-1. **Open:** https://github.com/Arbythecoder/afodams-web
+1. **Open:** https://github.com/Arbythecoder/Solid Build-web
 
 2. **Click "Settings"** (top right)
 
@@ -120,7 +120,7 @@
 
 7. **Wait 3-5 minutes**, then:
    - Go back to **Settings** → **Pages**
-   - You'll see: **"Your site is live at https://arbythecoder.github.io/afodams-web/"**
+   - You'll see: **"Your site is live at https://arbythecoder.github.io/Solid Build-web/"**
 
 8. **TEST IT:**
    - Click the URL
@@ -132,7 +132,7 @@
 
 ### Test Your Live Website:
 
-1. **Visit:** https://arbythecoder.github.io/afodams-web/
+1. **Visit:** https://arbythecoder.github.io/Solid Build-web/
 
 2. **Test Signup:**
    - Click **"Sign Up"** or **"Get Started"**
@@ -159,7 +159,7 @@
 **Option 1: Via Render Console (Easier)**
 
 1. Go to Render dashboard: https://dashboard.render.com
-2. Click your **afodams-backend** service
+2. Click your **Solid Build-backend** service
 3. Click **"Shell"** tab (left side)
 4. Type this command:
    ```bash
@@ -169,7 +169,7 @@
 6. Should see:
    ```
    Connected to MongoDB...
-   Admin user created: admin@afodamsproperty.com
+   Admin user created: admin@Solid Buildproperty.com
    Created 9 properties
    Seed completed successfully!
    ```
@@ -182,7 +182,7 @@ node seed-properties.js
 ```
 
 **What this does:**
-- Creates admin account: `admin@afodamsproperty.com` / `Admin@123`
+- Creates admin account: `admin@Solid Buildproperty.com` / `Admin@123`
 - Creates 3 landlord accounts
 - Creates 9 properties:
   - 3 in Gbagada Estate, Lagos
@@ -191,10 +191,10 @@ node seed-properties.js
 
 ### Access Admin Dashboard
 
-1. **Visit:** https://arbythecoder.github.io/afodams-web/#/login
+1. **Visit:** https://arbythecoder.github.io/Solid Build-web/#/login
 
 2. **Login with:**
-   - Email: `admin@afodamsproperty.com`
+   - Email: `admin@Solid Buildproperty.com`
    - Password: `Admin@123`
 
 3. **You can now:**
@@ -213,7 +213,7 @@ node seed-properties.js
 1. **Sign up:** https://uptimerobot.com (FREE)
 2. **Add Monitor:**
    - Type: **HTTP(s)**
-   - URL: `https://afodams-backend-XXXX.onrender.com/health`
+   - URL: `https://Solid Build-backend-XXXX.onrender.com/health`
    - Interval: **15 minutes**
 3. Backend will never sleep!
 
@@ -263,12 +263,12 @@ node seed-properties.js
 
 ## 📊 WHAT YOU GET (100% FREE!)
 
-✅ **Professional Website:** https://arbythecoder.github.io/afodams-web/
-✅ **Backend API:** https://afodams-backend-XXXX.onrender.com
+✅ **Professional Website:** https://arbythecoder.github.io/Solid Build-web/
+✅ **Backend API:** https://Solid Build-backend-XXXX.onrender.com
 ✅ **Database:** 512MB MongoDB storage
 ✅ **SSL/HTTPS:** Automatic encryption
 ✅ **Auto-Deploy:** Every git push deploys automatically
-✅ **API Docs:** https://afodams-backend-XXXX.onrender.com/api-docs
+✅ **API Docs:** https://Solid Build-backend-XXXX.onrender.com/api-docs
 
 **Features Working:**
 - User registration/login (all 5 roles)
@@ -302,11 +302,11 @@ Before sharing with client:
 
 ## 📞 QUICK LINKS
 
-- **Your Live Website:** https://arbythecoder.github.io/afodams-web/
+- **Your Live Website:** https://arbythecoder.github.io/Solid Build-web/
 - **Backend Dashboard:** https://dashboard.render.com
 - **MongoDB Dashboard:** https://cloud.mongodb.com
-- **GitHub Repo:** https://github.com/Arbythecoder/afodams-web
-- **GitHub Actions:** https://github.com/Arbythecoder/afodams-web/actions
+- **GitHub Repo:** https://github.com/Arbythecoder/Solid Build-web
+- **GitHub Actions:** https://github.com/Arbythecoder/Solid Build-web/actions
 
 ---
 

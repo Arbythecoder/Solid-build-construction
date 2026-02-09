@@ -1,4 +1,4 @@
-# 🏡 AFODAMS PROPERTY LIMITED - Website Ready for Launch!
+# 🏡 Solid Build Construction Limited - Website Ready for Launch!
 
 ## 🎉 YOUR WEBSITE IS COMPLETE!
 
@@ -75,7 +75,7 @@ Your website will be hosted on **Cloudflare Pages** - one of the best hosting pl
 ## 🌐 NEXT STEP: ADD YOUR DOMAIN
 
 ### What You Need:
-- Your domain name (e.g., afodamsproperty.com or afodamsproperty.com.ng)
+- Your domain name (e.g., Solid Buildproperty.com or Solid Buildproperty.com.ng)
 - Access to your domain registrar (where you bought the domain)
 
 ### What I'll Do:
@@ -93,7 +93,7 @@ Your website will be hosted on **Cloudflare Pages** - one of the best hosting pl
 
 The website displays:
 - **Phone:** +234 911 525 8580 (WhatsApp enabled)
-- **Email:** afodamsproperty@gmail.com
+- **Email:** Solid Buildproperty@gmail.com
 - **Address:** 149 Ogudu Road, Lagos, Nigeria
 
 **WhatsApp Button:** Visitors can click the green floating button to chat with you instantly!
@@ -139,7 +139,7 @@ You can:
 
 ### For Admin (You):
 1. **Login** at: yourdomain.com/#/login
-2. Email: admin@afodamsproperty.com
+2. Email: admin@Solid Buildproperty.com
 3. Password: Admin@123
 4. You get access to:
    - Add/edit/delete properties
@@ -336,6 +336,6 @@ Ready when you are! Just say the word and provide your domain.
 
 ---
 
-*Built with ❤️ for Afodams Property Limited*
+*Built with ❤️ for Solid Build Construction Limited*
 *Powered by Cloudflare Pages, Render.com, and MongoDB Atlas*
 *Date: November 28, 2025*

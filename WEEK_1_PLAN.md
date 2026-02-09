@@ -228,7 +228,7 @@ docker run -d -p 27017:27017 mongo
 
 Then update backend/.env:
 ```
-MONGO_URI=mongodb://localhost:27017/afodams-properties
+MONGO_URI=mongodb://localhost:27017/Solid Build-properties
 ```
 
 ### Step 2: Once MongoDB is fixed, I'll:

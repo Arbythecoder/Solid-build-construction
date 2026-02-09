@@ -22,7 +22,7 @@ exports.createProperty = asyncHandler(async (req, res) => {
     if (req.files) {
         const uploadPromises = req.files.map(file => 
             cloudinary.uploader.upload(file.path, {
-                folder: `afodams-properties/${isPremium ? 'premium' : 'standard'}`,
+                folder: `solidbuild-properties/${isPremium ? 'premium' : 'standard'}`,
                 quality: isPremium ? 'auto:best' : 'auto:good',
                 fetch_format: 'auto',
                 flags: 'progressive'
@@ -105,7 +105,7 @@ exports.addVirtualTour = asyncHandler(async (req, res) => {
 
     const result = await cloudinary.uploader.upload(req.file.path, {
         resource_type: 'video',
-        folder: 'afodams-properties/virtual-tours',
+        folder: 'solidbuild-properties/virtual-tours',
         eager: [
             { format: 'mp4', quality: 'auto:best' }
         ]
@@ -266,7 +266,7 @@ exports.uploadPropertyImages = asyncHandler(async (req, res) => {
     if (req.files) {
         const uploadPromises = req.files.map(file =>
             cloudinary.uploader.upload(file.path, {
-                folder: 'afodams-properties/images',
+                folder: 'solidbuild-properties/images',
                 quality: 'auto:good',
                 fetch_format: 'auto'
             })

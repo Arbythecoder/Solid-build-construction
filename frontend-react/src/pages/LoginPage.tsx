@@ -147,7 +147,7 @@ const LoginPage = () => {
               <div className="w-full border-t border-white/10"></div>
             </div>
             <div className="relative flex justify-center text-sm">
-              <span className="px-4 bg-transparent text-gray-400">New to Afodams Property?</span>
+              <span className="px-4 bg-transparent text-gray-400">New to Solid Build Construction Limited?</span>
             </div>
           </div>
 

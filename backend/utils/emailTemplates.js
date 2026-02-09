@@ -81,15 +81,15 @@ const welcomeEmail = (userName, role) => `
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to Afodams Property</title>
+  <title>Welcome to Solid Build Construction Limited</title>
 </head>
 <body style="margin: 0; padding: 20px; background-color: #f4f4f4;">
   <div style="${styles.container}">
     <div style="${styles.header}">
-      <span style="${styles.logo}">AFODAMS PROPERTY</span>
+      <span style="${styles.logo}">SOLID BUILD CONSTRUCTION LIMITED</span>
     </div>
     <div style="${styles.body}">
-      <h1 style="${styles.title}">Welcome to Afodams Property, ${userName}!</h1>
+      <h1 style="${styles.title}">Welcome to Solid Build Construction Limited, ${userName}!</h1>
       <p style="${styles.text}">
         Thank you for joining Nigeria's premier luxury real estate platform. We're excited to have you as a ${role}.
       </p>
@@ -100,7 +100,7 @@ const welcomeEmail = (userName, role) => `
         </p>
       </div>
       <p style="${styles.text}">
-        With Afodams Property, you get access to:
+        With Solid Build Construction Limited, you get access to:
       </p>
       <ul style="${styles.text}">
         <li>Exclusive luxury property listings</li>
@@ -114,7 +114,7 @@ const welcomeEmail = (userName, role) => `
       </a>
     </div>
     <div style="${styles.footer}">
-      <p style="${styles.footerText}">Afodams Property Limited</p>
+      <p style="${styles.footerText}">Solid Build Construction Limited</p>
       <p style="${styles.footerText}">Lagos, Nigeria</p>
       <p style="${styles.footerText}">&copy; ${new Date().getFullYear()} All rights reserved</p>
     </div>
@@ -135,7 +135,7 @@ const inquiryReceivedEmail = (landlordName, propertyTitle, inquirerName, inquire
 <body style="margin: 0; padding: 20px; background-color: #f4f4f4;">
   <div style="${styles.container}">
     <div style="${styles.header}">
-      <span style="${styles.logo}">AFODAMS PROPERTY</span>
+      <span style="${styles.logo}">SOLID BUILD CONSTRUCTION LIMITED</span>
     </div>
     <div style="${styles.body}">
       <h1 style="${styles.title}">New Inquiry Received!</h1>
@@ -164,7 +164,7 @@ const inquiryReceivedEmail = (landlordName, propertyTitle, inquirerName, inquire
       </a>
     </div>
     <div style="${styles.footer}">
-      <p style="${styles.footerText}">Afodams Property Limited</p>
+      <p style="${styles.footerText}">Solid Build Construction Limited</p>
       <p style="${styles.footerText}">&copy; ${new Date().getFullYear()} All rights reserved</p>
     </div>
   </div>
@@ -184,7 +184,7 @@ const propertyApprovedEmail = (landlordName, propertyTitle, propertyId) => `
 <body style="margin: 0; padding: 20px; background-color: #f4f4f4;">
   <div style="${styles.container}">
     <div style="${styles.header}">
-      <span style="${styles.logo}">AFODAMS PROPERTY</span>
+      <span style="${styles.logo}">SOLID BUILD CONSTRUCTION LIMITED</span>
     </div>
     <div style="${styles.body}">
       <h1 style="${styles.title}">🎉 Your Property is Live!</h1>
@@ -212,7 +212,7 @@ const propertyApprovedEmail = (landlordName, propertyTitle, propertyId) => `
       </a>
     </div>
     <div style="${styles.footer}">
-      <p style="${styles.footerText}">Afodams Property Limited</p>
+      <p style="${styles.footerText}">Solid Build Construction Limited</p>
       <p style="${styles.footerText}">&copy; ${new Date().getFullYear()} All rights reserved</p>
     </div>
   </div>
@@ -232,7 +232,7 @@ const paymentConfirmationEmail = (userName, amount, propertyTitle, transactionRe
 <body style="margin: 0; padding: 20px; background-color: #f4f4f4;">
   <div style="${styles.container}">
     <div style="${styles.header}">
-      <span style="${styles.logo}">AFODAMS PROPERTY</span>
+      <span style="${styles.logo}">SOLID BUILD CONSTRUCTION LIMITED</span>
     </div>
     <div style="${styles.body}">
       <h1 style="${styles.title}">Payment Successful! ✓</h1>
@@ -276,7 +276,7 @@ const paymentConfirmationEmail = (userName, amount, propertyTitle, transactionRe
       </a>
     </div>
     <div style="${styles.footer}">
-      <p style="${styles.footerText}">Afodams Property Limited</p>
+      <p style="${styles.footerText}">Solid Build Construction Limited</p>
       <p style="${styles.footerText}">&copy; ${new Date().getFullYear()} All rights reserved</p>
     </div>
   </div>
@@ -296,7 +296,7 @@ const passwordResetEmail = (userName, resetLink) => `
 <body style="margin: 0; padding: 20px; background-color: #f4f4f4;">
   <div style="${styles.container}">
     <div style="${styles.header}">
-      <span style="${styles.logo}">AFODAMS PROPERTY</span>
+      <span style="${styles.logo}">SOLID BUILD CONSTRUCTION LIMITED</span>
     </div>
     <div style="${styles.body}">
       <h1 style="${styles.title}">Reset Your Password</h1>
@@ -317,7 +317,7 @@ const passwordResetEmail = (userName, resetLink) => `
       </div>
     </div>
     <div style="${styles.footer}">
-      <p style="${styles.footerText}">Afodams Property Limited</p>
+      <p style="${styles.footerText}">SOLID BUILD CONSTRUCTION LIMITED Limited</p>
       <p style="${styles.footerText}">&copy; ${new Date().getFullYear()} All rights reserved</p>
     </div>
   </div>

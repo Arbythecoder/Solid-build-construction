@@ -554,7 +554,7 @@ const CofOGuide = ({ onClose }: { onClose: () => void }) => {
                 <p className="text-sm text-yellow-800">
                   Always verify C of O documents before purchasing property. Consult with a
                   qualified real estate lawyer and conduct thorough due diligence.
-                  Afodams provides this tool as a convenience but recommends professional
+                  Solid Build provides this tool as a convenience but recommends professional
                   legal advice for all property transactions.
                 </p>
               </div>

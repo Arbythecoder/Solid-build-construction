@@ -119,19 +119,19 @@ const HomePage = () => {
       name: 'Chief Emeka Okonkwo',
       role: 'Business Executive, Lagos',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200',
-      text: 'Afodams helped me find the perfect family home in Lekki. Their C of O verification service gave me peace of mind. Highly recommended!',
+      text: 'Solid Build helped me find the perfect family home in Lekki. Their C of O verification service gave me peace of mind. Highly recommended!',
     },
     {
       name: 'Mrs. Aisha Bello',
       role: 'Doctor, Abuja',
       image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200',
-      text: 'As a busy professional, I appreciated how Afodams handled everything. From property search to documentation, they were exceptional.',
+      text: 'As a busy professional, I appreciated how Solid Build handled everything. From property search to documentation, they were exceptional.',
     },
     {
       name: 'Mr. Oluwaseun Adeyemi',
       role: 'Diaspora Investor, UK',
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200',
-      text: 'Living abroad, I was worried about investing in Nigerian property. Afodams made it seamless and transparent. My investment is secure.',
+      text: 'Living abroad, I was worried about investing in Nigerian property. Solid Build made it seamless and transparent. My investment is secure.',
     },
   ]
 

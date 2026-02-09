@@ -6,7 +6,7 @@ process.env.JWT_SECRET = 'test-jwt-secret-key-for-testing';
 
 // Connect to test database before all tests
 beforeAll(async () => {
-  const mongoUri = process.env.MONGO_URI_TEST || 'mongodb://localhost:27017/afodams-test';
+  const mongoUri = process.env.MONGO_URI_TEST || 'mongodb://localhost:27017/solidbuild-test';
   try {
     await mongoose.connect(mongoUri);
     console.log('Connected to test database');

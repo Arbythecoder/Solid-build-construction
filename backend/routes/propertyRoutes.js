@@ -1,5 +1,6 @@
 const express = require("express");
 const { protect, authorize } = require("../middleware/authMiddleware");
+const { checkPropertyOwnership, scopePropertiesToRole } = require("../middleware/rbacMiddleware");
 const upload = require("../middleware/uploadMiddleware");
 const {
     createProperty,
@@ -25,8 +26,8 @@ router.route('/')
 
 router.route('/:id')
     .get(getPropertyById)
-    .put(protect, authorize('landlord', 'admin'), updateProperty)
-    .delete(protect, authorize('landlord', 'admin'), deleteProperty);
+    .put(protect, authorize('landlord', 'admin'), checkPropertyOwnership, updateProperty)
+    .delete(protect, authorize('landlord', 'admin'), checkPropertyOwnership, deleteProperty);
 
 // Advanced Search & Filtering
 router.get('/search/advanced', filterProperties);
@@ -37,6 +38,7 @@ router.post(
     '/:id/images',
     protect,
     authorize('landlord', 'admin'),
+    checkPropertyOwnership,
     upload.array('images', 5),
     uploadPropertyImages
 );

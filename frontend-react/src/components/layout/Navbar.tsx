@@ -46,7 +46,7 @@ const Navbar = () => {
             </div>
             <div>
               <h1 className="text-xl font-playfair font-bold text-gradient-gold">
-                Afodams Property
+                Solid Build Construction Limited
               </h1>
               <p className="text-xs text-gray-600">Luxury Real Estate</p>
             </div>

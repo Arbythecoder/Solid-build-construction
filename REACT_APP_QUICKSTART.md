@@ -7,7 +7,7 @@
 ## Step 1: Open Terminal in the React Project
 
 ```bash
-cd C:\Users\Arbythecoder\Desktop\afodamspropertylimited\frontend-react
+cd C:\Users\Arbythecoder\Desktop\Solid Buildpropertylimited\frontend-react
 ```
 
 ---

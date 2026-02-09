@@ -55,7 +55,7 @@ const AppComingSoon = () => {
             {/* Heading */}
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold text-white mb-6">
               <span className="bg-gradient-gold bg-clip-text text-transparent">
-                Afodams Property
+                Solid Build Construction Limited
               </span>
               <br />
               Mobile App

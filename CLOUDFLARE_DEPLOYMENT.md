@@ -32,7 +32,7 @@
 
 1. **Select GitHub** and authorize Cloudflare
 
-2. **Choose Repository:** `afodams-web`
+2. **Choose Repository:** `Solid Build-web`
 
 3. **Configure Build Settings:**
    ```
@@ -44,28 +44,28 @@
 
 4. **Environment Variables:**
    ```
-   VITE_API_URL = https://afodams-backend.onrender.com
+   VITE_API_URL = https://Solid Build-backend.onrender.com
    ```
 
 5. **Click "Save and Deploy"**
 
 6. **Wait 2-3 minutes** ⏱️
 
-7. **You'll get a URL:** `https://afodams-web.pages.dev`
+7. **You'll get a URL:** `https://Solid Build-web.pages.dev`
 
 ---
 
 ## 🌐 STEP 2: Add Client's Custom Domain
 
-### If Client Has Domain (e.g., afodamsproperty.com)
+### If Client Has Domain (e.g., Solid Buildproperty.com)
 
 1. **In Cloudflare Pages Dashboard:**
-   - Click your project: `afodams-web`
+   - Click your project: `Solid Build-web`
    - Go to **"Custom domains"** tab
    - Click **"Set up a custom domain"**
 
 2. **Enter Domain:**
-   - Type: `afodamsproperty.com`
+   - Type: `Solid Buildproperty.com`
    - Click **"Continue"**
 
 3. **Add DNS Records:**
@@ -78,8 +78,8 @@
    **Option B: Domain on Another Registrar (GoDaddy, Namecheap, etc.)**
    - Cloudflare shows DNS records to add:
      ```
-     CNAME  @  afodams-web.pages.dev
-     CNAME  www  afodams-web.pages.dev
+     CNAME  @  Solid Build-web.pages.dev
+     CNAME  www  Solid Build-web.pages.dev
      ```
    - Go to your domain registrar
    - Add these CNAME records
@@ -88,7 +88,7 @@
 
 4. **Enable HTTPS:**
    - Cloudflare automatically provisions SSL certificate
-   - Your site will be live at: `https://afodamsproperty.com` 🎉
+   - Your site will be live at: `https://Solid Buildproperty.com` 🎉
 
 ---
 
@@ -96,7 +96,7 @@
 
 **Already set up!** Just follow the backend deployment guide.
 
-**Backend URL:** `https://afodams-backend.onrender.com`
+**Backend URL:** `https://Solid Build-backend.onrender.com`
 
 Make sure to update CORS in backend to allow your custom domain:
 ```javascript
@@ -104,9 +104,9 @@ Make sure to update CORS in backend to allow your custom domain:
 const allowedOrigins = [
   "http://localhost:5173",
   "https://arbythecoder.github.io",
-  "https://afodams-web.pages.dev",  // Cloudflare Pages default
-  "https://afodamsproperty.com",     // Custom domain
-  "https://www.afodamsproperty.com", // WWW version
+  "https://Solid Build-web.pages.dev",  // Cloudflare Pages default
+  "https://Solid Buildproperty.com",     // Custom domain
+  "https://www.Solid Buildproperty.com", // WWW version
   process.env.CORS_ORIGIN
 ];
 ```
@@ -146,7 +146,7 @@ Every time you push to GitHub:
 
 After deployment:
 
-1. **Visit:** `https://afodams-web.pages.dev` (or your custom domain)
+1. **Visit:** `https://Solid Build-web.pages.dev` (or your custom domain)
 
 2. **Test These:**
    - ✅ Homepage loads
@@ -168,9 +168,9 @@ After deployment:
 
 **After deployment, you'll have:**
 
-- **Production Site:** `https://afodamsproperty.com` (client's domain)
-- **Cloudflare Default:** `https://afodams-web.pages.dev` (backup)
-- **Backend API:** `https://afodams-backend.onrender.com`
+- **Production Site:** `https://Solid Buildproperty.com` (client's domain)
+- **Cloudflare Default:** `https://Solid Build-web.pages.dev` (backup)
+- **Backend API:** `https://Solid Build-backend.onrender.com`
 
 ---
 
@@ -212,7 +212,7 @@ Cloudflare automatically provides:
 ## 🚀 Ready to Deploy?
 
 1. **Create Cloudflare account:** https://dash.cloudflare.com/sign-up
-2. **Connect GitHub repository:** `afodams-web`
+2. **Connect GitHub repository:** `Solid Build-web`
 3. **Add custom domain:** Client's domain
 4. **Done!** ✅
 

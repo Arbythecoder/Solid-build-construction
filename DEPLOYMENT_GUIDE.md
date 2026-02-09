@@ -1,4 +1,4 @@
-# 🚀 Afodams Property Limited - Deployment Guide
+# 🚀 Solid Build Construction Limited - Deployment Guide
 
 ## 📋 Project Completion Summary
 
@@ -56,7 +56,7 @@
 ## 📁 Project Structure
 
 ```
-afodamspropertylimited/
+Solid Buildpropertylimited/
 ├── backend/
 │   ├── config/
 │   │   └── db.js                 # MongoDB connection
@@ -119,9 +119,9 @@ Create a `.env` file in the `backend/` directory:
 
 ```env
 # Database
-MONGODB_URI=mongodb://localhost:27017/afodamsproperty
+MONGODB_URI=mongodb://localhost:27017/Solid Buildproperty
 # Or for production (MongoDB Atlas):
-# MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/afodamsproperty
+# MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/Solid Buildproperty
 
 # JWT Secret (CHANGE THIS!)
 JWT_SECRET=your_super_secret_jwt_key_change_this_in_production
@@ -182,7 +182,7 @@ You need an admin user to access the dashboard. Two options:
 ```javascript
 db.users.insertOne({
     name: "Admin",
-    email: "admin@afodamsproperty.com",
+    email: "admin@Solid Buildproperty.com",
     password: "$2a$10$YOUR_HASHED_PASSWORD_HERE",  // Use bcrypt to hash
     role: "admin"
 })
@@ -215,7 +215,7 @@ db.users.updateOne(
 
 3. Configure:
    ```
-   Name: afodams-property-api
+   Name: Solid Build-property-api
    Environment: Node
    Build Command: npm install
    Start Command: node server.js
@@ -228,7 +228,7 @@ db.users.updateOne(
    - `PORT` → 5000
 
 5. Click "Create Web Service"
-6. Copy the URL (e.g., `https://afodams-property-api.onrender.com`)
+6. Copy the URL (e.g., `https://Solid Build-property-api.onrender.com`)
 
 #### **B. Deploy Frontend to Vercel**
 
@@ -249,7 +249,7 @@ db.users.updateOne(
 3. Before deploying, update `frontend/js/config.js`:
    ```javascript
    production: {
-       API_URL: 'https://afodams-property-api.onrender.com'  // Your Render URL
+       API_URL: 'https://Solid Build-property-api.onrender.com'  // Your Render URL
    }
    ```
 
@@ -280,8 +280,8 @@ sudo apt-get install -y nodejs
 sudo apt install nginx
 
 # 4. Clone your repository
-git clone https://github.com/yourusername/afodamspropertylimited.git
-cd afodamspropertylimited
+git clone https://github.com/yourusername/Solid Buildpropertylimited.git
+cd Solid Buildpropertylimited
 
 # 5. Setup Backend
 cd backend
@@ -293,12 +293,12 @@ nano .env
 sudo npm install -g pm2
 
 # 7. Start Backend
-pm2 start server.js --name afodams-api
+pm2 start server.js --name Solid Build-api
 pm2 save
 pm2 startup
 
 # 8. Configure Nginx
-sudo nano /etc/nginx/sites-available/afodamsproperty
+sudo nano /etc/nginx/sites-available/Solid Buildproperty
 
 # Add this configuration:
 ```
@@ -308,7 +308,7 @@ sudo nano /etc/nginx/sites-available/afodamsproperty
 server {
     listen 80;
     server_name yourdomain.com www.yourdomain.com;
-    root /path/to/afodamspropertylimited/frontend;
+    root /path/to/Solid Buildpropertylimited/frontend;
     index index.html;
 
     location / {
@@ -334,7 +334,7 @@ server {
 
 ```bash
 # Enable site
-sudo ln -s /etc/nginx/sites-available/afodamsproperty /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/Solid Buildproperty /etc/nginx/sites-enabled/
 sudo nginx -t
 sudo systemctl restart nginx
 
@@ -356,14 +356,14 @@ heroku login
 
 # Create app for backend
 cd backend
-heroku create afodams-property-api
+heroku create Solid Build-property-api
 heroku addons:create mongolab:sandbox
 heroku config:set JWT_SECRET=your_secret_here
 git push heroku main
 
 # Create app for frontend
 cd ../frontend
-heroku create afodams-property-frontend
+heroku create Solid Build-property-frontend
 # Update config.js with backend URL
 git push heroku main
 ```
@@ -471,9 +471,9 @@ npx serve .
 ## 📞 Support & Contact
 
 **Developer:** [Your Name]
-**Client:** Afodams Property Limited
+**Client:** Solid Build Construction Limited
 **Location:** 149 Ogudu Road, Lagos, Nigeria
-**Email:** afodamsproperty@gmail.com
+**Email:** Solid Buildproperty@gmail.com
 **Phone:** +234 911 525 8580
 
 ---

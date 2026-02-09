@@ -33,8 +33,8 @@ const seedData = async () => {
     // Create Admin user
     const adminPassword = await bcrypt.hash('Admin@123', 10);
     const admin = await User.create({
-      name: 'Afodams Admin',
-      email: 'admin@afodamsproperty.com',
+      name: 'Solid Build Admin',
+      email: 'admin@solidbuild.com',
       password: adminPassword,
       role: 'admin',
       verified: true,
@@ -47,7 +47,7 @@ const seedData = async () => {
 
     const landlord1 = await User.create({
       name: 'Chief Adebayo Williams',
-      email: 'landlord1@afodams.com',
+      email: 'landlord1@solidbuild.com',
       password: landlordPassword,
       role: 'landlord',
       verified: true,
@@ -56,7 +56,7 @@ const seedData = async () => {
 
     const landlord2 = await User.create({
       name: 'Mrs. Chidinma Okonkwo',
-      email: 'landlord2@afodams.com',
+      email: 'landlord2@solidbuild.com',
       password: landlordPassword,
       role: 'landlord',
       verified: true,
@@ -65,7 +65,7 @@ const seedData = async () => {
 
     const landlord3 = await User.create({
       name: 'Alhaji Musa Ibrahim',
-      email: 'landlord3@afodams.com',
+      email: 'landlord3@solidbuild.com',
       password: landlordPassword,
       role: 'landlord',
       verified: true,
@@ -78,7 +78,7 @@ const seedData = async () => {
     const tenantPassword = await bcrypt.hash('Tenant@123', 10);
     await User.create({
       name: 'John Tenant',
-      email: 'tenant@afodams.com',
+      email: 'tenant@solidbuild.com',
       password: tenantPassword,
       role: 'tenant',
       verified: true,
@@ -379,9 +379,9 @@ const seedData = async () => {
     console.log(`   - 1 Tenant user`);
     console.log(`   - ${allProperties.length} Properties`);
     console.log(`\n🔑 Login Credentials:`);
-    console.log(`   Admin: admin@afodamsproperty.com / Admin@123`);
-    console.log(`   Landlord: landlord1@afodams.com / Landlord@123`);
-    console.log(`   Tenant: tenant@afodams.com / Tenant@123`);
+    console.log(`   Admin: admin@solidbuild.com / Admin@123`);
+    console.log(`   Landlord: landlord1@solidbuild.com / Landlord@123`);
+    console.log(`   Tenant: tenant@solidbuild.com / Tenant@123`);
 
     process.exit(0);
   } catch (error) {

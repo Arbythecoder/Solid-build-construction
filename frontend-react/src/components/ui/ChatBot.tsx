@@ -33,7 +33,7 @@ const ChatBot = () => {
     'properties': "We have amazing properties in Lagos including Gbagada, Ikeja, and Ogba areas. Would you like to see our listings?",
     'price': "Our properties range from ₦15M to ₦250M. What's your budget range?",
     'location': "We have properties in Gbagada Estate, Ikeja/Allen, and Ogba Lagos. Which area interests you?",
-    'contact': "You can reach us at +234 911 525 8580 or email afodamsproperty@gmail.com",
+    'contact': "You can reach us at +234 911 525 8580 or email Solid Buildproperty@gmail.com",
     'default': "That's a great question! Let me connect you with one of our agents who can provide detailed information. Could you share your contact details?"
   }
 
@@ -130,7 +130,7 @@ const ChatBot = () => {
                   <User className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-semibold">Afodams Property</h3>
+                  <h3 className="font-semibold">Solid Build Construction Limited</h3>
                   <p className="text-xs opacity-75">Online • Typically replies instantly</p>
                 </div>
               </div>

@@ -1,6 +1,6 @@
-# Fly.io deployment configuration for Afodams Property Backend
+# Fly.io deployment configuration for Solid Build Construction Limited Backend
 
-app = "afodams-backend"
+app = "solidbuild-backend"
 primary_region = "fra" # Frankfurt (closest to Nigeria)
 
 [build]

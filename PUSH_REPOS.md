@@ -2,8 +2,8 @@
 
 ## 🎯 Setup Plan
 
-- **Frontend Repo:** `afodams-web` (existing - will repurpose for frontend only)
-- **Backend Repo:** `afodams-backend` (new - you need to create this)
+- **Frontend Repo:** `Solid Build-web` (existing - will repurpose for frontend only)
+- **Backend Repo:** `Solid Build-backend` (new - you need to create this)
 
 ---
 
@@ -12,20 +12,20 @@
 1. **Go to:** https://github.com/new
 
 2. **Fill in:**
-   - **Repository name:** `afodams-backend`
-   - **Description:** `Afodams Property Backend API - Node.js + MongoDB`
+   - **Repository name:** `Solid Build-backend`
+   - **Description:** `Solid Build Construction Limited Backend API - Node.js + MongoDB`
    - **Visibility:** Public
    - **DO NOT check** any boxes (no README, no .gitignore, no license)
 
 3. **Click "Create repository"**
 
-4. **Keep the page open** - you'll see the URL: `https://github.com/Arbythecoder/afodams-backend.git`
+4. **Keep the page open** - you'll see the URL: `https://github.com/Arbythecoder/Solid Build-backend.git`
 
 ---
 
 ## 🚀 STEP 2: Push Frontend (Using Existing Repo)
 
-I'll push the frontend to your existing `afodams-web` repo.
+I'll push the frontend to your existing `Solid Build-web` repo.
 
 **Just run this command:**
 
@@ -39,14 +39,14 @@ Or manually:
 cd frontend-react
 git init
 git add .
-git commit -m "Initial commit: Afodams Property Frontend"
+git commit -m "Initial commit: Solid Build Construction Limited Frontend"
 git branch -M main
-git remote add origin https://github.com/Arbythecoder/afodams-web.git
+git remote add origin https://github.com/Arbythecoder/Solid Build-web.git
 git push -u origin main --force
 cd ..
 ```
 
-**Frontend will be at:** https://github.com/Arbythecoder/afodams-web
+**Frontend will be at:** https://github.com/Arbythecoder/Solid Build-web
 
 ---
 
@@ -64,14 +64,14 @@ Or manually:
 cd backend
 git init
 git add .
-git commit -m "Initial commit: Afodams Property Backend API"
+git commit -m "Initial commit: Solid Build Construction Limited Backend API"
 git branch -M main
-git remote add origin https://github.com/Arbythecoder/afodams-backend.git
+git remote add origin https://github.com/Arbythecoder/Solid Build-backend.git
 git push -u origin main --force
 cd ..
 ```
 
-**Backend will be at:** https://github.com/Arbythecoder/afodams-backend
+**Backend will be at:** https://github.com/Arbythecoder/Solid Build-backend
 
 ---
 
@@ -101,21 +101,21 @@ Before pushing, I've created proper `.gitignore` files to prevent secrets from b
 
 ### Frontend (GitHub Pages)
 
-1. Go to: https://github.com/Arbythecoder/afodams-web/settings/pages
+1. Go to: https://github.com/Arbythecoder/Solid Build-web/settings/pages
 2. **Source:** Select "GitHub Actions"
 3. The workflow will auto-deploy on every push
-4. **Live URL:** https://arbythecoder.github.io/afodams-web/
+4. **Live URL:** https://arbythecoder.github.io/Solid Build-web/
 
 ### Backend (Render.com)
 
 1. Go to: https://dashboard.render.com
 2. Click "New +" → "Web Service"
-3. Connect GitHub → Select `afodams-backend`
+3. Connect GitHub → Select `Solid Build-backend`
 4. Render auto-detects `render.yaml`
 5. **Add environment variable:**
    - `MONGO_URI` = Your MongoDB connection string
 6. Click "Create Web Service"
-7. **Live URL:** https://afodams-backend.onrender.com
+7. **Live URL:** https://Solid Build-backend.onrender.com
 
 ---
 
@@ -145,8 +145,8 @@ push-backend.bat
 
 After pushing, verify:
 
-- [ ] Frontend repo: https://github.com/Arbythecoder/afodams-web
-- [ ] Backend repo: https://github.com/Arbythecoder/afodams-backend
+- [ ] Frontend repo: https://github.com/Arbythecoder/Solid Build-web
+- [ ] Backend repo: https://github.com/Arbythecoder/Solid Build-backend
 - [ ] No `.env` files in either repo (check on GitHub)
 - [ ] Both have proper `.gitignore` files
 - [ ] Both have README.md files
@@ -155,7 +155,7 @@ After pushing, verify:
 
 ## 📞 Repository URLs
 
-**Frontend:** https://github.com/Arbythecoder/afodams-web
-**Backend:** https://github.com/Arbythecoder/afodams-backend
+**Frontend:** https://github.com/Arbythecoder/Solid Build-web
+**Backend:** https://github.com/Arbythecoder/Solid Build-backend
 
 Ready to push? Create the backend repo first, then run the batch files! 🚀

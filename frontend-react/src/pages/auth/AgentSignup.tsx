@@ -253,7 +253,7 @@ const AgentSignup = () => {
 
             <div>
               <label className="block text-sm font-medium text-gray-300 mb-2">
-                Why do you want to partner with Afodams Property? *
+                Why do you want to partner with Solid Build Construction Limited? *
               </label>
               <textarea
                 name="motivation"

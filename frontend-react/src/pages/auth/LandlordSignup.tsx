@@ -103,7 +103,7 @@ const LandlordSignup = () => {
             Landlord Registration
           </h1>
           <p className="text-xl text-gray-300">
-            Join Afodams Property and start managing your properties
+            Join Solid Build Construction Limited and start managing your properties
           </p>
         </motion.div>
 

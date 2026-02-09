@@ -155,9 +155,9 @@ All Week 2 components follow:
 
 ---
 
-## 📊 COMPARISON: AFODAMS VS RIGHTMOVE
+## 📊 COMPARISON: Solid Build VS RIGHTMOVE
 
-| Feature | Rightmove | Afodams |
+| Feature | Rightmove | Solid Build |
 |---------|-----------|---------|
 | **Mortgage Calculator** | Basic | Advanced + Nigerian rates |
 | **ROI Calculator** | ❌ None | ✅ Full analytics |
@@ -269,4 +269,4 @@ By end of Week 2, we'll have:
 **Status:** On track, building premium features
 **Quality:** Better than UK property sites
 
-🔥 **Let's make Afodams the BEST property platform in Nigeria!**
+🔥 **Let's make Solid Build the BEST property platform in Nigeria!**

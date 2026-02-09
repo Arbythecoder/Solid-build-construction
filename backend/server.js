@@ -25,6 +25,9 @@ const tenantRoutes = require("./routes/tenantRoutes");
 const landlordRoutes = require("./routes/landlordRoutes");
 const notificationRoutes = require("./routes/notificationRoutes");
 const favoriteRoutes = require("./routes/favoriteRoutes");
+const adminRoutes = require("./routes/adminRoutes");
+const investorRoutes = require("./routes/investorRoutes");
+const dealRoutes = require("./routes/dealRoutes");
 
 const app = express();
 const server = http.createServer(app);
@@ -101,7 +104,7 @@ app.use("/api/auth", limiter);
 // API Documentation
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec, {
     customCss: '.swagger-ui .topbar { display: none }',
-    customSiteTitle: "Afodams Property API"
+    customSiteTitle: "Solid Build Construction Limited API"
 }));
 
 // Serve static files
@@ -117,6 +120,9 @@ app.use("/api/agents", agentRoutes);
 app.use("/api/landlords", landlordRoutes);
 app.use("/api/notifications", notificationRoutes);
 app.use("/api/favorites", favoriteRoutes);
+app.use("/api/admin", adminRoutes);
+app.use("/api/investor", investorRoutes);
+app.use("/api/deals", dealRoutes);
 
 // Health check endpoint
 app.get("/health", (req, res) => {

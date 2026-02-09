@@ -11,7 +11,7 @@
 
 1. Go to: https://cloud.mongodb.com
 2. Login with your MongoDB account
-3. Select your cluster: "Afodamscluster"
+3. Select your cluster: "Solid Buildcluster"
 4. Click "Network Access" (left sidebar)
 5. Click "Add IP Address"
 6. Click "Allow Access from Anywhere" OR
@@ -31,7 +31,7 @@
 
 2. Update backend/.env:
    ```
-   MONGO_URI=mongodb://localhost:27017/afodams-properties
+   MONGO_URI=mongodb://localhost:27017/Solid Build-properties
    ```
 
 3. Restart backend: `cd backend && npm start`
@@ -43,7 +43,7 @@
 After fixing, you should see:
 ```
 ✅ MongoDB Connected Successfully
-📍 Database: afodams-properties
+📍 Database: Solid Build-properties
 ```
 
 Instead of:

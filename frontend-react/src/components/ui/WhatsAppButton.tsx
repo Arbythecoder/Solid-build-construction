@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { MessageCircle } from 'lucide-react'
 
 const WhatsAppButton = () => {
-  const whatsappNumber = '+2349115258580' // Afodams Property contact
+  const whatsappNumber = '+2349115258580' // Solid Build Construction Limited contact
   const message = 'Hello! I am interested in your properties.'
 
   const handleClick = () => {

@@ -105,7 +105,7 @@ Total: ${formatCurrency(plan.totalPayment)}`
     if (navigator.share) {
       try {
         await navigator.share({
-          title: 'Payment Plan - Afodams',
+          title: 'Payment Plan - Solid Build',
           text,
         })
       } catch (error) {

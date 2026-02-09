@@ -188,7 +188,7 @@ const seedDatabase = async () => {
             phone: '08012345001',
             role: 'admin'
         });
-        console.log('✅ Admin created: admin@afodams.com / Admin123!');
+        console.log('✅ Admin created: admin@solidbuild.com / Admin123!');
 
         // Create Landlords
         const landlord1 = await User.create({
@@ -280,7 +280,7 @@ const seedDatabase = async () => {
         console.log('\n\n🎉 DATABASE SEEDED SUCCESSFULLY!\n');
         console.log('📋 TEST ACCOUNTS:');
         console.log('================================');
-        console.log('Admin:     admin@afodams.com / Admin123!');
+        console.log('Admin:     admin@solidbuild.com / Admin123!');
         console.log('Landlord:  landlord@test.com / Test123456');
         console.log('Tenant:    tenant@test.com / Test123456');
         console.log('Investor:  investor@test.com / Test123456');

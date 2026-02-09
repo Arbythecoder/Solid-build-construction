@@ -131,7 +131,7 @@ Two prominent CTAs:
 
 **Git Status:**
 - ✅ Committed to: `803af7c`
-- ✅ Pushed to: https://github.com/Arbythecoder/afodams-web
+- ✅ Pushed to: https://github.com/Arbythecoder/Solid Build-web
 - ✅ Branch: main
 
 **To Deploy:**
@@ -140,7 +140,7 @@ Two prominent CTAs:
 ```powershell
 cd frontend-react
 npm run build
-wrangler pages deploy dist --project-name=afodams-property
+wrangler pages deploy dist --project-name=Solid Build-property
 ```
 
 ### Fly.io (Backend - no changes):

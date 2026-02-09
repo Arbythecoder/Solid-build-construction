@@ -1,4 +1,4 @@
-# 🔥 AFODAMS PROPERTY - REAL STATUS & ACTION PLAN
+# 🔥 Solid Build Construction Limited - REAL STATUS & ACTION PLAN
 
 **Updated:** November 17, 2025
 **Current Status:** BUILDING TO UK PREMIUM STANDARDS

@@ -54,11 +54,11 @@ const Footer = () => {
   ]
 
   const socialLinks = [
-    { icon: <Facebook className="w-5 h-5" />, url: 'https://facebook.com/afodamsproperty', label: 'Facebook' },
-    { icon: <Instagram className="w-5 h-5" />, url: 'https://instagram.com/afodamsproperty', label: 'Instagram' },
-    { icon: <Twitter className="w-5 h-5" />, url: 'https://twitter.com/afodamsproperty', label: 'Twitter' },
-    { icon: <Linkedin className="w-5 h-5" />, url: 'https://linkedin.com/company/afodamsproperty', label: 'LinkedIn' },
-    { icon: <Youtube className="w-5 h-5" />, url: 'https://youtube.com/@afodamsproperty', label: 'YouTube' },
+    { icon: <Facebook className="w-5 h-5" />, url: 'https://facebook.com/Solid Buildproperty', label: 'Facebook' },
+    { icon: <Instagram className="w-5 h-5" />, url: 'https://instagram.com/Solid Buildproperty', label: 'Instagram' },
+    { icon: <Twitter className="w-5 h-5" />, url: 'https://twitter.com/Solid Buildproperty', label: 'Twitter' },
+    { icon: <Linkedin className="w-5 h-5" />, url: 'https://linkedin.com/company/Solid Buildproperty', label: 'LinkedIn' },
+    { icon: <Youtube className="w-5 h-5" />, url: 'https://youtube.com/@Solid Buildproperty', label: 'YouTube' },
   ]
 
   return (
@@ -109,7 +109,7 @@ const Footer = () => {
           {/* Company Info - 2 columns */}
           <div className="lg:col-span-2">
             <h3 className="text-3xl font-playfair font-bold text-luxury-gold mb-4">
-              Afodams Property
+              Solid Build Construction Limited
             </h3>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Nigeria's premier real estate platform. We help you find your dream home,
@@ -135,8 +135,8 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-luxury-gold flex-shrink-0" />
-                <a href="mailto:afodamsproperty@gmail.com" className="text-gray-400 hover:text-luxury-gold transition-colors">
-                  afodamsproperty@gmail.com
+                <a href="mailto:Solid Buildproperty@gmail.com" className="text-gray-400 hover:text-luxury-gold transition-colors">
+                  Solid Buildproperty@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-3">
@@ -251,7 +251,7 @@ const Footer = () => {
         <div className="container-premium py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-gray-400 text-sm text-center md:text-left">
-              &copy; {currentYear} Afodams Property Limited. All rights reserved.
+              &copy; {currentYear} Solid Build Construction Limited Limited. All rights reserved.
               <span className="hidden md:inline"> | RC: 1234567</span>
             </p>
             <div className="flex items-center gap-6 text-sm">

@@ -35,7 +35,7 @@ node test-db-connection.js
 **Expected Output:**
 ```
 ✅ SUCCESS! MongoDB Connected
-📍 Database: afodams-properties
+📍 Database: Solid Build-properties
 ✅ Connection is working perfectly!
 ```
 
@@ -54,7 +54,7 @@ node seed-database.js
 🗑️  Cleaning database...
 ✅ Database cleaned
 👥 Creating users...
-✅ Admin created: admin@afodams.com / Admin123!
+✅ Admin created: admin@Solid Build.com / Admin123!
 ✅ Landlord created: landlord@test.com / Test123456
 ✅ Tenant created: tenant@test.com / Test123456
 ✅ Investor created: investor@test.com / Test123456
@@ -66,7 +66,7 @@ node seed-database.js
 
 📋 TEST ACCOUNTS:
 ================================
-Admin:     admin@afodams.com / Admin123!
+Admin:     admin@Solid Build.com / Admin123!
 Landlord:  landlord@test.com / Test123456
 Tenant:    tenant@test.com / Test123456
 Investor:  investor@test.com / Test123456
@@ -88,7 +88,7 @@ npm start
 ```
 Server running in production mode on port 5000
 ✅ MongoDB Connected Successfully
-📍 Database: afodams-properties
+📍 Database: Solid Build-properties
 ```
 
 ---

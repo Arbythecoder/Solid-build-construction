@@ -1,6 +1,6 @@
 # 🚀 WEEK 2 - PREMIUM FEATURES (Beyond Rightmove)
 
-**Goal:** Make Afodams BETTER than UK property sites
+**Goal:** Make Solid Build BETTER than UK property sites
 **Timeline:** 7 days after Week 1 complete
 **Focus:** Advanced features they DON'T have
 
@@ -293,7 +293,7 @@ By end of Week 2, we should have:
 
 ## 🔥 WHAT MAKES US BETTER THAN RIGHTMOVE
 
-| Feature | Rightmove | Zoopla | Afodams |
+| Feature | Rightmove | Zoopla | Solid Build |
 |---------|-----------|--------|---------|
 | **AI Property Matching** | ❌ | ❌ | ✅ |
 | **Investment Analytics** | Basic | Basic | Advanced |

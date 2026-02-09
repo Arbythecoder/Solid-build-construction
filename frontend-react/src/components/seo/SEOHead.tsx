@@ -30,7 +30,7 @@ interface SEOHeadProps {
 }
 
 const SEOHead: React.FC<SEOHeadProps> = ({
-  title = 'Afodams Property Limited',
+  title = 'Solid Build Construction Limited Limited',
   description = 'Nigeria\'s premier luxury real estate platform. Find exclusive properties, apartments, and investment opportunities across Lagos, Abuja, and major cities.',
   keywords = ['real estate', 'property', 'Nigeria', 'Lagos', 'luxury homes', 'apartments', 'land for sale', 'investment'],
   image = '/og-image.jpg',
@@ -41,7 +41,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
   availability = 'InStock',
   propertyData
 }) => {
-  const siteName = 'Afodams Property Limited';
+  const siteName = 'Solid Build Construction Limited Limited';
   const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
 
   // Generate property schema
@@ -77,9 +77,9 @@ const SEOHead: React.FC<SEOHeadProps> = ({
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'RealEstateAgent',
-    name: 'Afodams Property Limited',
-    url: 'https://afodamsproperty.com',
-    logo: 'https://afodamsproperty.com/logo.png',
+    name: 'Solid Build Construction Limited Limited',
+    url: 'https://Solid Buildproperty.com',
+    logo: 'https://Solid Buildproperty.com/logo.png',
     description: 'Premier luxury real estate company in Nigeria',
     address: {
       '@type': 'PostalAddress',
@@ -92,9 +92,9 @@ const SEOHead: React.FC<SEOHeadProps> = ({
       contactType: 'customer service'
     },
     sameAs: [
-      'https://facebook.com/afodamsproperty',
-      'https://twitter.com/afodamsproperty',
-      'https://instagram.com/afodamsproperty'
+      'https://facebook.com/Solid Buildproperty',
+      'https://twitter.com/Solid Buildproperty',
+      'https://instagram.com/Solid Buildproperty'
     ]
   };
 
@@ -104,7 +104,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords.join(', ')} />
-      <meta name="author" content="Afodams Property Limited" />
+      <meta name="author" content="Solid Build Construction Limited Limited" />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href={url} />
 

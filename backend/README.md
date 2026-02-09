@@ -1,6 +1,6 @@
-# 🔧 Afodams Property Limited - Backend API
+# 🔧 Solid Build Construction Limited - Backend API
 
-RESTful API for the Afodams Property platform built with Node.js, Express, and MongoDB.
+RESTful API for the Solid Build Construction Limited platform built with Node.js, Express, and MongoDB.
 
 ## 🌟 Features
 
@@ -47,7 +47,7 @@ Create a `.env` file in the backend directory:
 
 ```env
 # Database
-MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/afodams
+MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/Solid Build
 
 # JWT
 JWT_SECRET=your_super_secret_jwt_key_minimum_32_characters
@@ -73,8 +73,8 @@ SMTP_HOST=smtp.sendgrid.net
 SMTP_PORT=587
 SMTP_USER=apikey
 SMTP_PASS=your_sendgrid_api_key
-SMTP_FROM_EMAIL=noreply@afodamsproperty.com
-SMTP_FROM_NAME=Afodams Property Limited
+SMTP_FROM_EMAIL=noreply@Solid Buildproperty.com
+SMTP_FROM_NAME=Solid Build Construction Limited
 ```
 
 ## 🏃 Development
@@ -117,7 +117,7 @@ npm run seed
 mongod
 
 # Update .env
-MONGO_URI=mongodb://localhost:27017/afodams
+MONGO_URI=mongodb://localhost:27017/Solid Build
 ```
 
 ## 🌱 Seed Database
@@ -129,7 +129,7 @@ npm run seed
 ```
 
 This creates:
-- 1 Admin user: `admin@afodamsproperty.com` / `Admin@123`
+- 1 Admin user: `admin@Solid Buildproperty.com` / `Admin@123`
 - 3 Landlord users
 - 1 Tenant user
 - 9 Properties (3 in Gbagada, 3 in Ikeja, 3 in Ogba)
@@ -214,7 +214,7 @@ http://localhost:5000/api-docs
 heroku login
 
 # Create app
-heroku create afodams-backend
+heroku create Solid Build-backend
 
 # Add MongoDB
 heroku addons:create mongolab:sandbox
@@ -234,8 +234,8 @@ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
 # Clone repo
-git clone https://github.com/Arbythecoder/afodams-backend.git
-cd afodams-backend
+git clone https://github.com/Arbythecoder/Solid Build-backend.git
+cd Solid Build-backend
 
 # Install dependencies
 npm install
@@ -247,7 +247,7 @@ nano .env
 sudo npm install -g pm2
 
 # Start server
-pm2 start server.js --name afodams-api
+pm2 start server.js --name Solid Build-api
 pm2 save
 pm2 startup
 ```
@@ -303,19 +303,19 @@ npm test auth.test.js
 
 ## 🔗 Frontend Repository
 
-This backend serves the Afodams Frontend application.
+This backend serves the Solid Build Frontend application.
 
-**Frontend Repo:** https://github.com/Arbythecoder/afodams-frontend
+**Frontend Repo:** https://github.com/Arbythecoder/Solid Build-frontend
 
 ## 📄 License
 
-Proprietary - Afodams Property Limited
+Proprietary - Solid Build Construction Limited
 
 ## 📞 Contact
 
-**Afodams Property Limited**
+**Solid Build Construction Limited**
 - 📍 149 Ogudu Road, Lagos, Nigeria
-- 📧 afodamsproperty@gmail.com
+- 📧 Solid Buildproperty@gmail.com
 - 📱 +234 911 525 8580
 
 ---

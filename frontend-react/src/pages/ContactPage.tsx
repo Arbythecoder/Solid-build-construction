@@ -58,8 +58,8 @@ const ContactPage = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
-      details: ['afodamsproperty@gmail.com', 'info@afodamsproperty.com'],
-      action: 'mailto:afodamsproperty@gmail.com'
+      details: ['Solid Buildproperty@gmail.com', 'info@Solid Buildproperty.com'],
+      action: 'mailto:Solid Buildproperty@gmail.com'
     },
     {
       icon: <MapPin className="w-6 h-6" />,
@@ -329,7 +329,7 @@ const ContactPage = () => {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Afodams Property Location"
+                  title="Solid Build Construction Limited Location"
                 />
               </div>
 
@@ -348,13 +348,13 @@ const ContactPage = () => {
                       <p className="font-semibold">+234 911 525 8580</p>
                     </div>
                   </a>
-                  <a href="mailto:afodamsproperty@gmail.com" className="flex items-center gap-4 hover:text-luxury-gold transition-colors">
+                  <a href="mailto:Solid Buildproperty@gmail.com" className="flex items-center gap-4 hover:text-luxury-gold transition-colors">
                     <div className="w-12 h-12 bg-gradient-gold rounded-full flex items-center justify-center text-premium-black">
                       <Mail className="w-5 h-5" />
                     </div>
                     <div>
                       <p className="text-gray-400 text-sm">Email Us</p>
-                      <p className="font-semibold">afodamsproperty@gmail.com</p>
+                      <p className="font-semibold">Solid Buildproperty@gmail.com</p>
                     </div>
                   </a>
                   <a

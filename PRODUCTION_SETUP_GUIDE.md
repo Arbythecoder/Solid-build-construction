@@ -1,4 +1,4 @@
-# 🚀 AFODAMS PROPERTY - PRODUCTION SETUP GUIDE
+# 🚀 Solid Build Construction Limited - PRODUCTION SETUP GUIDE
 
 **Last Updated:** November 16, 2025
 **Status:** ✅ READY FOR PRODUCTION
@@ -155,7 +155,7 @@ npm run dev
 
 ### **Backend (.env)**
 ```env
-MONGO_URI=mongodb+srv://afodamsproperty_db_user:Arby123.@afodamscluster.dids01b.mongodb.net/afodams-properties?retryWrites=true&w=majority&appName=Afodamscluster
+MONGO_URI=mongodb+srv://Solid Buildproperty_db_user:Arby123.@Solid Buildcluster.dids01b.mongodb.net/Solid Build-properties?retryWrites=true&w=majority&appName=Solid Buildcluster
 NODE_ENV=production
 PORT=5000
 JWT_SECRET=your_jwt_secret_here

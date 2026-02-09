@@ -50,7 +50,7 @@ The property sits on 650sqm of land with a beautiful garden, swimming pool, and 
   agent: {
     name: 'Adewale Johnson',
     phone: '+234 911 525 8580',
-    email: 'adewale@afodamsproperty.com',
+    email: 'adewale@Solid Buildproperty.com',
     image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200',
   },
   verified: true,

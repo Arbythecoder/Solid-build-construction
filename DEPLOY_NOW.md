@@ -1,8 +1,8 @@
-# 🚀 IMMEDIATE DEPLOYMENT STEPS - Afodams Property
+# 🚀 IMMEDIATE DEPLOYMENT STEPS - Solid Build Construction Limited
 
 ## ✅ CURRENT STATUS
 
-**Git Repository:** ✅ Successfully pushed to https://github.com/Arbythecoder/afodams-web.git
+**Git Repository:** ✅ Successfully pushed to https://github.com/Arbythecoder/Solid Build-web.git
 **Deployment Configs:** ✅ All configuration files ready
 **Code Status:** ✅ Production-ready
 
@@ -18,11 +18,11 @@
 2. **Create New Web Service:**
    - Click **"New +"** → **"Web Service"**
    - Click **"Connect to GitHub"**
-   - Select repository: **afodams-web**
+   - Select repository: **Solid Build-web**
 
 3. **Render will auto-detect `render.yaml`** and configure:
    ```
-   ✅ Name: afodams-backend
+   ✅ Name: Solid Build-backend
    ✅ Environment: Node
    ✅ Build Command: cd backend && npm install
    ✅ Start Command: cd backend && npm start
@@ -33,7 +33,7 @@
 
    **REQUIRED (Must Add):**
    ```
-   MONGO_URI = mongodb+srv://YOUR_USERNAME:YOUR_PASSWORD@cluster.mongodb.net/afodams
+   MONGO_URI = mongodb+srv://YOUR_USERNAME:YOUR_PASSWORD@cluster.mongodb.net/Solid Build
    ```
 
    **AUTO-GENERATED (Render handles):**
@@ -56,14 +56,14 @@
 5. **Click "Create Web Service"**
    - Deployment starts automatically
    - Wait 3-5 minutes
-   - **Copy your backend URL:** `https://afodams-backend.onrender.com`
+   - **Copy your backend URL:** `https://Solid Build-backend.onrender.com`
 
 ---
 
 ### STEP 2: Enable GitHub Pages (2 minutes)
 
 1. **Go to your GitHub repo:**
-   https://github.com/Arbythecoder/afodams-web
+   https://github.com/Arbythecoder/Solid Build-web
 
 2. **Click "Settings"** (top menu)
 
@@ -82,7 +82,7 @@
 
 7. **Your site will be live at:**
    ```
-   https://arbythecoder.github.io/afodams-web/
+   https://arbythecoder.github.io/Solid Build-web/
    ```
 
 ---
@@ -90,11 +90,11 @@
 ### STEP 3: Verify Deployment (1 minute)
 
 1. **Check Frontend:**
-   - Visit: https://arbythecoder.github.io/afodams-web/
+   - Visit: https://arbythecoder.github.io/Solid Build-web/
    - Should see homepage with properties
 
 2. **Check Backend:**
-   - Visit: https://afodams-backend.onrender.com/health
+   - Visit: https://Solid Build-backend.onrender.com/health
    - Should see: `{"status": "ok"}`
 
 3. **Test Login:**
@@ -114,10 +114,10 @@
 3. **Create Cluster:**
    - Choose: **FREE tier (M0)**
    - Region: **AWS - Ireland (eu-west-1)** or closest to Nigeria
-   - Cluster Name: **afodams-cluster**
+   - Cluster Name: **Solid Build-cluster**
 
 4. **Create Database User:**
-   - Username: `afodams_admin`
+   - Username: `Solid Build_admin`
    - Password: [Generate strong password]
    - **Save this password!**
 
@@ -129,7 +129,7 @@
    - Click "Connect" → "Connect your application"
    - Copy connection string:
    ```
-   mongodb+srv://afodams_admin:<password>@afodams-cluster.xxxxx.mongodb.net/afodams?retryWrites=true&w=majority
+   mongodb+srv://Solid Build_admin:<password>@Solid Build-cluster.xxxxx.mongodb.net/Solid Build?retryWrites=true&w=majority
    ```
    - Replace `<password>` with your actual password
 
@@ -183,11 +183,11 @@
 
 ## 📞 Quick Access Links
 
-- **Live Website:** https://arbythecoder.github.io/afodams-web/
-- **Backend API:** https://afodams-backend.onrender.com
-- **Backend Health:** https://afodams-backend.onrender.com/health
-- **API Docs:** https://afodams-backend.onrender.com/api-docs
-- **GitHub Repo:** https://github.com/Arbythecoder/afodams-web
+- **Live Website:** https://arbythecoder.github.io/Solid Build-web/
+- **Backend API:** https://Solid Build-backend.onrender.com
+- **Backend Health:** https://Solid Build-backend.onrender.com/health
+- **API Docs:** https://Solid Build-backend.onrender.com/api-docs
+- **GitHub Repo:** https://github.com/Arbythecoder/Solid Build-web
 - **Render Dashboard:** https://dashboard.render.com
 - **MongoDB Atlas:** https://cloud.mongodb.com
 

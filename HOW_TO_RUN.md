@@ -1,9 +1,9 @@
-# 🚀 HOW TO RUN AFODAMS PROPERTY APPLICATION
+# 🚀 HOW TO RUN Solid Build Construction Limited APPLICATION
 
 ## 📂 Project Structure
 
 ```
-afodamspropertylimited/
+Solid Buildpropertylimited/
 ├── frontend-react/          ✅ NEW REACT APP (ACTIVE)
 │   ├── src/
 │   │   ├── pages/
@@ -264,7 +264,7 @@ npm install
 ## 📞 NEED HELP?
 
 **Created by:** Claude Code
-**For:** Afodams Property Management Platform
+**For:** Solid Build Construction Limited Management Platform
 **Date:** November 2025
 
 ---

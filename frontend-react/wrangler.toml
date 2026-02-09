@@ -1,6 +1,6 @@
-# Cloudflare Pages Configuration for Afodams Property
+# Cloudflare Pages Configuration for Solid Build Construction Limited
 
-name = "afodams-property"
+name = "solidbuild-property"
 compatibility_date = "2024-01-01"
 
 [build]

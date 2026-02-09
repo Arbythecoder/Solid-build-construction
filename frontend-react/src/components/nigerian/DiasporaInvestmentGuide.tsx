@@ -402,7 +402,7 @@ const DiasporaInvestmentGuide = () => {
               <li>• Use only licensed professionals</li>
               <li>• Never send money without verified documentation</li>
               <li>• Visit the property (physically or virtually) before purchase</li>
-              <li>• Work with established platforms like Afodams</li>
+              <li>• Work with established platforms like Solid Build</li>
             </ul>
           </div>
         </div>

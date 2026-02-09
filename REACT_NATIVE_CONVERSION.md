@@ -66,10 +66,10 @@
 
 ```bash
 # 1. Create new React Native project
-npx react-native init AfodamsPropertyApp
+npx react-native init Solid BuildPropertyApp
 
 # 2. Install dependencies
-cd AfodamsPropertyApp
+cd Solid BuildPropertyApp
 npm install @react-navigation/native @react-navigation/stack
 npm install axios zustand react-native-vector-icons
 npm install socket.io-client
@@ -144,7 +144,7 @@ function AppNavigator() {
 // src/services/api.ts - SAME CODE!
 import axios from 'axios';
 
-const API_URL = 'https://afodams-backend.onrender.com/api';
+const API_URL = 'https://Solid Build-backend.onrender.com/api';
 
 export const authAPI = {
   login: async (email: string, password: string) => {
@@ -181,7 +181,7 @@ npm install react-native-maps
 ## 📁 Folder Structure (Copied from Web)
 
 ```
-AfodamsPropertyApp/
+Solid BuildPropertyApp/
 ├── src/
 │   ├── services/
 │   │   └── api.ts              ← COPY FROM WEB (works as-is!)
@@ -224,7 +224,7 @@ Similar to Tailwind CSS but for React Native.
 
 ### 3. **Expo** (Easier Development)
 ```bash
-npx create-expo-app AfodamsPropertyApp
+npx create-expo-app Solid BuildPropertyApp
 ```
 - Faster development
 - Easier testing
