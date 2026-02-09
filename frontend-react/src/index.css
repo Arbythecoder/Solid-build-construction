@@ -2,128 +2,144 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Premium Global Styles */
+/* Solid Build Brand Styles - Sand, Water, White */
 @layer base {
   * {
     @apply border-border;
   }
 
   body {
-    @apply bg-gray-50 text-premium-soft-black font-poppins;
+    @apply bg-gradient-to-br from-white via-brand-cream to-brand-sand-light/20 text-brand-slate font-poppins;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-playfair font-bold text-premium-black;
+    @apply font-playfair font-bold text-gray-900;
   }
 
-  /* Custom Scrollbar */
+  /* Custom Scrollbar - Water Blue Theme */
   ::-webkit-scrollbar {
     @apply w-3;
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-gray-100;
+    @apply bg-brand-sand-light;
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-gradient-gold rounded-md;
+    @apply bg-gradient-water rounded-md;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-luxury-gold;
+    @apply bg-brand-water-dark;
   }
 
-  /* Selection Color */
+  /* Selection Color - Water Blue */
   ::selection {
-    @apply bg-luxury-gold text-premium-black;
+    @apply bg-brand-water text-white;
   }
 }
 
-/* Premium Components */
+/* Solid Build Components - Modern Beach Aesthetic */
 @layer components {
-  /* Glass Effect */
+  /* Glass Effect with Water Tint */
   .glass {
-    @apply bg-white/10 backdrop-blur-xl border border-white/20;
+    @apply bg-white/80 backdrop-blur-xl border border-brand-water/20 shadow-water;
   }
 
   .glass-dark {
-    @apply bg-black/30 backdrop-blur-xl border border-white/10;
+    @apply bg-brand-water-dark/30 backdrop-blur-xl border border-white/10;
   }
 
-  /* Button Styles */
+  /* Button Styles - Water & Sand Theme */
   .btn-premium {
-    @apply px-6 py-3 font-montserrat font-semibold uppercase tracking-wide rounded-xl transition-all duration-300 inline-flex items-center justify-center gap-2;
+    @apply px-6 py-3 font-montserrat font-semibold uppercase tracking-wide rounded-xl transition-all duration-300 inline-flex items-center justify-center gap-2 transform hover:scale-105;
   }
 
   .btn-gold {
-    @apply btn-premium bg-gradient-gold text-premium-black shadow-gold hover:shadow-gold-lg hover:-translate-y-1 active:translate-y-0;
+    @apply btn-premium bg-gradient-sand text-brand-brown-dark shadow-sand hover:shadow-water-lg hover:-translate-y-1 active:translate-y-0;
+  }
+
+  .btn-water {
+    @apply btn-premium bg-gradient-water text-white shadow-water hover:shadow-water-lg hover:-translate-y-1 active:translate-y-0;
   }
 
   .btn-luxury {
-    @apply btn-premium bg-premium-black text-luxury-gold border-2 border-luxury-gold hover:bg-luxury-gold hover:text-premium-black hover:-translate-y-1;
+    @apply btn-premium bg-brand-water text-white border-2 border-brand-water-dark hover:bg-brand-water-dark hover:-translate-y-1;
   }
 
   .btn-outline-gold {
-    @apply btn-premium bg-transparent text-luxury-gold border-2 border-luxury-gold hover:bg-luxury-gold hover:text-premium-black;
+    @apply btn-premium bg-transparent text-brand-sand-dark border-2 border-brand-sand hover:bg-brand-sand hover:text-white;
   }
 
-  /* Card Styles */
+  .btn-outline-water {
+    @apply btn-premium bg-transparent text-brand-water border-2 border-brand-water hover:bg-brand-water hover:text-white;
+  }
+
+  /* Card Styles with Wave Animation */
   .card-premium {
-    @apply bg-white rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2;
+    @apply bg-white rounded-2xl shadow-lg transition-all duration-500 hover:shadow-water-lg hover:-translate-y-3 border border-brand-water/10;
   }
 
-  /* Property Card */
+  /* Property Card with Beach Vibes */
   .property-card {
-    @apply card-premium overflow-hidden cursor-pointer;
+    @apply relative overflow-hidden cursor-pointer;
+  }
+
+  .property-card::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-beach opacity-0 transition-opacity duration-500 pointer-events-none;
+  }
+
+  .property-card:hover::before {
+    @apply opacity-5;
   }
 
   .property-image {
-    @apply aspect-video w-full object-cover transition-transform duration-500;
+    @apply w-full object-cover transition-transform duration-700 hover:scale-110;
   }
 
-  /* Input Styles */
+  /* Input Styles - Water Blue Focus */
   .input-premium {
-    @apply w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-luxury-gold focus:ring-2 focus:ring-luxury-gold/20 outline-none transition-all duration-300;
-  }
-
-  /* Badge */
-  .badge-premium {
-    @apply px-4 py-2 bg-gradient-gold text-premium-black rounded-lg font-montserrat font-bold text-xs uppercase tracking-wider shadow-md;
-  }
-
-  /* Section Spacing */
-  .section {
-    @apply py-20 md:py-32;
-  }
-
-  .container-premium {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
-  }
-
-  /* Text Gradient */
+    @apply w-full s - Beach Theme */
   .text-gradient-gold {
-    @apply bg-gradient-gold bg-clip-text text-transparent;
+    @apply bg-gradient-sand bg-clip-text text-transparent;
+  }
+
+  .text-gradient-water {
+    @apply bg-gradient-water bg-clip-text text-transparent;
+  }
+
+  .text-gradient-beach {
+    @apply bg-gradient-beach bg-clip-text text-transparent;
   }
 }
 
-/* Animations */
+/* Smooth Animations */
 @layer utilities {
   .animate-fade-in {
-    animation: fadeIn 0.6s ease forwards;
+    animation: fadeIn 0.8s ease forwards;
   }
 
   .animate-slide-up {
-    animation: slideUp 0.6s ease forwards;
+    animation: slideUp 0.7s ease forwards;
   }
 
   .animate-slide-in-left {
-    animation: slideInLeft 0.6s ease forwards;
+    animation: slideInLeft 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
 
   .animate-slide-in-right {
-    animation: slideInRight 0.6s ease forwards;
+    animation: slideInRight 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+
+  .animate-wave {
+    animation: wave 3s ease-in-out infinite;
   }
 }
 
@@ -139,7 +155,7 @@
 @keyframes slideUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
@@ -150,7 +166,7 @@
 @keyframes slideInLeft {
   from {
     opacity: 0;
-    transform: translateX(-30px);
+    transform: translateX(-50px);
   }
   to {
     opacity: 1;
@@ -161,7 +177,62 @@
 @keyframes slideInRight {
   from {
     opacity: 0;
-    transform: translateX(30px);
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.02);
+  }
+}
+
+/* Loading Skeleton with Water Animation */
+.skeleton {
+  @apply bg-gradient-to-r from-brand-sand-light via-brand-water-light/20 to-brand-sand-light;
+  background-size: 200% 100%;
+  animation: shimmer 1.8s infinite ease-in-out;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hover Effects for Cards */
+.hover-lift {
+  @apply transition-all duration-500 hover:-translate-y-4 hover:shadow-water-lg;
+}
+
+.hover-glow {
+  @apply transition-all duration-300 hover:shadow-water hover:border-brand-water(30px);
   }
   to {
     opacity: 1;
