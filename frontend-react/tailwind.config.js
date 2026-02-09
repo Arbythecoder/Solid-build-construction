@@ -145,15 +145,22 @@ export default {
         },
         wave: {
           '0%, 100%': {
+        wave: {
+          '0%, 100%': {
             transform: 'translateY(0) scale(1)',
           },
           '50%': {
-            transform: 'translateY(-10px) scale(1.02
+            transform: 'translateY(-10px) scale(1.02)',
+          },
+        },
+        shimmer: {
           '0%': {
             backgroundPosition: '-1000px 0',
           },
           '100%': {
             backgroundPosition: '1000px 0',
+          },
+        },
           },
         },
         pulseGold: {

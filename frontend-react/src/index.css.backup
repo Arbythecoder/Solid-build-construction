@@ -87,6 +87,15 @@
     @apply relative overflow-hidden cursor-pointer;
   }
 
+  .property-card::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-beach opacity-0 transition-opacity duration-500 pointer-events-none;
+  }
+
+  .property-card:hover::before {
+    @apply opacity-5;
+  }
+
   .property-image {
     @apply w-full object-cover transition-transform duration-700 hover:scale-110;
   }
