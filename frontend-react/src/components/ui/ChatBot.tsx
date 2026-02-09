@@ -103,7 +103,7 @@ const ChatBot = () => {
         animate={{ scale: 1 }}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="fixed bottom-24 right-6 z-50 bg-gradient-gold text-premium-black rounded-full p-4 shadow-2xl"
+        className="fixed bottom-24 right-6 z-50 bg-gradient-beach text-premium-black rounded-full p-4 shadow-2xl"
         aria-label="Open chat"
       >
         {isOpen ? <X className="w-6 h-6" /> : <MessageSquare className="w-6 h-6" />}
@@ -124,7 +124,7 @@ const ChatBot = () => {
             className="fixed bottom-40 right-6 z-50 w-96 max-w-[calc(100vw-3rem)] bg-white rounded-2xl shadow-2xl overflow-hidden"
           >
             {/* Header */}
-            <div className="bg-gradient-gold text-premium-black p-4">
+            <div className="bg-gradient-beach text-premium-black p-4">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-premium-black/10 flex items-center justify-center">
                   <User className="w-6 h-6" />
@@ -170,7 +170,7 @@ const ChatBot = () => {
                       placeholder="Your Name"
                       value={userInfo.name}
                       onChange={(e) => setUserInfo(prev => ({ ...prev, name: e.target.value }))}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-luxury-gold"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-brand-water"
                       required
                     />
                     <input
@@ -178,7 +178,7 @@ const ChatBot = () => {
                       placeholder="Email Address"
                       value={userInfo.email}
                       onChange={(e) => setUserInfo(prev => ({ ...prev, email: e.target.value }))}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-luxury-gold"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-brand-water"
                       required
                     />
                     <input
@@ -186,7 +186,7 @@ const ChatBot = () => {
                       placeholder="Phone Number"
                       value={userInfo.phone}
                       onChange={(e) => setUserInfo(prev => ({ ...prev, phone: e.target.value }))}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-luxury-gold"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-brand-water"
                       required
                     />
                     <button
@@ -209,7 +209,7 @@ const ChatBot = () => {
                   onChange={(e) => setInputMessage(e.target.value)}
                   onKeyPress={(e) => e.key === 'Enter' && handleSend()}
                   placeholder="Type your message..."
-                  className="flex-1 px-4 py-2 border border-gray-300 rounded-full text-sm focus:outline-none focus:border-luxury-gold"
+                  className="flex-1 px-4 py-2 border border-gray-300 rounded-full text-sm focus:outline-none focus:border-brand-water"
                 />
                 <button
                   onClick={handleSend}
@@ -221,7 +221,7 @@ const ChatBot = () => {
               {step === 'greeting' && (
                 <button
                   onClick={() => setStep('collecting')}
-                  className="mt-2 text-xs text-luxury-gold hover:underline"
+                  className="mt-2 text-xs text-brand-water hover:underline"
                 >
                   Need immediate assistance? Click here
                 </button>

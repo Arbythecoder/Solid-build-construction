@@ -46,15 +46,15 @@ const AppComingSoon = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="inline-flex items-center gap-2 bg-luxury-gold/10 border border-luxury-gold/20 rounded-full px-4 py-2 mb-6"
+              className="inline-flex items-center gap-2 bg-luxury-gold/10 border border-brand-water/20 rounded-full px-4 py-2 mb-6"
             >
-              <Smartphone className="w-4 h-4 text-luxury-gold" />
-              <span className="text-luxury-gold text-sm font-semibold">COMING SOON</span>
+              <Smartphone className="w-4 h-4 text-brand-water" />
+              <span className="text-brand-water text-sm font-semibold">COMING SOON</span>
             </motion.div>
 
             {/* Heading */}
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold text-white mb-6">
-              <span className="bg-gradient-gold bg-clip-text text-transparent">
+              <span className="bg-gradient-beach bg-clip-text text-transparent">
                 Solid Build Construction Limited
               </span>
               <br />
@@ -85,7 +85,7 @@ const AppComingSoon = () => {
                   className="flex items-center gap-3"
                 >
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-luxury-gold/20 flex items-center justify-center">
-                    <CheckCircle2 className="w-4 h-4 text-luxury-gold" />
+                    <CheckCircle2 className="w-4 h-4 text-brand-water" />
                   </div>
                   <span className="text-gray-300">{feature}</span>
                 </motion.div>
@@ -119,13 +119,13 @@ const AppComingSoon = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email"
-                    className="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-luxury-gold transition-colors"
+                    className="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-brand-water transition-colors"
                     required
                   />
                 </div>
                 <Button
                   type="submit"
-                  className="bg-gradient-gold text-premium-black hover:opacity-90 whitespace-nowrap"
+                  className="bg-gradient-beach text-premium-black hover:opacity-90 whitespace-nowrap"
                 >
                   <Bell className="w-5 h-5 mr-2" />
                   Notify Me
@@ -147,7 +147,7 @@ const AppComingSoon = () => {
             )}
 
             <p className="text-sm text-gray-400 mt-4">
-              🎉 <strong className="text-luxury-gold">Launching Q2 2025</strong> • iOS & Android
+              🎉 <strong className="text-brand-water">Launching Q2 2025</strong> • iOS & Android
             </p>
           </motion.div>
 
@@ -162,7 +162,7 @@ const AppComingSoon = () => {
             {/* Floating Phone Mockup */}
             <div className="relative mx-auto" style={{ maxWidth: '400px' }}>
               {/* Glow Effect */}
-              <div className="absolute inset-0 bg-gradient-gold rounded-[3rem] blur-3xl opacity-20 animate-pulse"></div>
+              <div className="absolute inset-0 bg-gradient-beach rounded-[3rem] blur-3xl opacity-20 animate-pulse"></div>
 
               {/* Phone Frame */}
               <div className="relative bg-gradient-to-br from-gray-900 to-black rounded-[3rem] p-3 shadow-2xl border-4 border-gray-800">
@@ -198,7 +198,7 @@ const AppComingSoon = () => {
                       {/* Property Cards */}
                       <div className="space-y-3">
                         {[1, 2].map((i) => (
-                          <div key={i} className="bg-gradient-gold/10 backdrop-blur-sm rounded-2xl p-4 border border-luxury-gold/20">
+                          <div key={i} className="bg-gradient-beach/10 backdrop-blur-sm rounded-2xl p-4 border border-brand-water/20">
                             <div className="flex gap-3">
                               <div className="w-20 h-20 bg-luxury-gold/20 rounded-xl"></div>
                               <div className="flex-1">
@@ -227,7 +227,7 @@ const AppComingSoon = () => {
               <motion.div
                 animate={{ y: [-10, 10, -10] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -right-8 top-20 bg-gradient-gold rounded-2xl p-4 shadow-2xl"
+                className="absolute -right-8 top-20 bg-gradient-beach rounded-2xl p-4 shadow-2xl"
               >
                 <Bell className="w-6 h-6 text-premium-black" />
               </motion.div>
@@ -237,7 +237,7 @@ const AppComingSoon = () => {
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                 className="absolute -left-8 bottom-32 bg-white rounded-2xl p-4 shadow-2xl"
               >
-                <Smartphone className="w-6 h-6 text-luxury-gold" />
+                <Smartphone className="w-6 h-6 text-brand-water" />
               </motion.div>
             </div>
           </motion.div>

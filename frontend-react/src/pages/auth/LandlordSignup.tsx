@@ -92,11 +92,11 @@ const LandlordSignup = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <Link to="/signup" className="inline-flex items-center text-luxury-gold hover:underline mb-6">
+          <Link to="/signup" className="inline-flex items-center text-brand-water hover:underline mb-6">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to role selection
           </Link>
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-gold mb-6">
+          <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-beach mb-6">
             <Building2 className="w-10 h-10 text-premium-black" />
           </div>
           <h1 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-4">
@@ -114,20 +114,20 @@ const LandlordSignup = () => {
               <div className="flex flex-col items-center flex-1">
                 <div className={`w-12 h-12 rounded-full flex items-center justify-center transition-all ${
                   step >= s.number
-                    ? 'bg-gradient-gold text-premium-black'
+                    ? 'bg-gradient-beach text-premium-black'
                     : 'bg-white/10 text-gray-400'
                 }`}>
                   {step > s.number ? <Check className="w-6 h-6" /> : s.icon}
                 </div>
                 <span className={`mt-2 text-sm font-medium ${
-                  step >= s.number ? 'text-luxury-gold' : 'text-gray-400'
+                  step >= s.number ? 'text-brand-water' : 'text-gray-400'
                 }`}>
                   {s.title}
                 </span>
               </div>
               {index < steps.length - 1 && (
                 <div className={`h-1 flex-1 mx-2 rounded ${
-                  step > s.number ? 'bg-gradient-gold' : 'bg-white/10'
+                  step > s.number ? 'bg-gradient-beach' : 'bg-white/10'
                 }`} />
               )}
             </div>
@@ -157,7 +157,7 @@ const LandlordSignup = () => {
                       value={formData.firstName}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-luxury-gold transition-colors"
+                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-brand-water transition-colors"
                       placeholder="John"
                     />
                   </div>
@@ -171,7 +171,7 @@ const LandlordSignup = () => {
                       value={formData.lastName}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-luxury-gold transition-colors"
+                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-brand-water transition-colors"
                       placeholder="Doe"
                     />
                   </div>
@@ -189,7 +189,7 @@ const LandlordSignup = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full pl-12 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-luxury-gold transition-colors"
+                      className="w-full pl-12 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-brand-water transition-colors"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -207,7 +207,7 @@ const LandlordSignup = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      className="w-full pl-12 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-luxury-gold transition-colors"
+                      className="w-full pl-12 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-brand-water transition-colors"
                       placeholder="+234 xxx xxx xxxx"
                     />
                   </div>
@@ -226,7 +226,7 @@ const LandlordSignup = () => {
                       onChange={handleChange}
                       required
                       minLength={8}
-                      className="w-full pl-12 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-luxury-gold transition-colors"
+                      className="w-full pl-12 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-brand-water transition-colors"
                       placeholder="Min. 8 characters"
                     />
                   </div>
@@ -244,7 +244,7 @@ const LandlordSignup = () => {
                       value={formData.confirmPassword}
                       onChange={handleChange}
                       required
-                      className="w-full pl-12 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-luxury-gold transition-colors"
+                      className="w-full pl-12 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-brand-water transition-colors"
                       placeholder="Re-enter password"
                     />
                   </div>
@@ -265,7 +265,7 @@ const LandlordSignup = () => {
                     value={formData.address}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-luxury-gold transition-colors"
+                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-brand-water transition-colors"
                     placeholder="123 Main Street"
                   />
                 </div>
@@ -281,7 +281,7 @@ const LandlordSignup = () => {
                       value={formData.city}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-luxury-gold transition-colors"
+                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-brand-water transition-colors"
                       placeholder="Lagos"
                     />
                   </div>
@@ -294,7 +294,7 @@ const LandlordSignup = () => {
                       value={formData.state}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-luxury-gold transition-colors"
+                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-brand-water transition-colors"
                     >
                       <option value="">Select State</option>
                       <option value="Lagos">Lagos</option>
@@ -334,7 +334,7 @@ const LandlordSignup = () => {
                     value={formData.numberOfProperties}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-luxury-gold transition-colors"
+                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-brand-water transition-colors"
                   >
                     <option value="1-5">1-5 properties</option>
                     <option value="6-10">6-10 properties</option>
@@ -355,7 +355,7 @@ const LandlordSignup = () => {
                         onClick={() => handlePropertyTypeToggle(type)}
                         className={`py-3 px-4 rounded-xl font-medium transition-all ${
                           formData.propertyTypes.includes(type)
-                            ? 'bg-gradient-gold text-premium-black'
+                            ? 'bg-gradient-beach text-premium-black'
                             : 'bg-white/5 text-gray-300 hover:bg-white/10'
                         }`}
                       >
@@ -373,7 +373,7 @@ const LandlordSignup = () => {
                     name="hearAboutUs"
                     value={formData.hearAboutUs}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-luxury-gold transition-colors"
+                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-brand-water transition-colors"
                   >
                     <option value="">Select an option</option>
                     <option value="google">Google Search</option>
@@ -394,11 +394,11 @@ const LandlordSignup = () => {
                   />
                   <label className="text-sm text-gray-300">
                     I agree to the{' '}
-                    <Link to="/terms" className="text-luxury-gold hover:underline">
+                    <Link to="/terms" className="text-brand-water hover:underline">
                       Terms of Service
                     </Link>{' '}
                     and{' '}
-                    <Link to="/privacy" className="text-luxury-gold hover:underline">
+                    <Link to="/privacy" className="text-brand-water hover:underline">
                       Privacy Policy
                     </Link>
                   </label>
@@ -439,7 +439,7 @@ const LandlordSignup = () => {
         >
           <p className="text-gray-400">
             Already have an account?{' '}
-            <Link to="/login" className="text-luxury-gold hover:underline font-semibold">
+            <Link to="/login" className="text-brand-water hover:underline font-semibold">
               Sign In
             </Link>
           </p>

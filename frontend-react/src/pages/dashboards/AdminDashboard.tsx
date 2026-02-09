@@ -161,7 +161,7 @@ const AdminDashboard = () => {
             onClick={() => setActiveTab('properties')}
             className={`px-6 py-3 rounded-xl font-semibold transition-all ${
               activeTab === 'properties'
-                ? 'bg-gradient-gold text-premium-black shadow-md'
+                ? 'bg-gradient-beach text-premium-black shadow-md'
                 : 'text-gray-600 hover:text-premium-black'
             }`}
           >
@@ -172,7 +172,7 @@ const AdminDashboard = () => {
             onClick={() => setActiveTab('agents')}
             className={`px-6 py-3 rounded-xl font-semibold transition-all ${
               activeTab === 'agents'
-                ? 'bg-gradient-gold text-premium-black shadow-md'
+                ? 'bg-gradient-beach text-premium-black shadow-md'
                 : 'text-gray-600 hover:text-premium-black'
             }`}
           >
@@ -183,7 +183,7 @@ const AdminDashboard = () => {
             onClick={() => setActiveTab('users')}
             className={`px-6 py-3 rounded-xl font-semibold transition-all ${
               activeTab === 'users'
-                ? 'bg-gradient-gold text-premium-black shadow-md'
+                ? 'bg-gradient-beach text-premium-black shadow-md'
                 : 'text-gray-600 hover:text-premium-black'
             }`}
           >
@@ -211,7 +211,7 @@ const AdminDashboard = () => {
                       placeholder="Search properties..."
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
-                      className="w-full pl-12 pr-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-luxury-gold transition-colors"
+                      className="w-full pl-12 pr-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:border-brand-water transition-colors"
                     />
                   </div>
                   <Button variant="outline" className="md:w-auto">
@@ -254,7 +254,7 @@ const AdminDashboard = () => {
                             <p className="text-gray-600 mb-1">
                               <span className="font-semibold">Location:</span> {property.location}
                             </p>
-                            <p className="text-luxury-gold font-bold text-xl">
+                            <p className="text-brand-water font-bold text-xl">
                               {property.price}
                             </p>
                           </div>

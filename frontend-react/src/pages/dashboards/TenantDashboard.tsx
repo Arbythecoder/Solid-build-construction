@@ -134,7 +134,7 @@ const TenantDashboard = () => {
                 <div className="grid grid-cols-2 gap-4 py-4 border-y border-gray-200">
                   <div>
                     <div className="text-sm text-gray-600 mb-1">Monthly Rent</div>
-                    <div className="text-lg font-bold text-luxury-gold">{currentProperty.monthlyRent}</div>
+                    <div className="text-lg font-bold text-brand-water">{currentProperty.monthlyRent}</div>
                   </div>
                   <div>
                     <div className="text-sm text-gray-600 mb-1">Landlord</div>
@@ -255,7 +255,7 @@ const TenantDashboard = () => {
           </h2>
           <div className="space-y-4">
             {maintenanceRequests.map((request) => (
-              <div key={request.id} className="border border-gray-200 rounded-xl p-6 hover:border-luxury-gold transition-colors">
+              <div key={request.id} className="border border-gray-200 rounded-xl p-6 hover:border-brand-water transition-colors">
                 <div className="flex items-start justify-between">
                   <div className="flex-1">
                     <h3 className="font-semibold text-lg text-premium-black mb-2">{request.issue}</h3>

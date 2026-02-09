@@ -165,7 +165,7 @@ const AgentDashboard = () => {
             className="bg-white rounded-2xl shadow-lg p-8"
           >
             <div className="flex items-center gap-3 mb-6">
-              <BookOpen className="w-6 h-6 text-luxury-gold" />
+              <BookOpen className="w-6 h-6 text-brand-water" />
               <h2 className="text-2xl font-playfair font-bold text-premium-black">
                 Training Progress
               </h2>
@@ -174,7 +174,7 @@ const AgentDashboard = () => {
               {trainingModules.map((module, index) => (
                 <div
                   key={module.id}
-                  className="border border-gray-200 rounded-xl p-4 hover:border-luxury-gold transition-colors"
+                  className="border border-gray-200 rounded-xl p-4 hover:border-brand-water transition-colors"
                 >
                   <div className="flex items-start justify-between mb-3">
                     <div className="flex-1">
@@ -192,7 +192,7 @@ const AgentDashboard = () => {
                           {module.status}
                         </span>
                         {module.certificate && (
-                          <span className="text-xs text-luxury-gold flex items-center gap-1">
+                          <span className="text-xs text-brand-water flex items-center gap-1">
                             <Award className="w-3 h-3" />
                             Certificate Earned
                           </span>
@@ -221,14 +221,14 @@ const AgentDashboard = () => {
             className="bg-white rounded-2xl shadow-lg p-8"
           >
             <div className="flex items-center gap-3 mb-6">
-              <Target className="w-6 h-6 text-luxury-gold" />
+              <Target className="w-6 h-6 text-brand-water" />
               <h2 className="text-2xl font-playfair font-bold text-premium-black">
                 Assigned Properties
               </h2>
             </div>
             <div className="space-y-6">
               {assignedProperties.map((property) => (
-                <div key={property.id} className="border border-gray-200 rounded-xl overflow-hidden hover:border-luxury-gold transition-colors group">
+                <div key={property.id} className="border border-gray-200 rounded-xl overflow-hidden hover:border-brand-water transition-colors group">
                   <div className="aspect-video overflow-hidden">
                     <img
                       src={property.image}
@@ -240,7 +240,7 @@ const AgentDashboard = () => {
                     <h3 className="font-semibold text-lg text-premium-black mb-1">{property.title}</h3>
                     <p className="text-gray-600 text-sm mb-2">{property.location}</p>
                     <div className="flex items-center justify-between">
-                      <div className="text-lg font-bold text-luxury-gold">{property.price}</div>
+                      <div className="text-lg font-bold text-brand-water">{property.price}</div>
                       <div className="text-sm text-gray-600">
                         <span className="font-semibold text-premium-black">{property.leads}</span> leads
                       </div>

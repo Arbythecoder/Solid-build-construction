@@ -157,7 +157,7 @@ const CofOVerification = () => {
       {/* Header */}
       <div className="text-center mb-8">
         <div className="inline-flex items-center justify-center w-16 h-16 bg-luxury-gold/10 rounded-full mb-4">
-          <FileCheck className="w-8 h-8 text-luxury-gold" />
+          <FileCheck className="w-8 h-8 text-brand-water" />
         </div>
         <h1 className="text-4xl font-playfair font-bold text-premium-black mb-3">
           Certificate of Occupancy Verification
@@ -167,7 +167,7 @@ const CofOVerification = () => {
         </p>
         <button
           onClick={() => setShowGuide(true)}
-          className="text-luxury-gold hover:text-luxury-gold/80 font-semibold"
+          className="text-brand-water hover:text-brand-water/80 font-semibold"
         >
           What is a C of O? Learn more →
         </button>
@@ -184,7 +184,7 @@ const CofOVerification = () => {
             {/* Method 1: Certificate Number */}
             <div className="border-2 border-dashed border-gray-300 rounded-xl p-6">
               <div className="flex items-center gap-2 mb-4">
-                <Hash className="w-5 h-5 text-luxury-gold" />
+                <Hash className="w-5 h-5 text-brand-water" />
                 <h3 className="font-semibold text-gray-900">Enter Certificate Number</h3>
               </div>
               <input
@@ -192,7 +192,7 @@ const CofOVerification = () => {
                 placeholder="e.g., LAG/2023/12345"
                 value={certificateNumber}
                 onChange={(e) => setCertificateNumber(e.target.value.toUpperCase())}
-                className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-luxury-gold"
+                className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-water"
               />
               <p className="text-xs text-gray-500 mt-2">
                 Format: STATE/YEAR/NUMBER
@@ -202,7 +202,7 @@ const CofOVerification = () => {
             {/* Method 2: Upload Document */}
             <div className="border-2 border-dashed border-gray-300 rounded-xl p-6">
               <div className="flex items-center gap-2 mb-4">
-                <Upload className="w-5 h-5 text-luxury-gold" />
+                <Upload className="w-5 h-5 text-brand-water" />
                 <h3 className="font-semibold text-gray-900">Upload C of O Document</h3>
               </div>
               <label className="block">
@@ -212,10 +212,10 @@ const CofOVerification = () => {
                   onChange={handleFileUpload}
                   className="hidden"
                 />
-                <div className="cursor-pointer border-2 border-dashed border-gray-300 rounded-xl p-4 hover:border-luxury-gold transition-colors text-center">
+                <div className="cursor-pointer border-2 border-dashed border-gray-300 rounded-xl p-4 hover:border-brand-water transition-colors text-center">
                   {uploadedFile ? (
                     <div className="flex items-center justify-center gap-2">
-                      <FileText className="w-5 h-5 text-luxury-gold" />
+                      <FileText className="w-5 h-5 text-brand-water" />
                       <span className="text-sm text-gray-700">{uploadedFile.name}</span>
                       <button
                         onClick={(e) => {
@@ -262,17 +262,17 @@ const CofOVerification = () => {
           <div className="mt-8 pt-8 border-t">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
               <div>
-                <Shield className="w-8 h-8 text-luxury-gold mx-auto mb-2" />
+                <Shield className="w-8 h-8 text-brand-water mx-auto mb-2" />
                 <p className="text-sm font-semibold text-gray-900">Secure Verification</p>
                 <p className="text-xs text-gray-600">End-to-end encryption</p>
               </div>
               <div>
-                <Clock className="w-8 h-8 text-luxury-gold mx-auto mb-2" />
+                <Clock className="w-8 h-8 text-brand-water mx-auto mb-2" />
                 <p className="text-sm font-semibold text-gray-900">Instant Results</p>
                 <p className="text-xs text-gray-600">Real-time verification</p>
               </div>
               <div>
-                <CheckCircle className="w-8 h-8 text-luxury-gold mx-auto mb-2" />
+                <CheckCircle className="w-8 h-8 text-brand-water mx-auto mb-2" />
                 <p className="text-sm font-semibold text-gray-900">Official Sources</p>
                 <p className="text-xs text-gray-600">Government databases</p>
               </div>
@@ -368,7 +368,7 @@ const VerificationResults = ({
       {result.status !== 'pending' && (
         <div className="p-8">
           <h3 className="font-semibold text-gray-900 mb-4 flex items-center gap-2">
-            <FileText className="w-5 h-5 text-luxury-gold" />
+            <FileText className="w-5 h-5 text-brand-water" />
             Certificate Details
           </h3>
 
@@ -413,13 +413,13 @@ const VerificationResults = ({
       {result.notes && result.notes.length > 0 && (
         <div className="px-8 pb-8">
           <h3 className="font-semibold text-gray-900 mb-4 flex items-center gap-2">
-            <AlertCircle className="w-5 h-5 text-luxury-gold" />
+            <AlertCircle className="w-5 h-5 text-brand-water" />
             Important Notes
           </h3>
           <ul className="space-y-2">
             {result.notes.map((note, index) => (
               <li key={index} className="flex items-start gap-2 text-gray-700">
-                <CheckCircle className="w-4 h-4 text-luxury-gold mt-0.5 flex-shrink-0" />
+                <CheckCircle className="w-4 h-4 text-brand-water mt-0.5 flex-shrink-0" />
                 <span className="text-sm">{note}</span>
               </li>
             ))}

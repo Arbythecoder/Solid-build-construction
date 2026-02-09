@@ -143,7 +143,7 @@ const PropertyDetailsPage = () => {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <Loader2 className="w-12 h-12 animate-spin text-luxury-gold mx-auto mb-4" />
+          <Loader2 className="w-12 h-12 animate-spin text-brand-water mx-auto mb-4" />
           <p className="text-gray-600">Loading property details...</p>
         </div>
       </div>
@@ -220,7 +220,7 @@ const PropertyDetailsPage = () => {
         <div className="absolute top-6 right-6">
           <span className={`px-4 py-2 rounded-full font-semibold ${
             property.status === 'For Sale'
-              ? 'bg-gradient-gold text-premium-black'
+              ? 'bg-gradient-beach text-premium-black'
               : 'bg-blue-500 text-white'
           }`}>
             {property.status}
@@ -238,7 +238,7 @@ const PropertyDetailsPage = () => {
                 <div>
                   <h1 className="text-3xl md:text-4xl font-playfair font-bold mb-3">{property.title}</h1>
                   <div className="flex items-center text-gray-600">
-                    <MapPin className="w-5 h-5 mr-2 text-luxury-gold" />
+                    <MapPin className="w-5 h-5 mr-2 text-brand-water" />
                     {property.address || property.location}
                   </div>
                 </div>
@@ -251,7 +251,7 @@ const PropertyDetailsPage = () => {
                   </button>
                 </div>
               </div>
-              <div className="text-4xl font-playfair font-bold text-luxury-gold">
+              <div className="text-4xl font-playfair font-bold text-brand-water">
                 {formatPrice(property.price)}
                 {property.status === 'For Rent' && <span className="text-lg text-gray-600">/year</span>}
               </div>
@@ -260,22 +260,22 @@ const PropertyDetailsPage = () => {
             {/* Stats */}
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="bg-white rounded-xl p-4 text-center shadow">
-                <Bed className="w-8 h-8 mx-auto mb-2 text-luxury-gold" />
+                <Bed className="w-8 h-8 mx-auto mb-2 text-brand-water" />
                 <div className="text-2xl font-bold">{property.bedrooms}</div>
                 <div className="text-sm text-gray-600">Bedrooms</div>
               </div>
               <div className="bg-white rounded-xl p-4 text-center shadow">
-                <Bath className="w-8 h-8 mx-auto mb-2 text-luxury-gold" />
+                <Bath className="w-8 h-8 mx-auto mb-2 text-brand-water" />
                 <div className="text-2xl font-bold">{property.bathrooms}</div>
                 <div className="text-sm text-gray-600">Bathrooms</div>
               </div>
               <div className="bg-white rounded-xl p-4 text-center shadow">
-                <Maximize className="w-8 h-8 mx-auto mb-2 text-luxury-gold" />
+                <Maximize className="w-8 h-8 mx-auto mb-2 text-brand-water" />
                 <div className="text-2xl font-bold">{property.size}</div>
                 <div className="text-sm text-gray-600">Sq. Meters</div>
               </div>
               <div className="bg-white rounded-xl p-4 text-center shadow">
-                <Car className="w-8 h-8 mx-auto mb-2 text-luxury-gold" />
+                <Car className="w-8 h-8 mx-auto mb-2 text-brand-water" />
                 <div className="text-2xl font-bold">{property.parking || 2}</div>
                 <div className="text-sm text-gray-600">Parking</div>
               </div>
@@ -327,7 +327,7 @@ const PropertyDetailsPage = () => {
                 <img
                   src={property.agent?.image || sampleProperty.agent.image}
                   alt={property.agent?.name || sampleProperty.agent.name}
-                  className="w-16 h-16 rounded-full object-cover border-2 border-luxury-gold"
+                  className="w-16 h-16 rounded-full object-cover border-2 border-brand-water"
                 />
                 <div>
                   <h4 className="font-semibold">{property.agent?.name || sampleProperty.agent.name}</h4>
@@ -337,11 +337,11 @@ const PropertyDetailsPage = () => {
 
               <div className="space-y-3 mb-6">
                 <a href={`tel:${property.agent?.phone || sampleProperty.agent.phone}`} className="flex items-center gap-3 p-3 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
-                  <Phone className="w-5 h-5 text-luxury-gold" />
+                  <Phone className="w-5 h-5 text-brand-water" />
                   <span>{property.agent?.phone || sampleProperty.agent.phone}</span>
                 </a>
                 <a href={`mailto:${property.agent?.email || sampleProperty.agent.email}`} className="flex items-center gap-3 p-3 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
-                  <Mail className="w-5 h-5 text-luxury-gold" />
+                  <Mail className="w-5 h-5 text-brand-water" />
                   <span className="text-sm">{property.agent?.email || sampleProperty.agent.email}</span>
                 </a>
               </div>
@@ -355,7 +355,7 @@ const PropertyDetailsPage = () => {
             </motion.div>
 
             <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2 }} className="bg-gradient-dark rounded-2xl p-6 text-white">
-              <Calendar className="w-10 h-10 text-luxury-gold mb-4" />
+              <Calendar className="w-10 h-10 text-brand-water mb-4" />
               <h3 className="text-xl font-bold mb-2">Schedule a Tour</h3>
               <p className="text-gray-300 mb-4">Visit this property in person with our agent.</p>
               <Button variant="gold" className="w-full" onClick={() => setShowInquiryModal(true)}>
@@ -374,19 +374,19 @@ const PropertyDetailsPage = () => {
             <form onSubmit={handleInquiry} className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
-                <input type="text" required value={inquiryForm.name} onChange={(e) => setInquiryForm({ ...inquiryForm, name: e.target.value })} className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-luxury-gold focus:border-transparent" />
+                <input type="text" required value={inquiryForm.name} onChange={(e) => setInquiryForm({ ...inquiryForm, name: e.target.value })} className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-brand-water focus:border-transparent" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                <input type="email" required value={inquiryForm.email} onChange={(e) => setInquiryForm({ ...inquiryForm, email: e.target.value })} className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-luxury-gold focus:border-transparent" />
+                <input type="email" required value={inquiryForm.email} onChange={(e) => setInquiryForm({ ...inquiryForm, email: e.target.value })} className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-brand-water focus:border-transparent" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Phone</label>
-                <input type="tel" value={inquiryForm.phone} onChange={(e) => setInquiryForm({ ...inquiryForm, phone: e.target.value })} className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-luxury-gold focus:border-transparent" />
+                <input type="tel" value={inquiryForm.phone} onChange={(e) => setInquiryForm({ ...inquiryForm, phone: e.target.value })} className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-brand-water focus:border-transparent" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                <textarea rows={4} required value={inquiryForm.message} onChange={(e) => setInquiryForm({ ...inquiryForm, message: e.target.value })} placeholder={`I'm interested in ${property.title}`} className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-luxury-gold focus:border-transparent resize-none" />
+                <textarea rows={4} required value={inquiryForm.message} onChange={(e) => setInquiryForm({ ...inquiryForm, message: e.target.value })} placeholder={`I'm interested in ${property.title}`} className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-brand-water focus:border-transparent resize-none" />
               </div>
               <div className="flex gap-3">
                 <Button type="button" variant="outline" className="flex-1" onClick={() => setShowInquiryModal(false)}>Cancel</Button>

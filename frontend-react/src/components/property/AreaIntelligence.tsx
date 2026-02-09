@@ -266,7 +266,7 @@ const AreaIntelligence = ({ property }: AreaIntelligenceProps) => {
               onClick={() => setActiveTab(tab.id as any)}
               className={`flex items-center gap-2 px-6 py-4 font-semibold transition-colors whitespace-nowrap ${
                 activeTab === tab.id
-                  ? 'border-b-2 border-luxury-gold text-luxury-gold'
+                  ? 'border-b-2 border-brand-water text-brand-water'
                   : 'text-gray-600 hover:text-gray-900'
               }`}
             >
@@ -322,7 +322,7 @@ const AreaIntelligence = ({ property }: AreaIntelligenceProps) => {
           <h3 className="font-semibold text-gray-900">Location Map</h3>
           <button
             onClick={() => setMapFullscreen(true)}
-            className="flex items-center gap-2 text-luxury-gold hover:text-luxury-gold/80 transition-colors"
+            className="flex items-center gap-2 text-brand-water hover:text-brand-water/80 transition-colors"
           >
             <Maximize2 className="w-4 h-4" />
             <span className="text-sm font-semibold">View Full Map</span>
@@ -333,7 +333,7 @@ const AreaIntelligence = ({ property }: AreaIntelligenceProps) => {
         <div className="aspect-video bg-gray-200 rounded-xl flex items-center justify-center relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-luxury-gold/20 to-premium-orange/20" />
           <div className="relative z-10 text-center">
-            <MapPin className="w-12 h-12 text-luxury-gold mx-auto mb-3" />
+            <MapPin className="w-12 h-12 text-brand-water mx-auto mb-3" />
             <p className="text-gray-700 font-semibold">
               {property.location.address}
             </p>
@@ -372,17 +372,17 @@ const OverviewTab = ({ data, city, state }: { data: any, city: string, state: st
       {/* Key Metrics */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <MetricCard
-          icon={<Users className="w-6 h-6 text-luxury-gold" />}
+          icon={<Users className="w-6 h-6 text-brand-water" />}
           label="Population"
           value={data.population}
         />
         <MetricCard
-          icon={<DollarSign className="w-6 h-6 text-luxury-gold" />}
+          icon={<DollarSign className="w-6 h-6 text-brand-water" />}
           label="Median Income"
           value={data.medianIncome}
         />
         <MetricCard
-          icon={<TrendingUp className="w-6 h-6 text-luxury-gold" />}
+          icon={<TrendingUp className="w-6 h-6 text-brand-water" />}
           label="Price Growth"
           value={data.priceGrowth}
           positive
@@ -524,7 +524,7 @@ const TransportTab = ({
       {/* Commute Calculator */}
       <div className="bg-gradient-to-br from-luxury-gold/10 to-premium-orange/10 rounded-xl p-6">
         <h3 className="font-semibold text-gray-900 mb-4 flex items-center gap-2">
-          <Navigation className="w-5 h-5 text-luxury-gold" />
+          <Navigation className="w-5 h-5 text-brand-water" />
           Commute Time Calculator
         </h3>
 
@@ -534,7 +534,7 @@ const TransportTab = ({
             placeholder="Enter your work location (e.g., Victoria Island)"
             value={commuteFrom}
             onChange={(e) => setCommuteFrom(e.target.value)}
-            className="flex-1 px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-luxury-gold"
+            className="flex-1 px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-water"
           />
           <button
             onClick={calculateCommute}
@@ -551,10 +551,10 @@ const TransportTab = ({
             className="mt-4 p-4 bg-white rounded-xl"
           >
             <div className="flex items-center gap-3">
-              <Clock className="w-6 h-6 text-luxury-gold" />
+              <Clock className="w-6 h-6 text-brand-water" />
               <div>
                 <p className="text-sm text-gray-600">Estimated commute time</p>
-                <p className="text-2xl font-bold text-luxury-gold">{commuteTime} minutes</p>
+                <p className="text-2xl font-bold text-brand-water">{commuteTime} minutes</p>
               </div>
             </div>
           </motion.div>
@@ -690,7 +690,7 @@ const ScoreBar = ({ label, score }: { label: string; score: number }) => {
 
 const PlaceCard = ({ place }: { place: NearbyPlace }) => {
   return (
-    <div className="border border-gray-200 rounded-xl p-4 hover:border-luxury-gold hover:bg-luxury-gold/5 transition-all">
+    <div className="border border-gray-200 rounded-xl p-4 hover:border-brand-water hover:bg-luxury-gold/5 transition-all">
       <div className="flex items-start justify-between gap-4">
         <div className="flex-1">
           <h4 className="font-semibold text-gray-900 mb-1">{place.name}</h4>
@@ -709,7 +709,7 @@ const PlaceCard = ({ place }: { place: NearbyPlace }) => {
           </div>
         </div>
         <div className="text-right">
-          <button className="text-luxury-gold hover:text-luxury-gold/80 transition-colors text-sm font-semibold">
+          <button className="text-brand-water hover:text-brand-water/80 transition-colors text-sm font-semibold">
             Directions →
           </button>
         </div>
@@ -788,7 +788,7 @@ const MapModal = ({
         {/* Map Content */}
         <div className="h-full bg-gray-100 flex items-center justify-center">
           <div className="text-center">
-            <MapPin className="w-16 h-16 text-luxury-gold mx-auto mb-4" />
+            <MapPin className="w-16 h-16 text-brand-water mx-auto mb-4" />
             <p className="text-gray-700 font-semibold mb-2">Interactive Map</p>
             <p className="text-sm text-gray-600">
               Google Maps integration will be added here

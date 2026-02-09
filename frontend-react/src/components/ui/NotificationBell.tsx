@@ -82,7 +82,7 @@ const NotificationBell: React.FC = () => {
             {unreadCount > 0 && (
               <button
                 onClick={markAllAsRead}
-                className="text-sm text-luxury-gold hover:text-luxury-gold/80 font-medium"
+                className="text-sm text-brand-water hover:text-brand-water/80 font-medium"
               >
                 Mark all as read
               </button>
@@ -158,7 +158,7 @@ const NotificationBell: React.FC = () => {
                   navigate('/dashboard/notifications');
                   setIsOpen(false);
                 }}
-                className="w-full text-center text-sm text-luxury-gold hover:text-luxury-gold/80 font-medium flex items-center justify-center gap-2"
+                className="w-full text-center text-sm text-brand-water hover:text-brand-water/80 font-medium flex items-center justify-center gap-2"
               >
                 View all notifications
                 <ExternalLink className="w-4 h-4" />

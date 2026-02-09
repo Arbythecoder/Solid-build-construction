@@ -31,7 +31,7 @@ const ForgotPasswordPage = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-gold mb-6">
+          <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-beach mb-6">
             <Mail className="w-10 h-10 text-premium-black" />
           </div>
           <h1 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-4">
@@ -57,7 +57,7 @@ const ForgotPasswordPage = () => {
                 <Send className="w-10 h-10 text-green-400" />
               </div>
               <p className="text-gray-300 mb-8">
-                If an account exists for <span className="text-luxury-gold">{email}</span>,
+                If an account exists for <span className="text-brand-water">{email}</span>,
                 you will receive an email with instructions on how to reset your password.
               </p>
               <Link to="/login">
@@ -80,7 +80,7 @@ const ForgotPasswordPage = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
-                    className="w-full pl-12 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-luxury-gold transition-colors"
+                    className="w-full pl-12 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-brand-water transition-colors"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -108,7 +108,7 @@ const ForgotPasswordPage = () => {
               <div className="text-center">
                 <Link
                   to="/login"
-                  className="inline-flex items-center gap-2 text-gray-400 hover:text-luxury-gold transition-colors"
+                  className="inline-flex items-center gap-2 text-gray-400 hover:text-brand-water transition-colors"
                 >
                   <ArrowLeft className="w-4 h-4" />
                   Back to Login
@@ -127,7 +127,7 @@ const ForgotPasswordPage = () => {
         >
           <p className="text-gray-400 text-sm">
             Need help?{' '}
-            <Link to="/contact" className="text-luxury-gold hover:underline">
+            <Link to="/contact" className="text-brand-water hover:underline">
               Contact Support
             </Link>
           </p>

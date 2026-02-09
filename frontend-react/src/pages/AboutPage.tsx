@@ -120,10 +120,10 @@ const AboutPage = () => {
                 transition={{ delay: index * 0.1 }}
                 className="text-center p-6"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-gold rounded-full mb-4 text-premium-black">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-beach rounded-full mb-4 text-premium-black">
                   {stat.icon}
                 </div>
-                <div className="text-4xl font-playfair font-bold text-luxury-gold mb-2">
+                <div className="text-4xl font-playfair font-bold text-brand-water mb-2">
                   {stat.value}
                 </div>
                 <div className="text-gray-600 font-medium">{stat.label}</div>
@@ -142,7 +142,7 @@ const AboutPage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <span className="text-sm font-montserrat font-bold text-luxury-gold uppercase tracking-wider">
+              <span className="text-sm font-montserrat font-bold text-brand-water uppercase tracking-wider">
                 Our Story
               </span>
               <h2 className="text-4xl font-playfair font-bold mt-3 mb-6">
@@ -181,7 +181,7 @@ const AboutPage = () => {
                 alt="Luxury Property in Lagos"
                 className="rounded-2xl shadow-2xl"
               />
-              <div className="absolute -bottom-8 -left-8 bg-gradient-gold p-6 rounded-xl shadow-lg">
+              <div className="absolute -bottom-8 -left-8 bg-gradient-beach p-6 rounded-xl shadow-lg">
                 <div className="text-4xl font-playfair font-bold text-premium-black">10+</div>
                 <div className="text-premium-charcoal font-medium">Years of Excellence</div>
               </div>
@@ -200,7 +200,7 @@ const AboutPage = () => {
               viewport={{ once: true }}
               className="glass-dark rounded-2xl p-10"
             >
-              <div className="w-16 h-16 bg-gradient-gold rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-gradient-beach rounded-full flex items-center justify-center mb-6">
                 <Target className="w-8 h-8 text-premium-black" />
               </div>
               <h3 className="text-3xl font-playfair font-bold mb-4">Our Mission</h3>
@@ -217,7 +217,7 @@ const AboutPage = () => {
               transition={{ delay: 0.1 }}
               className="glass-dark rounded-2xl p-10"
             >
-              <div className="w-16 h-16 bg-gradient-gold rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-gradient-beach rounded-full flex items-center justify-center mb-6">
                 <Eye className="w-8 h-8 text-premium-black" />
               </div>
               <h3 className="text-3xl font-playfair font-bold mb-4">Our Vision</h3>
@@ -240,7 +240,7 @@ const AboutPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-sm font-montserrat font-bold text-luxury-gold uppercase tracking-wider">
+            <span className="text-sm font-montserrat font-bold text-brand-water uppercase tracking-wider">
               Our Core Values
             </span>
             <h2 className="text-4xl font-playfair font-bold mt-3">
@@ -258,7 +258,7 @@ const AboutPage = () => {
                 transition={{ delay: index * 0.1 }}
                 className="card-premium p-8 text-center hover:shadow-gold transition-all"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-gold rounded-full mb-6 text-premium-black">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-beach rounded-full mb-6 text-premium-black">
                   {value.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-3">{value.title}</h3>
@@ -278,7 +278,7 @@ const AboutPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-sm font-montserrat font-bold text-luxury-gold uppercase tracking-wider">
+            <span className="text-sm font-montserrat font-bold text-brand-water uppercase tracking-wider">
               Our Journey
             </span>
             <h2 className="text-4xl font-playfair font-bold mt-3">
@@ -297,11 +297,11 @@ const AboutPage = () => {
                 className="flex items-center gap-8 mb-8"
               >
                 <div className="w-24 text-right">
-                  <span className="text-2xl font-playfair font-bold text-luxury-gold">
+                  <span className="text-2xl font-playfair font-bold text-brand-water">
                     {milestone.year}
                   </span>
                 </div>
-                <div className="w-4 h-4 bg-gradient-gold rounded-full flex-shrink-0" />
+                <div className="w-4 h-4 bg-gradient-beach rounded-full flex-shrink-0" />
                 <div className="flex-1 bg-white rounded-xl p-6 shadow-lg">
                   <p className="text-lg text-gray-700">{milestone.event}</p>
                 </div>
@@ -320,7 +320,7 @@ const AboutPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-sm font-montserrat font-bold text-luxury-gold uppercase tracking-wider">
+            <span className="text-sm font-montserrat font-bold text-brand-water uppercase tracking-wider">
               Our Team
             </span>
             <h2 className="text-4xl font-playfair font-bold mt-3 mb-4">
@@ -351,7 +351,7 @@ const AboutPage = () => {
                 </div>
                 <div className="p-6 text-center">
                   <h3 className="text-xl font-bold mb-1">{member.name}</h3>
-                  <p className="text-luxury-gold font-medium mb-3">{member.role}</p>
+                  <p className="text-brand-water font-medium mb-3">{member.role}</p>
                   <p className="text-gray-600 text-sm">{member.bio}</p>
                 </div>
               </motion.div>
@@ -369,7 +369,7 @@ const AboutPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-sm font-montserrat font-bold text-luxury-gold uppercase tracking-wider">
+            <span className="text-sm font-montserrat font-bold text-brand-water uppercase tracking-wider">
               Why Choose Us
             </span>
             <h2 className="text-4xl font-playfair font-bold mt-3">
@@ -394,7 +394,7 @@ const AboutPage = () => {
                 transition={{ delay: index * 0.1 }}
                 className="flex items-start gap-4"
               >
-                <div className="w-12 h-12 bg-gradient-gold rounded-lg flex items-center justify-center flex-shrink-0 text-premium-black">
+                <div className="w-12 h-12 bg-gradient-beach rounded-lg flex items-center justify-center flex-shrink-0 text-premium-black">
                   {item.icon}
                 </div>
                 <div>
@@ -408,7 +408,7 @@ const AboutPage = () => {
       </section>
 
       {/* Contact CTA */}
-      <section className="py-20 bg-gradient-gold">
+      <section className="py-20 bg-gradient-beach">
         <div className="container-premium">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

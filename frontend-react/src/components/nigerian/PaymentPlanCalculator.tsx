@@ -150,7 +150,7 @@ Total: ${formatCurrency(plan.totalPayment)}`
               type="number"
               value={propertyPrice}
               onChange={(e) => setPropertyPrice(Number(e.target.value))}
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-luxury-gold"
+              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-water"
             />
           </div>
 
@@ -170,7 +170,7 @@ Total: ${formatCurrency(plan.totalPayment)}`
             />
             <div className="flex justify-between text-xs text-gray-500 mt-1">
               <span>5%</span>
-              <span className="font-semibold text-luxury-gold">
+              <span className="font-semibold text-brand-water">
                 {formatCurrency(plan.downPaymentAmount)}
               </span>
               <span>50%</span>
@@ -185,7 +185,7 @@ Total: ${formatCurrency(plan.totalPayment)}`
             <select
               value={duration}
               onChange={(e) => setDuration(Number(e.target.value))}
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-luxury-gold"
+              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-water"
             >
               <option value={6}>6 months</option>
               <option value={12}>12 months (1 year)</option>
@@ -213,7 +213,7 @@ Total: ${formatCurrency(plan.totalPayment)}`
             />
             <div className="flex justify-between text-xs text-gray-500 mt-1">
               <span>0%</span>
-              <span className="font-semibold text-luxury-gold">{interestRate}%</span>
+              <span className="font-semibold text-brand-water">{interestRate}%</span>
               <span>20%</span>
             </div>
           </div>
@@ -227,7 +227,7 @@ Total: ${formatCurrency(plan.totalPayment)}`
               type="date"
               value={startDate}
               onChange={(e) => setStartDate(e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-luxury-gold"
+              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-water"
             />
           </div>
         </div>
@@ -242,7 +242,7 @@ Total: ${formatCurrency(plan.totalPayment)}`
               onClick={() => setActiveTab(tab.id as any)}
               className={`flex items-center gap-2 px-6 py-4 font-semibold transition-colors whitespace-nowrap ${
                 activeTab === tab.id
-                  ? 'border-b-2 border-luxury-gold text-luxury-gold'
+                  ? 'border-b-2 border-brand-water text-brand-water'
                   : 'text-gray-600 hover:text-gray-900'
               }`}
             >
@@ -356,7 +356,7 @@ const SummaryTab = ({
           </div>
           <div className="flex items-center justify-between py-3">
             <span className="text-lg font-semibold text-gray-900">Total Amount Payable</span>
-            <span className="text-2xl font-bold text-luxury-gold">{formatCurrency(plan.totalPayment)}</span>
+            <span className="text-2xl font-bold text-brand-water">{formatCurrency(plan.totalPayment)}</span>
           </div>
         </div>
       </div>
@@ -449,7 +449,7 @@ const ScheduleTab = ({
                   day: 'numeric'
                 })}
               </td>
-              <td className="p-3 text-right font-bold text-luxury-gold">
+              <td className="p-3 text-right font-bold text-brand-water">
                 {formatCurrency(payment.amount)}
               </td>
               <td className="p-3 text-right text-gray-700">
@@ -514,7 +514,7 @@ const OptionsTab = ({
         return (
           <div
             key={plan.duration}
-            className="border-2 border-gray-200 rounded-xl p-6 hover:border-luxury-gold transition-colors"
+            className="border-2 border-gray-200 rounded-xl p-6 hover:border-brand-water transition-colors"
           >
             <div className="flex items-start justify-between mb-4">
               <div>
@@ -522,7 +522,7 @@ const OptionsTab = ({
                 <p className="text-sm text-gray-600">{plan.interest}% interest per annum</p>
               </div>
               <div className="text-right">
-                <p className="text-2xl font-bold text-luxury-gold">
+                <p className="text-2xl font-bold text-brand-water">
                   {formatCurrency(calculation.monthlyPayment)}
                 </p>
                 <p className="text-xs text-gray-600">per month</p>

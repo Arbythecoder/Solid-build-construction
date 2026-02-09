@@ -187,7 +187,7 @@ const HomePage = () => {
               className="max-w-4xl mx-auto bg-white rounded-2xl p-2 shadow-2xl flex flex-col md:flex-row gap-2"
             >
               <div className="flex-1 flex items-center gap-3 px-4">
-                <Search className="w-6 h-6 text-luxury-gold" />
+                <Search className="w-6 h-6 text-brand-water" />
                 <input
                   type="text"
                   placeholder="Search by location, property type, or price..."
@@ -219,19 +219,19 @@ const HomePage = () => {
               className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto"
             >
               <div className="text-center">
-                <div className="text-5xl font-playfair font-extrabold text-luxury-gold mb-2">
+                <div className="text-5xl font-playfair font-extrabold text-brand-water mb-2">
                   {Math.floor(counters.properties)}+
                 </div>
                 <div className="text-lg text-gray-300">Properties</div>
               </div>
               <div className="text-center">
-                <div className="text-5xl font-playfair font-extrabold text-luxury-gold mb-2">
+                <div className="text-5xl font-playfair font-extrabold text-brand-water mb-2">
                   {Math.floor(counters.clients)}+
                 </div>
                 <div className="text-lg text-gray-300">Happy Clients</div>
               </div>
               <div className="text-center">
-                <div className="text-5xl font-playfair font-extrabold text-luxury-gold mb-2">
+                <div className="text-5xl font-playfair font-extrabold text-brand-water mb-2">
                   {Math.floor(counters.agents)}+
                 </div>
                 <div className="text-lg text-gray-300">Expert Agents</div>
@@ -260,7 +260,7 @@ const HomePage = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="text-sm font-montserrat font-bold text-luxury-gold uppercase tracking-wider">
+            <span className="text-sm font-montserrat font-bold text-brand-water uppercase tracking-wider">
               Featured Listings
             </span>
             <h2 className="text-4xl md:text-5xl font-playfair font-bold mt-3 mb-4">
@@ -307,7 +307,7 @@ const HomePage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-sm font-montserrat font-bold text-luxury-gold uppercase tracking-wider">
+            <span className="text-sm font-montserrat font-bold text-brand-water uppercase tracking-wider">
               Why Choose Us
             </span>
             <h2 className="text-4xl md:text-5xl font-playfair font-bold mt-3">
@@ -341,7 +341,7 @@ const HomePage = () => {
                 transition={{ delay: index * 0.1 }}
                 className="glass-dark rounded-2xl p-8 text-center hover:bg-white/20 transition-all"
               >
-                <div className="inline-flex items-center justify-center mb-6 text-luxury-gold">
+                <div className="inline-flex items-center justify-center mb-6 text-brand-water">
                   {feature.icon}
                 </div>
                 <h3 className="text-2xl font-bold mb-4">{feature.title}</h3>
@@ -369,10 +369,10 @@ const HomePage = () => {
                 transition={{ delay: index * 0.1 }}
                 className="card-premium p-8 text-center"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-gold rounded-full mb-4 text-premium-black">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-beach rounded-full mb-4 text-premium-black">
                   {stat.icon}
                 </div>
-                <div className="text-5xl font-playfair font-extrabold text-luxury-gold mb-2">
+                <div className="text-5xl font-playfair font-extrabold text-brand-water mb-2">
                   {stat.value}
                 </div>
                 <div className="text-lg text-gray-600 font-medium">{stat.label}</div>
@@ -391,7 +391,7 @@ const HomePage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-sm font-montserrat font-bold text-luxury-gold uppercase tracking-wider">
+            <span className="text-sm font-montserrat font-bold text-brand-water uppercase tracking-wider">
               Testimonials
             </span>
             <h2 className="text-4xl md:text-5xl font-playfair font-bold mt-3">
@@ -409,12 +409,12 @@ const HomePage = () => {
                 transition={{ delay: index * 0.1 }}
                 className="glass-dark rounded-2xl p-8 relative"
               >
-                <Quote className="absolute top-6 right-6 w-10 h-10 text-luxury-gold/20" />
+                <Quote className="absolute top-6 right-6 w-10 h-10 text-brand-water/20" />
                 <div className="flex items-center gap-4 mb-6">
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className="w-16 h-16 rounded-full object-cover border-2 border-luxury-gold"
+                    className="w-16 h-16 rounded-full object-cover border-2 border-brand-water"
                   />
                   <div>
                     <h4 className="font-bold text-lg">{testimonial.name}</h4>
@@ -423,7 +423,7 @@ const HomePage = () => {
                 </div>
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-luxury-gold text-luxury-gold" />
+                    <Star key={i} className="w-5 h-5 fill-luxury-gold text-brand-water" />
                   ))}
                 </div>
                 <p className="text-gray-300 leading-relaxed italic">"{testimonial.text}"</p>
@@ -442,7 +442,7 @@ const HomePage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-sm font-montserrat font-bold text-luxury-gold uppercase tracking-wider">
+            <span className="text-sm font-montserrat font-bold text-brand-water uppercase tracking-wider">
               Our Locations
             </span>
             <h2 className="text-4xl font-playfair font-bold mt-3">
@@ -483,7 +483,7 @@ const HomePage = () => {
       </section>
 
       {/* CTA SECTION */}
-      <section className="section bg-gradient-gold">
+      <section className="section bg-gradient-beach">
         <div className="container-premium text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -507,7 +507,7 @@ const HomePage = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="bg-premium-black border-premium-black text-luxury-gold hover:bg-premium-black hover:text-white"
+                className="bg-premium-black border-premium-black text-brand-water hover:bg-premium-black hover:text-white"
                 onClick={() => navigate('/contact')}
               >
                 Contact Us

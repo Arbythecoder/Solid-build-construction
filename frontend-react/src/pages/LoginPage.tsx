@@ -40,7 +40,7 @@ const LoginPage = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-gold mb-6">
+          <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-beach mb-6">
             <LogIn className="w-10 h-10 text-premium-black" />
           </div>
           <h1 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-4">
@@ -71,7 +71,7 @@ const LoginPage = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full pl-12 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-luxury-gold transition-colors"
+                  className="w-full pl-12 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-brand-water transition-colors"
                   placeholder="your@email.com"
                 />
               </div>
@@ -89,13 +89,13 @@ const LoginPage = () => {
                   value={formData.password}
                   onChange={handleChange}
                   required
-                  className="w-full pl-12 pr-12 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-luxury-gold transition-colors"
+                  className="w-full pl-12 pr-12 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-brand-water transition-colors"
                   placeholder="Enter your password"
                 />
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-luxury-gold transition-colors"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-brand-water transition-colors"
                 >
                   {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
                 </button>
@@ -110,13 +110,13 @@ const LoginPage = () => {
                   checked={formData.rememberMe}
                   onChange={handleChange}
                   id="rememberMe"
-                  className="rounded border-gray-600 text-luxury-gold focus:ring-luxury-gold"
+                  className="rounded border-gray-600 text-brand-water focus:ring-brand-water"
                 />
                 <label htmlFor="rememberMe" className="text-sm text-gray-300">
                   Remember me
                 </label>
               </div>
-              <Link to="/forgot-password" className="text-sm text-luxury-gold hover:underline">
+              <Link to="/forgot-password" className="text-sm text-brand-water hover:underline">
                 Forgot password?
               </Link>
             </div>
@@ -168,7 +168,7 @@ const LoginPage = () => {
         >
           <p className="text-gray-400 text-sm">
             Need help?{' '}
-            <Link to="/contact" className="text-luxury-gold hover:underline">
+            <Link to="/contact" className="text-brand-water hover:underline">
               Contact Support
             </Link>
           </p>

@@ -181,7 +181,7 @@ const CurrencyConverter = () => {
               <select
                 value={fromCurrency}
                 onChange={(e) => setFromCurrency(e.target.value)}
-                className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-luxury-gold appearance-none"
+                className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-water appearance-none"
               >
                 {currencies.map(curr => (
                   <option key={curr.code} value={curr.code}>
@@ -195,7 +195,7 @@ const CurrencyConverter = () => {
                 type="number"
                 value={amount}
                 onChange={(e) => setAmount(Number(e.target.value))}
-                className="w-full px-4 py-4 text-2xl font-bold border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-luxury-gold"
+                className="w-full px-4 py-4 text-2xl font-bold border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-water"
                 placeholder="0.00"
               />
             </div>
@@ -230,7 +230,7 @@ const CurrencyConverter = () => {
               <select
                 value={toCurrency}
                 onChange={(e) => setToCurrency(e.target.value)}
-                className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-luxury-gold appearance-none"
+                className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-water appearance-none"
               >
                 {currencies.map(curr => (
                   <option key={curr.code} value={curr.code}>
@@ -239,8 +239,8 @@ const CurrencyConverter = () => {
                 ))}
               </select>
             </div>
-            <div className="mt-3 bg-luxury-gold/10 border-2 border-luxury-gold rounded-xl px-4 py-4">
-              <div className="text-3xl font-bold text-luxury-gold">
+            <div className="mt-3 bg-luxury-gold/10 border-2 border-brand-water rounded-xl px-4 py-4">
+              <div className="text-3xl font-bold text-brand-water">
                 {getSymbol(toCurrency)} {formatNumber(result)}
               </div>
             </div>
@@ -273,7 +273,7 @@ const CurrencyConverter = () => {
                   onClick={() => setAmount(quickAmount)}
                   className={`p-3 rounded-xl border-2 transition-all text-left ${
                     amount === quickAmount
-                      ? 'border-luxury-gold bg-luxury-gold/5'
+                      ? 'border-brand-water bg-luxury-gold/5'
                       : 'border-gray-200 hover:border-gray-300'
                   }`}
                 >
@@ -293,7 +293,7 @@ const CurrencyConverter = () => {
         <div className="bg-white border rounded-xl overflow-hidden">
           <div className="p-4 bg-gray-50 border-b">
             <h3 className="font-semibold text-gray-900 flex items-center gap-2">
-              <BarChart3 className="w-5 h-5 text-luxury-gold" />
+              <BarChart3 className="w-5 h-5 text-brand-water" />
               Current Exchange Rates
             </h3>
           </div>
@@ -374,7 +374,7 @@ const CurrencyConverter = () => {
       <div className="px-6 pb-6">
         <div className="bg-gradient-to-br from-luxury-gold/10 to-premium-orange/10 rounded-xl p-6">
           <h3 className="font-semibold text-gray-900 mb-4 flex items-center gap-2">
-            <DollarSign className="w-5 h-5 text-luxury-gold" />
+            <DollarSign className="w-5 h-5 text-brand-water" />
             Sending Money from Abroad?
           </h3>
           <p className="text-gray-700 mb-4">
@@ -382,27 +382,27 @@ const CurrencyConverter = () => {
           </p>
           <ul className="space-y-2 text-sm text-gray-700 mb-4">
             <li className="flex items-start gap-2">
-              <AlertCircle className="w-4 h-4 text-luxury-gold mt-0.5 flex-shrink-0" />
+              <AlertCircle className="w-4 h-4 text-brand-water mt-0.5 flex-shrink-0" />
               <span>Use official banking channels (wire transfers) for large amounts</span>
             </li>
             <li className="flex items-start gap-2">
-              <AlertCircle className="w-4 h-4 text-luxury-gold mt-0.5 flex-shrink-0" />
+              <AlertCircle className="w-4 h-4 text-brand-water mt-0.5 flex-shrink-0" />
               <span>Compare rates across multiple providers (banks, Wise, Western Union)</span>
             </li>
             <li className="flex items-start gap-2">
-              <AlertCircle className="w-4 h-4 text-luxury-gold mt-0.5 flex-shrink-0" />
+              <AlertCircle className="w-4 h-4 text-brand-water mt-0.5 flex-shrink-0" />
               <span>Factor in transfer fees (typically $15-$50 per transaction)</span>
             </li>
             <li className="flex items-start gap-2">
-              <AlertCircle className="w-4 h-4 text-luxury-gold mt-0.5 flex-shrink-0" />
+              <AlertCircle className="w-4 h-4 text-brand-water mt-0.5 flex-shrink-0" />
               <span>Allow 2-5 business days for international transfers</span>
             </li>
             <li className="flex items-start gap-2">
-              <AlertCircle className="w-4 h-4 text-luxury-gold mt-0.5 flex-shrink-0" />
+              <AlertCircle className="w-4 h-4 text-brand-water mt-0.5 flex-shrink-0" />
               <span>Keep all transaction receipts for property documentation</span>
             </li>
           </ul>
-          <button className="text-luxury-gold hover:text-luxury-gold/80 font-semibold flex items-center gap-1">
+          <button className="text-brand-water hover:text-brand-water/80 font-semibold flex items-center gap-1">
             View Diaspora Investment Guide
             <ExternalLink className="w-4 h-4" />
           </button>

@@ -2,14 +2,14 @@ import { ButtonHTMLAttributes, ReactNode } from 'react'
 import { motion } from 'framer-motion'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'gold' | 'luxury' | 'outline'
+  variant?: 'gold' | 'water' | 'luxury' | 'outline'
   size?: 'sm' | 'md' | 'lg'
   children: ReactNode
   isLoading?: boolean
 }
 
 const Button = ({
-  variant = 'gold',
+  variant = 'water',
   size = 'md',
   children,
   isLoading = false,
@@ -20,9 +20,10 @@ const Button = ({
   const baseClasses = 'font-montserrat font-semibold uppercase tracking-wide rounded-xl transition-all duration-300 inline-flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed'
 
   const variantClasses = {
-    gold: 'bg-gradient-gold text-premium-black shadow-gold hover:shadow-gold-lg hover:-translate-y-1 active:translate-y-0',
-    luxury: 'bg-premium-black text-luxury-gold border-2 border-luxury-gold hover:bg-luxury-gold hover:text-premium-black hover:-translate-y-1',
-    outline: 'bg-transparent text-luxury-gold border-2 border-luxury-gold hover:bg-luxury-gold hover:text-premium-black'
+    gold: 'bg-gradient-sand text-white shadow-sand hover:shadow-sand-lg hover:-translate-y-1 active:translate-y-0',
+    water: 'bg-gradient-water text-white shadow-water hover:shadow-water-lg hover:-translate-y-1 active:translate-y-0',
+    luxury: 'bg-brand-water text-white border-2 border-brand-water-dark hover:bg-brand-water-dark hover:-translate-y-1',
+    outline: 'bg-transparent text-brand-water border-2 border-brand-water hover:bg-brand-water hover:text-white'
   }
 
   const sizeClasses = {

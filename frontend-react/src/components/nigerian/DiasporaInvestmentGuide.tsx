@@ -163,7 +163,7 @@ const DiasporaInvestmentGuide = () => {
       description: 'Rapid urbanization creating strong property demand'
     },
     {
-      icon: <DollarSign className="w-6 h-6 text-luxury-gold" />,
+      icon: <DollarSign className="w-6 h-6 text-brand-water" />,
       title: 'Affordable Entry',
       description: 'Lower property prices compared to UK/US markets'
     },
@@ -179,7 +179,7 @@ const DiasporaInvestmentGuide = () => {
       {/* Hero Section */}
       <div className="text-center mb-12">
         <div className="inline-flex items-center justify-center w-20 h-20 bg-luxury-gold/10 rounded-full mb-6">
-          <Globe className="w-10 h-10 text-luxury-gold" />
+          <Globe className="w-10 h-10 text-brand-water" />
         </div>
         <h1 className="text-4xl md:text-5xl font-playfair font-bold text-premium-black mb-4">
           Diaspora Investment Guide
@@ -195,7 +195,7 @@ const DiasporaInvestmentGuide = () => {
             <Phone className="w-5 h-5" />
             Talk to Expert
           </button>
-          <button className="px-8 py-4 border-2 border-luxury-gold text-luxury-gold rounded-xl font-semibold hover:bg-luxury-gold/5 transition-colors flex items-center gap-2">
+          <button className="px-8 py-4 border-2 border-brand-water text-brand-water rounded-xl font-semibold hover:bg-luxury-gold/5 transition-colors flex items-center gap-2">
             <Download className="w-5 h-5" />
             Download Guide
           </button>
@@ -205,7 +205,7 @@ const DiasporaInvestmentGuide = () => {
       {/* Country Selector */}
       <div className="bg-white rounded-2xl shadow-lg p-6 mb-8">
         <h2 className="text-xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
-          <MapPin className="w-5 h-5 text-luxury-gold" />
+          <MapPin className="w-5 h-5 text-brand-water" />
           Select Your Location
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -215,14 +215,14 @@ const DiasporaInvestmentGuide = () => {
               onClick={() => setSelectedCountry(country.name)}
               className={`p-4 rounded-xl border-2 transition-all text-left ${
                 selectedCountry === country.name
-                  ? 'border-luxury-gold bg-luxury-gold/5'
+                  ? 'border-brand-water bg-luxury-gold/5'
                   : 'border-gray-200 hover:border-gray-300'
               }`}
             >
               <div className="text-3xl mb-2">{country.flag}</div>
               <div className="font-semibold text-gray-900">{country.name}</div>
               <div className="text-xs text-gray-600 mt-1">{country.timezone}</div>
-              <div className="text-xs text-luxury-gold mt-2">{country.offices}</div>
+              <div className="text-xs text-brand-water mt-2">{country.offices}</div>
             </button>
           ))}
         </div>
@@ -270,11 +270,11 @@ const DiasporaInvestmentGuide = () => {
                 onClick={() => setActiveStep(index)}
                 className={`p-4 rounded-xl border-2 transition-all ${
                   activeStep === index
-                    ? 'border-luxury-gold bg-luxury-gold/5'
+                    ? 'border-brand-water bg-luxury-gold/5'
                     : 'border-gray-200 hover:border-gray-300'
                 }`}
               >
-                <div className={`mb-2 ${activeStep === index ? 'text-luxury-gold' : 'text-gray-400'}`}>
+                <div className={`mb-2 ${activeStep === index ? 'text-brand-water' : 'text-gray-400'}`}>
                   {step.icon}
                 </div>
                 <div className="text-xs font-semibold text-gray-900">Step {step.id}</div>
@@ -352,36 +352,36 @@ const DiasporaInvestmentGuide = () => {
       {/* Support Services */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         <div className="bg-white rounded-xl shadow-lg p-6 text-center">
-          <Phone className="w-12 h-12 text-luxury-gold mx-auto mb-4" />
+          <Phone className="w-12 h-12 text-brand-water mx-auto mb-4" />
           <h3 className="font-semibold text-gray-900 mb-2">24/7 Diaspora Support</h3>
           <p className="text-sm text-gray-600 mb-4">
             Dedicated support team in your timezone
           </p>
-          <button className="text-luxury-gold hover:text-luxury-gold/80 font-semibold flex items-center gap-1 mx-auto">
+          <button className="text-brand-water hover:text-brand-water/80 font-semibold flex items-center gap-1 mx-auto">
             Contact Now
             <ChevronRight className="w-4 h-4" />
           </button>
         </div>
 
         <div className="bg-white rounded-xl shadow-lg p-6 text-center">
-          <Video className="w-12 h-12 text-luxury-gold mx-auto mb-4" />
+          <Video className="w-12 h-12 text-brand-water mx-auto mb-4" />
           <h3 className="font-semibold text-gray-900 mb-2">Virtual Property Tours</h3>
           <p className="text-sm text-gray-600 mb-4">
             View properties via live video calls
           </p>
-          <button className="text-luxury-gold hover:text-luxury-gold/80 font-semibold flex items-center gap-1 mx-auto">
+          <button className="text-brand-water hover:text-brand-water/80 font-semibold flex items-center gap-1 mx-auto">
             Schedule Tour
             <ChevronRight className="w-4 h-4" />
           </button>
         </div>
 
         <div className="bg-white rounded-xl shadow-lg p-6 text-center">
-          <Users className="w-12 h-12 text-luxury-gold mx-auto mb-4" />
+          <Users className="w-12 h-12 text-brand-water mx-auto mb-4" />
           <h3 className="font-semibold text-gray-900 mb-2">Trusted Partners</h3>
           <p className="text-sm text-gray-600 mb-4">
             Verified lawyers, agents, and managers
           </p>
-          <button className="text-luxury-gold hover:text-luxury-gold/80 font-semibold flex items-center gap-1 mx-auto">
+          <button className="text-brand-water hover:text-brand-water/80 font-semibold flex items-center gap-1 mx-auto">
             View Partners
             <ChevronRight className="w-4 h-4" />
           </button>
@@ -502,7 +502,7 @@ const ContactFormModal = ({ onClose }: { onClose: () => void }) => {
               required
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-luxury-gold"
+              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-water"
             />
           </div>
 
@@ -515,7 +515,7 @@ const ContactFormModal = ({ onClose }: { onClose: () => void }) => {
               required
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-luxury-gold"
+              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-water"
             />
           </div>
 
@@ -526,7 +526,7 @@ const ContactFormModal = ({ onClose }: { onClose: () => void }) => {
             <select
               value={formData.country}
               onChange={(e) => setFormData({ ...formData, country: e.target.value })}
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-luxury-gold"
+              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-water"
             >
               <option value="USA">🇺🇸 USA</option>
               <option value="UK">🇬🇧 UK</option>
@@ -545,7 +545,7 @@ const ContactFormModal = ({ onClose }: { onClose: () => void }) => {
               required
               value={formData.phone}
               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-luxury-gold"
+              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-water"
               placeholder="+1 234 567 8900"
             />
           </div>
@@ -557,7 +557,7 @@ const ContactFormModal = ({ onClose }: { onClose: () => void }) => {
             <textarea
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-luxury-gold"
+              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-water"
               rows={3}
               placeholder="Tell us about your investment goals..."
             />

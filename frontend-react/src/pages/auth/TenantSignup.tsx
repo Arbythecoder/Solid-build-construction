@@ -66,7 +66,7 @@ const TenantSignup = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <Link to="/signup" className="inline-flex items-center text-luxury-gold hover:underline mb-6">
+          <Link to="/signup" className="inline-flex items-center text-brand-water hover:underline mb-6">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to role selection
           </Link>

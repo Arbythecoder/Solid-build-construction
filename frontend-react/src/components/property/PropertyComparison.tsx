@@ -146,7 +146,7 @@ const PropertyComparison = ({
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="text-center">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-luxury-gold/10 rounded-full mb-6">
-            <Home className="w-10 h-10 text-luxury-gold" />
+            <Home className="w-10 h-10 text-brand-water" />
           </div>
           <h2 className="text-3xl font-playfair font-bold text-premium-black mb-4">
             Compare Properties
@@ -227,13 +227,13 @@ const PropertyComparison = ({
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="border-2 border-dashed border-gray-300 rounded-2xl p-8 flex flex-col items-center justify-center min-h-[400px] hover:border-luxury-gold transition-colors cursor-pointer group"
+            className="border-2 border-dashed border-gray-300 rounded-2xl p-8 flex flex-col items-center justify-center min-h-[400px] hover:border-brand-water transition-colors cursor-pointer group"
             onClick={() => addProperty(selectedProperties.length)}
           >
             <div className="w-16 h-16 bg-gray-100 group-hover:bg-luxury-gold/10 rounded-full flex items-center justify-center mb-4 transition-colors">
-              <Plus className="w-8 h-8 text-gray-400 group-hover:text-luxury-gold transition-colors" />
+              <Plus className="w-8 h-8 text-gray-400 group-hover:text-brand-water transition-colors" />
             </div>
-            <p className="text-gray-600 font-semibold group-hover:text-luxury-gold transition-colors">
+            <p className="text-gray-600 font-semibold group-hover:text-brand-water transition-colors">
               Add Property
             </p>
           </motion.div>
@@ -478,7 +478,7 @@ const PropertyCard = ({
           </span>
         </div>
 
-        <div className="text-3xl font-bold text-luxury-gold mb-4">
+        <div className="text-3xl font-bold text-brand-water mb-4">
           {formatCurrency(property.price)}
         </div>
 
@@ -537,7 +537,7 @@ const ComparisonRow = ({
             highlights[index]
               ? isAmenity
                 ? 'bg-green-50 text-green-700 font-semibold'
-                : 'bg-luxury-gold/10 text-luxury-gold font-bold'
+                : 'bg-luxury-gold/10 text-brand-water font-bold'
               : isAmenity && value === '✗'
                 ? 'text-gray-300'
                 : ''
@@ -614,7 +614,7 @@ const PropertySelector = ({
                 placeholder="Search by title or location..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-luxury-gold"
+                className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-water"
               />
             </div>
 
@@ -630,7 +630,7 @@ const PropertySelector = ({
                     <div
                       key={property._id}
                       onClick={() => onSelect(property)}
-                      className="border rounded-xl p-4 hover:border-luxury-gold hover:bg-luxury-gold/5 cursor-pointer transition-all group"
+                      className="border rounded-xl p-4 hover:border-brand-water hover:bg-luxury-gold/5 cursor-pointer transition-all group"
                     >
                       <div className="flex gap-4">
                         <img
@@ -639,13 +639,13 @@ const PropertySelector = ({
                           className="w-24 h-24 object-cover rounded-lg"
                         />
                         <div className="flex-1">
-                          <h3 className="font-semibold text-premium-black mb-1 line-clamp-1 group-hover:text-luxury-gold transition-colors">
+                          <h3 className="font-semibold text-premium-black mb-1 line-clamp-1 group-hover:text-brand-water transition-colors">
                             {property.title}
                           </h3>
                           <p className="text-sm text-gray-600 mb-2">
                             {property.location.city}, {property.location.state}
                           </p>
-                          <p className="font-bold text-luxury-gold">
+                          <p className="font-bold text-brand-water">
                             {formatCurrency(property.price)}
                           </p>
                         </div>

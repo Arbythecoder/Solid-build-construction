@@ -162,7 +162,7 @@ const ContactPage = () => {
                 transition={{ delay: index * 0.1 }}
                 className="card-premium p-6 text-center hover:shadow-gold transition-all group cursor-pointer"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-gold rounded-full mb-4 text-premium-black group-hover:scale-110 transition-transform">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-beach rounded-full mb-4 text-premium-black group-hover:scale-110 transition-transform">
                   {info.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-3">{info.title}</h3>
@@ -185,7 +185,7 @@ const ContactPage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <span className="text-sm font-montserrat font-bold text-luxury-gold uppercase tracking-wider">
+              <span className="text-sm font-montserrat font-bold text-brand-water uppercase tracking-wider">
                 Send Us a Message
               </span>
               <h2 className="text-4xl font-playfair font-bold mt-3 mb-6">
@@ -223,7 +223,7 @@ const ContactPage = () => {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:border-transparent transition-all"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-water focus:border-transparent transition-all"
                         placeholder="John Doe"
                       />
                     </div>
@@ -237,7 +237,7 @@ const ContactPage = () => {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:border-transparent transition-all"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-water focus:border-transparent transition-all"
                         placeholder="john@example.com"
                       />
                     </div>
@@ -253,7 +253,7 @@ const ContactPage = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:border-transparent transition-all"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-water focus:border-transparent transition-all"
                         placeholder="+234 800 000 0000"
                       />
                     </div>
@@ -266,7 +266,7 @@ const ContactPage = () => {
                         value={formData.subject}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:border-transparent transition-all"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-water focus:border-transparent transition-all"
                       >
                         <option value="">Select a subject</option>
                         <option value="Property Inquiry">Property Inquiry</option>
@@ -290,7 +290,7 @@ const ContactPage = () => {
                       onChange={handleChange}
                       required
                       rows={5}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:border-transparent transition-all resize-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-water focus:border-transparent transition-all resize-none"
                       placeholder="Tell us how we can help you..."
                     />
                   </div>
@@ -339,8 +339,8 @@ const ContactPage = () => {
                   Quick Contact
                 </h3>
                 <div className="space-y-4">
-                  <a href="tel:+2349115258580" className="flex items-center gap-4 hover:text-luxury-gold transition-colors">
-                    <div className="w-12 h-12 bg-gradient-gold rounded-full flex items-center justify-center text-premium-black">
+                  <a href="tel:+2349115258580" className="flex items-center gap-4 hover:text-brand-water transition-colors">
+                    <div className="w-12 h-12 bg-gradient-beach rounded-full flex items-center justify-center text-premium-black">
                       <Phone className="w-5 h-5" />
                     </div>
                     <div>
@@ -348,8 +348,8 @@ const ContactPage = () => {
                       <p className="font-semibold">+234 911 525 8580</p>
                     </div>
                   </a>
-                  <a href="mailto:Solid Buildproperty@gmail.com" className="flex items-center gap-4 hover:text-luxury-gold transition-colors">
-                    <div className="w-12 h-12 bg-gradient-gold rounded-full flex items-center justify-center text-premium-black">
+                  <a href="mailto:Solid Buildproperty@gmail.com" className="flex items-center gap-4 hover:text-brand-water transition-colors">
+                    <div className="w-12 h-12 bg-gradient-beach rounded-full flex items-center justify-center text-premium-black">
                       <Mail className="w-5 h-5" />
                     </div>
                     <div>
@@ -361,9 +361,9 @@ const ContactPage = () => {
                     href="https://wa.me/2349115258580"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-4 hover:text-luxury-gold transition-colors"
+                    className="flex items-center gap-4 hover:text-brand-water transition-colors"
                   >
-                    <div className="w-12 h-12 bg-gradient-gold rounded-full flex items-center justify-center text-premium-black">
+                    <div className="w-12 h-12 bg-gradient-beach rounded-full flex items-center justify-center text-premium-black">
                       <MessageSquare className="w-5 h-5" />
                     </div>
                     <div>
@@ -387,7 +387,7 @@ const ContactPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-sm font-montserrat font-bold text-luxury-gold uppercase tracking-wider">
+            <span className="text-sm font-montserrat font-bold text-brand-water uppercase tracking-wider">
               Our Locations
             </span>
             <h2 className="text-4xl font-playfair font-bold mt-3 mb-4">
@@ -421,12 +421,12 @@ const ContactPage = () => {
                 </div>
                 <div className="p-6">
                   <div className="flex items-start gap-3 mb-3">
-                    <MapPin className="w-5 h-5 text-luxury-gold flex-shrink-0 mt-0.5" />
+                    <MapPin className="w-5 h-5 text-brand-water flex-shrink-0 mt-0.5" />
                     <p className="text-gray-600">{office.address}</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Phone className="w-5 h-5 text-luxury-gold" />
-                    <a href={`tel:${office.phone.replace(/\s/g, '')}`} className="text-gray-600 hover:text-luxury-gold transition-colors">
+                    <Phone className="w-5 h-5 text-brand-water" />
+                    <a href={`tel:${office.phone.replace(/\s/g, '')}`} className="text-gray-600 hover:text-brand-water transition-colors">
                       {office.phone}
                     </a>
                   </div>
@@ -446,7 +446,7 @@ const ContactPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-sm font-montserrat font-bold text-luxury-gold uppercase tracking-wider">
+            <span className="text-sm font-montserrat font-bold text-brand-water uppercase tracking-wider">
               FAQs
             </span>
             <h2 className="text-4xl font-playfair font-bold mt-3">
@@ -465,7 +465,7 @@ const ContactPage = () => {
                 className="card-premium p-6"
               >
                 <h3 className="text-lg font-bold mb-3 flex items-start gap-3">
-                  <span className="w-8 h-8 bg-gradient-gold rounded-full flex items-center justify-center text-premium-black text-sm flex-shrink-0">
+                  <span className="w-8 h-8 bg-gradient-beach rounded-full flex items-center justify-center text-premium-black text-sm flex-shrink-0">
                     Q
                   </span>
                   {faq.question}
@@ -478,7 +478,7 @@ const ContactPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-gold">
+      <section className="py-20 bg-gradient-beach">
         <div className="container-premium">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

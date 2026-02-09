@@ -40,7 +40,7 @@ const DashboardPage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
       <div className="text-center">
-        <Loader2 className="w-12 h-12 animate-spin text-luxury-gold mx-auto mb-4" />
+        <Loader2 className="w-12 h-12 animate-spin text-brand-water mx-auto mb-4" />
         <p className="text-gray-600 text-lg">Loading your dashboard...</p>
       </div>
     </div>

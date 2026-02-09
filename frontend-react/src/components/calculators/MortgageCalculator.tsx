@@ -52,7 +52,7 @@ const MortgageCalculator = ({ propertyPrice = 0 }: MortgageCalculatorProps) => {
     >
       {/* Header */}
       <div className="flex items-center gap-3 mb-6">
-        <div className="w-12 h-12 bg-gradient-gold rounded-xl flex items-center justify-center">
+        <div className="w-12 h-12 bg-gradient-beach rounded-xl flex items-center justify-center">
           <Calculator className="w-6 h-6 text-premium-black" />
         </div>
         <div>
@@ -78,7 +78,7 @@ const MortgageCalculator = ({ propertyPrice = 0 }: MortgageCalculatorProps) => {
               type="number"
               value={price}
               onChange={(e) => setPrice(Number(e.target.value))}
-              className="w-full pl-8 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:border-luxury-gold focus:outline-none text-lg"
+              className="w-full pl-8 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:border-brand-water focus:outline-none text-lg"
             />
           </div>
         </div>
@@ -89,7 +89,7 @@ const MortgageCalculator = ({ propertyPrice = 0 }: MortgageCalculatorProps) => {
             <label className="text-sm font-semibold text-gray-700">
               Deposit ({deposit}%)
             </label>
-            <span className="text-sm font-bold text-luxury-gold">
+            <span className="text-sm font-bold text-brand-water">
               {formatCurrency(results.depositAmount)}
             </span>
           </div>
@@ -170,7 +170,7 @@ const MortgageCalculator = ({ propertyPrice = 0 }: MortgageCalculatorProps) => {
           className="space-y-4"
         >
           {/* Monthly Payment (Highlighted) */}
-          <div className="bg-gradient-gold rounded-xl p-6 text-center">
+          <div className="bg-gradient-beach rounded-xl p-6 text-center">
             <p className="text-sm font-semibold text-premium-charcoal mb-2">
               Estimated Monthly Payment
             </p>
@@ -183,7 +183,7 @@ const MortgageCalculator = ({ propertyPrice = 0 }: MortgageCalculatorProps) => {
           <div className="grid grid-cols-2 gap-4">
             <div className="bg-gray-50 rounded-xl p-4">
               <div className="flex items-center gap-2 mb-2">
-                <DollarSign className="w-4 h-4 text-luxury-gold" />
+                <DollarSign className="w-4 h-4 text-brand-water" />
                 <p className="text-xs font-semibold text-gray-600">Loan Amount</p>
               </div>
               <p className="text-lg font-bold text-premium-black">
@@ -193,7 +193,7 @@ const MortgageCalculator = ({ propertyPrice = 0 }: MortgageCalculatorProps) => {
 
             <div className="bg-gray-50 rounded-xl p-4">
               <div className="flex items-center gap-2 mb-2">
-                <TrendingUp className="w-4 h-4 text-luxury-gold" />
+                <TrendingUp className="w-4 h-4 text-brand-water" />
                 <p className="text-xs font-semibold text-gray-600">Total Interest</p>
               </div>
               <p className="text-lg font-bold text-premium-black">
@@ -203,7 +203,7 @@ const MortgageCalculator = ({ propertyPrice = 0 }: MortgageCalculatorProps) => {
 
             <div className="bg-gray-50 rounded-xl p-4 col-span-2">
               <div className="flex items-center gap-2 mb-2">
-                <Home className="w-4 h-4 text-luxury-gold" />
+                <Home className="w-4 h-4 text-brand-water" />
                 <p className="text-xs font-semibold text-gray-600">
                   Total Amount Payable
                 </p>

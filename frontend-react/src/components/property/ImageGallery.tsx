@@ -272,7 +272,7 @@ const ImageGallery = ({ images, propertyTitle = 'Property' }: ImageGalleryProps)
                   onClick={() => setSelectedIndex(index)}
                   className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 transition-all ${
                     index === selectedIndex
-                      ? 'border-luxury-gold scale-110'
+                      ? 'border-brand-water scale-110'
                       : 'border-white/30 hover:border-white/60'
                   }`}
                 >

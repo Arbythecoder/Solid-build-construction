@@ -205,7 +205,7 @@ const AdvancedFilters = ({ onApplyFilters, initialFilters }: AdvancedFiltersProp
                     placeholder="e.g., Lekki, Ikoyi, Victoria Island"
                     value={filters.location}
                     onChange={(e) => setFilters({ ...filters, location: e.target.value })}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-luxury-gold focus:outline-none"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-brand-water focus:outline-none"
                   />
                 </div>
 
@@ -222,14 +222,14 @@ const AdvancedFilters = ({ onApplyFilters, initialFilters }: AdvancedFiltersProp
                         onClick={() => togglePropertyType(type.value)}
                         className={`p-3 rounded-xl border-2 transition-all text-left ${
                           filters.propertyType.includes(type.value)
-                            ? 'border-luxury-gold bg-luxury-gold/10 text-premium-black'
+                            ? 'border-brand-water bg-luxury-gold/10 text-premium-black'
                             : 'border-gray-200 hover:border-gray-300'
                         }`}
                       >
                         <div className="text-2xl mb-1">{type.icon}</div>
                         <div className="text-sm font-semibold">{type.label}</div>
                         {filters.propertyType.includes(type.value) && (
-                          <Check className="w-4 h-4 text-luxury-gold absolute top-2 right-2" />
+                          <Check className="w-4 h-4 text-brand-water absolute top-2 right-2" />
                         )}
                       </button>
                     ))}
@@ -248,7 +248,7 @@ const AdvancedFilters = ({ onApplyFilters, initialFilters }: AdvancedFiltersProp
                         onClick={() => setFilters({ ...filters, listingType: type })}
                         className={`py-3 px-4 rounded-xl border-2 font-semibold transition-all ${
                           filters.listingType === type
-                            ? 'border-luxury-gold bg-luxury-gold/10 text-premium-black'
+                            ? 'border-brand-water bg-luxury-gold/10 text-premium-black'
                             : 'border-gray-200 hover:border-gray-300'
                         }`}
                       >
@@ -270,7 +270,7 @@ const AdvancedFilters = ({ onApplyFilters, initialFilters }: AdvancedFiltersProp
                       <select
                         value={filters.priceMin}
                         onChange={(e) => setFilters({ ...filters, priceMin: Number(e.target.value) })}
-                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-luxury-gold focus:outline-none"
+                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-brand-water focus:outline-none"
                       >
                         <option value={0}>No Min</option>
                         {priceRanges.map(range => (
@@ -285,7 +285,7 @@ const AdvancedFilters = ({ onApplyFilters, initialFilters }: AdvancedFiltersProp
                       <select
                         value={filters.priceMax}
                         onChange={(e) => setFilters({ ...filters, priceMax: Number(e.target.value) })}
-                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-luxury-gold focus:outline-none"
+                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-brand-water focus:outline-none"
                       >
                         <option value={999999999}>No Max</option>
                         {priceRanges.map(range => (
@@ -312,7 +312,7 @@ const AdvancedFilters = ({ onApplyFilters, initialFilters }: AdvancedFiltersProp
                           onClick={() => setFilters({ ...filters, bedrooms: num })}
                           className={`flex-1 py-2 rounded-lg border-2 font-semibold transition-all ${
                             filters.bedrooms === num
-                              ? 'border-luxury-gold bg-luxury-gold/10 text-premium-black'
+                              ? 'border-brand-water bg-luxury-gold/10 text-premium-black'
                               : 'border-gray-200 hover:border-gray-300'
                           }`}
                         >
@@ -333,7 +333,7 @@ const AdvancedFilters = ({ onApplyFilters, initialFilters }: AdvancedFiltersProp
                           onClick={() => setFilters({ ...filters, bathrooms: num })}
                           className={`flex-1 py-2 rounded-lg border-2 font-semibold transition-all ${
                             filters.bathrooms === num
-                              ? 'border-luxury-gold bg-luxury-gold/10 text-premium-black'
+                              ? 'border-brand-water bg-luxury-gold/10 text-premium-black'
                               : 'border-gray-200 hover:border-gray-300'
                           }`}
                         >
@@ -356,12 +356,12 @@ const AdvancedFilters = ({ onApplyFilters, initialFilters }: AdvancedFiltersProp
                         onClick={() => toggleFeature(amenity)}
                         className={`py-2 px-3 rounded-lg border-2 text-sm font-medium transition-all text-left ${
                           filters.features.includes(amenity)
-                            ? 'border-luxury-gold bg-luxury-gold/10 text-premium-black'
+                            ? 'border-brand-water bg-luxury-gold/10 text-premium-black'
                             : 'border-gray-200 hover:border-gray-300'
                         }`}
                       >
                         {filters.features.includes(amenity) && (
-                          <Check className="w-3 h-3 inline mr-1 text-luxury-gold" />
+                          <Check className="w-3 h-3 inline mr-1 text-brand-water" />
                         )}
                         {amenity}
                       </button>
@@ -382,7 +382,7 @@ const AdvancedFilters = ({ onApplyFilters, initialFilters }: AdvancedFiltersProp
                         onClick={() => setFilters({ ...filters, addedWithin: period })}
                         className={`py-3 px-4 rounded-xl border-2 font-semibold transition-all ${
                           filters.addedWithin === period
-                            ? 'border-luxury-gold bg-luxury-gold/10 text-premium-black'
+                            ? 'border-brand-water bg-luxury-gold/10 text-premium-black'
                             : 'border-gray-200 hover:border-gray-300'
                         }`}
                       >
@@ -403,7 +403,7 @@ const AdvancedFilters = ({ onApplyFilters, initialFilters }: AdvancedFiltersProp
                   <select
                     value={filters.sortBy}
                     onChange={(e) => setFilters({ ...filters, sortBy: e.target.value })}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-luxury-gold focus:outline-none"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-brand-water focus:outline-none"
                   >
                     <option value="newest">Newest First</option>
                     <option value="oldest">Oldest First</option>

@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 rounded-xl bg-gradient-gold flex items-center justify-center shadow-gold group-hover:shadow-gold-lg transition-all">
+            <div className="w-12 h-12 rounded-xl bg-gradient-beach flex items-center justify-center shadow-gold group-hover:shadow-gold-lg transition-all">
               <span className="text-2xl font-playfair font-bold text-premium-black">A</span>
             </div>
             <div>
@@ -60,10 +60,10 @@ const Navbar = () => {
                 to={link.path}
                 className={`relative font-medium transition-colors ${
                   isActive(link.path)
-                    ? 'text-luxury-gold'
+                    ? 'text-brand-water'
                     : isScrolled
-                    ? 'text-gray-700 hover:text-luxury-gold'
-                    : 'text-white hover:text-luxury-gold'
+                    ? 'text-gray-700 hover:text-brand-water'
+                    : 'text-white hover:text-brand-water'
                 }`}
               >
                 {link.name}
@@ -96,7 +96,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 rounded-xl bg-gradient-gold text-premium-black"
+            className="lg:hidden p-2 rounded-xl bg-gradient-beach text-premium-black"
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -120,7 +120,7 @@ const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   className={`block py-2 font-medium ${
                     isActive(link.path)
-                      ? 'text-luxury-gold'
+                      ? 'text-brand-water'
                       : 'text-gray-700'
                   }`}
                 >

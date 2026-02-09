@@ -64,7 +64,7 @@ const Footer = () => {
   return (
     <footer className="bg-premium-black text-white">
       {/* Newsletter Section */}
-      <div className="bg-gradient-gold py-12">
+      <div className="bg-gradient-beach py-12">
         <div className="container-premium">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="text-center md:text-left">
@@ -89,7 +89,7 @@ const Footer = () => {
               </div>
               <button
                 type="submit"
-                className="bg-premium-black text-luxury-gold px-6 py-4 rounded-xl hover:bg-premium-charcoal transition-colors flex items-center gap-2 font-semibold"
+                className="bg-premium-black text-brand-water px-6 py-4 rounded-xl hover:bg-premium-charcoal transition-colors flex items-center gap-2 font-semibold"
               >
                 {subscribed ? 'Subscribed!' : (
                   <>
@@ -108,7 +108,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12">
           {/* Company Info - 2 columns */}
           <div className="lg:col-span-2">
-            <h3 className="text-3xl font-playfair font-bold text-luxury-gold mb-4">
+            <h3 className="text-3xl font-playfair font-bold text-brand-water mb-4">
               Solid Build Construction Limited
             </h3>
             <p className="text-gray-400 mb-6 leading-relaxed">
@@ -120,7 +120,7 @@ const Footer = () => {
             {/* Contact Info */}
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-luxury-gold flex-shrink-0 mt-0.5" />
+                <MapPin className="w-5 h-5 text-brand-water flex-shrink-0 mt-0.5" />
                 <div>
                   <span className="text-gray-400">149 Ogudu Road,</span>
                   <br />
@@ -128,19 +128,19 @@ const Footer = () => {
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-luxury-gold flex-shrink-0" />
-                <a href="tel:+2349115258580" className="text-gray-400 hover:text-luxury-gold transition-colors">
+                <Phone className="w-5 h-5 text-brand-water flex-shrink-0" />
+                <a href="tel:+2349115258580" className="text-gray-400 hover:text-brand-water transition-colors">
                   +234 911 525 8580
                 </a>
               </div>
               <div className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-luxury-gold flex-shrink-0" />
-                <a href="mailto:Solid Buildproperty@gmail.com" className="text-gray-400 hover:text-luxury-gold transition-colors">
+                <Mail className="w-5 h-5 text-brand-water flex-shrink-0" />
+                <a href="mailto:Solid Buildproperty@gmail.com" className="text-gray-400 hover:text-brand-water transition-colors">
                   Solid Buildproperty@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-3">
-                <Clock className="w-5 h-5 text-luxury-gold flex-shrink-0" />
+                <Clock className="w-5 h-5 text-brand-water flex-shrink-0" />
                 <span className="text-gray-400">Mon - Sat: 8AM - 6PM</span>
               </div>
             </div>
@@ -154,7 +154,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="w-10 h-10 rounded-full bg-gradient-gold flex items-center justify-center text-premium-black hover:shadow-gold hover:scale-110 transition-all"
+                  className="w-10 h-10 rounded-full bg-gradient-beach flex items-center justify-center text-premium-black hover:shadow-gold hover:scale-110 transition-all"
                 >
                   {social.icon}
                 </a>
@@ -164,13 +164,13 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold text-luxury-gold mb-6">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-brand-water mb-6">Quick Links</h4>
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <Link
                     to={link.path}
-                    className="text-gray-400 hover:text-luxury-gold transition-colors flex items-center gap-2 group"
+                    className="text-gray-400 hover:text-brand-water transition-colors flex items-center gap-2 group"
                   >
                     <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     {link.name}
@@ -182,13 +182,13 @@ const Footer = () => {
 
           {/* Properties */}
           <div>
-            <h4 className="text-lg font-semibold text-luxury-gold mb-6">Properties</h4>
+            <h4 className="text-lg font-semibold text-brand-water mb-6">Properties</h4>
             <ul className="space-y-3">
               {propertyLinks.map((link, index) => (
                 <li key={index}>
                   <Link
                     to={link.path}
-                    className="text-gray-400 hover:text-luxury-gold transition-colors flex items-center gap-2 group"
+                    className="text-gray-400 hover:text-brand-water transition-colors flex items-center gap-2 group"
                   >
                     <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     {link.name}
@@ -200,13 +200,13 @@ const Footer = () => {
 
           {/* Tools */}
           <div>
-            <h4 className="text-lg font-semibold text-luxury-gold mb-6">Tools & Resources</h4>
+            <h4 className="text-lg font-semibold text-brand-water mb-6">Tools & Resources</h4>
             <ul className="space-y-3">
               {toolsLinks.map((link, index) => (
                 <li key={index}>
                   <Link
                     to={link.path}
-                    className="text-gray-400 hover:text-luxury-gold transition-colors flex items-center gap-2 group"
+                    className="text-gray-400 hover:text-brand-water transition-colors flex items-center gap-2 group"
                   >
                     <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     {link.name}
@@ -218,13 +218,13 @@ const Footer = () => {
 
           {/* Legal */}
           <div>
-            <h4 className="text-lg font-semibold text-luxury-gold mb-6">Legal</h4>
+            <h4 className="text-lg font-semibold text-brand-water mb-6">Legal</h4>
             <ul className="space-y-3">
               {legalLinks.map((link, index) => (
                 <li key={index}>
                   <Link
                     to={link.path}
-                    className="text-gray-400 hover:text-luxury-gold transition-colors flex items-center gap-2 group"
+                    className="text-gray-400 hover:text-brand-water transition-colors flex items-center gap-2 group"
                   >
                     <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     {link.name}
@@ -255,11 +255,11 @@ const Footer = () => {
               <span className="hidden md:inline"> | RC: 1234567</span>
             </p>
             <div className="flex items-center gap-6 text-sm">
-              <Link to="/sitemap" className="text-gray-400 hover:text-luxury-gold transition-colors">
+              <Link to="/sitemap" className="text-gray-400 hover:text-brand-water transition-colors">
                 Sitemap
               </Link>
               <span className="text-gray-600">|</span>
-              <Link to="/accessibility" className="text-gray-400 hover:text-luxury-gold transition-colors">
+              <Link to="/accessibility" className="text-gray-400 hover:text-brand-water transition-colors">
                 Accessibility
               </Link>
               <span className="text-gray-600">|</span>

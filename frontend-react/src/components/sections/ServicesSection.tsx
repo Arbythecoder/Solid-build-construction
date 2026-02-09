@@ -56,17 +56,17 @@ const ServicesSection = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2 bg-luxury-gold/10 border border-luxury-gold/20 rounded-full px-6 py-2 mb-6"
+            className="inline-flex items-center gap-2 bg-luxury-gold/10 border border-brand-water/20 rounded-full px-6 py-2 mb-6"
           >
-            <Building2 className="w-5 h-5 text-luxury-gold" />
-            <span className="text-luxury-gold font-semibold text-sm uppercase tracking-wide">
+            <Building2 className="w-5 h-5 text-brand-water" />
+            <span className="text-brand-water font-semibold text-sm uppercase tracking-wide">
               Our Services
             </span>
           </motion.div>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold text-premium-black mb-6">
             Comprehensive Real Estate
-            <span className="block bg-gradient-gold bg-clip-text text-transparent">
+            <span className="block bg-gradient-beach bg-clip-text text-transparent">
               Solutions
             </span>
           </h2>
@@ -91,7 +91,7 @@ const ServicesSection = () => {
             >
               {/* Icon */}
               <div className="relative mb-6">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-gold flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-beach flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <service.icon className="w-8 h-8 text-premium-black" />
                 </div>
                 {/* Decorative element */}
@@ -99,7 +99,7 @@ const ServicesSection = () => {
               </div>
 
               {/* Content */}
-              <h3 className="text-2xl font-bold text-premium-black mb-3 group-hover:text-luxury-gold transition-colors">
+              <h3 className="text-2xl font-bold text-premium-black mb-3 group-hover:text-brand-water transition-colors">
                 {service.title}
               </h3>
 
@@ -133,7 +133,7 @@ const ServicesSection = () => {
           <div className="inline-flex flex-col sm:flex-row gap-4">
             <a
               href="/#/contact"
-              className="px-8 py-4 bg-gradient-gold text-premium-black font-semibold rounded-xl hover:opacity-90 transition-opacity shadow-lg hover:shadow-xl"
+              className="px-8 py-4 bg-gradient-beach text-premium-black font-semibold rounded-xl hover:opacity-90 transition-opacity shadow-lg hover:shadow-xl"
             >
               Get Started Today
             </a>
@@ -169,7 +169,7 @@ const ServicesSection = () => {
               transition={{ delay: index * 0.1 }}
               className="text-center"
             >
-              <div className="text-4xl md:text-5xl font-bold bg-gradient-gold bg-clip-text text-transparent mb-2">
+              <div className="text-4xl md:text-5xl font-bold bg-gradient-beach bg-clip-text text-transparent mb-2">
                 {stat.value}
               </div>
               <div className="text-gray-600 font-medium">

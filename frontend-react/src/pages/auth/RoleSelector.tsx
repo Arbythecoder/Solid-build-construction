@@ -116,7 +116,7 @@ const RoleSelector = () => {
             Already have an account?{' '}
             <button
               onClick={() => navigate('/login')}
-              className="text-luxury-gold hover:underline font-semibold"
+              className="text-brand-water hover:underline font-semibold"
             >
               Sign In
             </button>

@@ -446,7 +446,7 @@ const PropertyListPage = () => {
                   <select
                     value={filters.status}
                     onChange={(e) => setFilters({ ...filters, status: e.target.value })}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-luxury-gold focus:border-transparent"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-water focus:border-transparent"
                   >
                     <option value="">All</option>
                     <option value="For Sale">For Sale</option>
@@ -460,7 +460,7 @@ const PropertyListPage = () => {
                   <select
                     value={filters.location}
                     onChange={(e) => setFilters({ ...filters, location: e.target.value })}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-luxury-gold focus:border-transparent"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-water focus:border-transparent"
                   >
                     <option value="">All Locations</option>
                     <option value="Gbagada">Gbagada</option>
@@ -481,7 +481,7 @@ const PropertyListPage = () => {
                   <select
                     value={filters.priceMin}
                     onChange={(e) => setFilters({ ...filters, priceMin: e.target.value })}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-luxury-gold focus:border-transparent"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-water focus:border-transparent"
                   >
                     <option value="">No Min</option>
                     <option value="1000000">₦1M</option>
@@ -498,7 +498,7 @@ const PropertyListPage = () => {
                   <select
                     value={filters.priceMax}
                     onChange={(e) => setFilters({ ...filters, priceMax: e.target.value })}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-luxury-gold focus:border-transparent"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-water focus:border-transparent"
                   >
                     <option value="">No Max</option>
                     <option value="10000000">₦10M</option>
@@ -515,7 +515,7 @@ const PropertyListPage = () => {
                   <select
                     value={filters.bedrooms}
                     onChange={(e) => setFilters({ ...filters, bedrooms: e.target.value })}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-luxury-gold focus:border-transparent"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-water focus:border-transparent"
                   >
                     <option value="">Any</option>
                     <option value="1">1+</option>
@@ -544,7 +544,7 @@ const PropertyListPage = () => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
           <div>
             <p className="text-gray-600">
-              Showing <span className="font-semibold text-luxury-gold">{filteredProperties.length}</span> of{' '}
+              Showing <span className="font-semibold text-brand-water">{filteredProperties.length}</span> of{' '}
               <span className="font-semibold">{properties.length}</span> properties
             </p>
           </div>
@@ -555,7 +555,7 @@ const PropertyListPage = () => {
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
-                className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-luxury-gold focus:border-transparent"
+                className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-water focus:border-transparent"
               >
                 <option value="newest">Newest</option>
                 <option value="price-low">Price: Low to High</option>
@@ -566,13 +566,13 @@ const PropertyListPage = () => {
             <div className="flex items-center gap-1 bg-gray-100 rounded-lg p-1">
               <button
                 onClick={() => setViewMode('grid')}
-                className={`p-2 rounded-lg transition-colors ${viewMode === 'grid' ? 'bg-white shadow text-luxury-gold' : 'text-gray-500'}`}
+                className={`p-2 rounded-lg transition-colors ${viewMode === 'grid' ? 'bg-white shadow text-brand-water' : 'text-gray-500'}`}
               >
                 <Grid className="w-5 h-5" />
               </button>
               <button
                 onClick={() => setViewMode('list')}
-                className={`p-2 rounded-lg transition-colors ${viewMode === 'list' ? 'bg-white shadow text-luxury-gold' : 'text-gray-500'}`}
+                className={`p-2 rounded-lg transition-colors ${viewMode === 'list' ? 'bg-white shadow text-brand-water' : 'text-gray-500'}`}
               >
                 <List className="w-5 h-5" />
               </button>
@@ -583,7 +583,7 @@ const PropertyListPage = () => {
         {/* Results */}
         {loading ? (
           <div className="text-center py-20">
-            <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-luxury-gold mx-auto mb-4"></div>
+            <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-brand-water mx-auto mb-4"></div>
             <p className="text-gray-600 text-lg">Loading properties...</p>
           </div>
         ) : filteredProperties.length === 0 ? (

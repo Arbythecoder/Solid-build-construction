@@ -212,7 +212,7 @@ const LandlordDashboard = () => {
           </h2>
           {loading ? (
             <div className="text-center py-12">
-              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-luxury-gold mx-auto"></div>
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-brand-water mx-auto"></div>
               <p className="text-gray-600 mt-4">Loading properties...</p>
             </div>
           ) : myProperties.length === 0 ? (
@@ -267,7 +267,7 @@ const LandlordDashboard = () => {
                     <MapPin className="w-4 h-4" />
                     {property.location?.city}, {property.location?.state}
                   </p>
-                  <div className="text-2xl font-bold text-luxury-gold mb-4">
+                  <div className="text-2xl font-bold text-brand-water mb-4">
                     ₦{Number(property.price).toLocaleString()}
                   </div>
 
@@ -362,7 +362,7 @@ const LandlordDashboard = () => {
                         value={formData.title}
                         onChange={(e) => setFormData({...formData, title: e.target.value})}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-luxury-gold transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-brand-water transition-colors"
                         placeholder="e.g., Luxury 5-Bedroom Villa with Pool"
                       />
                     </div>
@@ -376,7 +376,7 @@ const LandlordDashboard = () => {
                         onChange={(e) => setFormData({...formData, description: e.target.value})}
                         required
                         rows={4}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-luxury-gold transition-colors resize-none"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-brand-water transition-colors resize-none"
                         placeholder="Describe your property..."
                       />
                     </div>
@@ -389,7 +389,7 @@ const LandlordDashboard = () => {
                         <select
                           value={formData.type}
                           onChange={(e) => setFormData({...formData, type: e.target.value})}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-luxury-gold transition-colors"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-brand-water transition-colors"
                         >
                           <option value="apartment">Apartment</option>
                           <option value="house">House</option>
@@ -405,7 +405,7 @@ const LandlordDashboard = () => {
                         <select
                           value={formData.listingType}
                           onChange={(e) => setFormData({...formData, listingType: e.target.value})}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-luxury-gold transition-colors"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-brand-water transition-colors"
                         >
                           <option value="For Sale">For Sale</option>
                           <option value="For Rent">For Rent</option>
@@ -420,7 +420,7 @@ const LandlordDashboard = () => {
                           value={formData.price}
                           onChange={(e) => setFormData({...formData, price: e.target.value})}
                           required
-                          className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-luxury-gold transition-colors"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-brand-water transition-colors"
                           placeholder="150000000"
                         />
                       </div>
@@ -441,7 +441,7 @@ const LandlordDashboard = () => {
                         value={formData.address}
                         onChange={(e) => setFormData({...formData, address: e.target.value})}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-luxury-gold transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-brand-water transition-colors"
                       />
                     </div>
                     <div>
@@ -453,7 +453,7 @@ const LandlordDashboard = () => {
                         value={formData.city}
                         onChange={(e) => setFormData({...formData, city: e.target.value})}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-luxury-gold transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-brand-water transition-colors"
                       />
                     </div>
                     <div>
@@ -464,7 +464,7 @@ const LandlordDashboard = () => {
                         value={formData.state}
                         onChange={(e) => setFormData({...formData, state: e.target.value})}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-luxury-gold transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-brand-water transition-colors"
                       >
                         <option value="">Select State</option>
                         <option value="Lagos">Lagos</option>
@@ -488,7 +488,7 @@ const LandlordDashboard = () => {
                         value={formData.bedrooms}
                         onChange={(e) => setFormData({...formData, bedrooms: e.target.value})}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-luxury-gold transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-brand-water transition-colors"
                       />
                     </div>
                     <div>
@@ -500,7 +500,7 @@ const LandlordDashboard = () => {
                         value={formData.bathrooms}
                         onChange={(e) => setFormData({...formData, bathrooms: e.target.value})}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-luxury-gold transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-brand-water transition-colors"
                       />
                     </div>
                     <div>
@@ -512,7 +512,7 @@ const LandlordDashboard = () => {
                         value={formData.size}
                         onChange={(e) => setFormData({...formData, size: e.target.value})}
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-luxury-gold transition-colors"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:border-brand-water transition-colors"
                       />
                     </div>
                   </div>
@@ -529,7 +529,7 @@ const LandlordDashboard = () => {
                         onClick={() => handleFeatureToggle(feature)}
                         className={`py-3 px-4 rounded-xl font-medium transition-all text-sm ${
                           formData.features.includes(feature)
-                            ? 'bg-gradient-gold text-premium-black'
+                            ? 'bg-gradient-beach text-premium-black'
                             : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                         }`}
                       >
@@ -542,7 +542,7 @@ const LandlordDashboard = () => {
                 {/* Images */}
                 <div>
                   <h3 className="text-xl font-semibold text-premium-black mb-4">Images</h3>
-                  <div className="border-2 border-dashed border-gray-300 rounded-xl p-12 text-center hover:border-luxury-gold transition-colors cursor-pointer">
+                  <div className="border-2 border-dashed border-gray-300 rounded-xl p-12 text-center hover:border-brand-water transition-colors cursor-pointer">
                     <ImageIcon className="w-12 h-12 text-gray-400 mx-auto mb-4" />
                     <p className="text-gray-600 mb-2">Click to upload or drag and drop</p>
                     <p className="text-sm text-gray-500">PNG, JPG up to 10MB</p>
