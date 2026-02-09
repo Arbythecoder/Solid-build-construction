@@ -1,4 +1,9 @@
 require("dotenv").config();
+const validateEnv = require("./utils/validateEnv");
+
+// Validate environment variables before starting server
+validateEnv();
+
 const express = require("express");
 const cors = require("cors");
 const helmet = require("helmet");
