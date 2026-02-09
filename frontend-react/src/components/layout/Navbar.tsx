@@ -41,9 +41,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 rounded-xl bg-gradient-beach flex items-center justify-center shadow-gold group-hover:shadow-gold-lg transition-all">
-              <span className="text-2xl font-playfair font-bold text-premium-black">A</span>
-            </div>
+            <img src="/logo-small.svg" alt="Solid Build Logo" className="w-12 h-12 group-hover:scale-110 transition-transform" />
             <div>
               <h1 className="text-xl font-playfair font-bold text-gradient-gold">
                 Solid Build Construction Limited

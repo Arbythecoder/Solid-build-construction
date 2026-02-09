@@ -1,0 +1,60 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle with Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0EA5E9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0284C7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="buildingGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5F5F5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E5E5E5;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D2B48C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C8A882;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#bgGradient)"/>
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#D2B48C" stroke-width="3" opacity="0.5"/>
+  
+  <!-- Inner Circle -->
+  <circle cx="100" cy="100" r="75" fill="white" opacity="0.95"/>
+  
+  <!-- Modern Building/Construction Icon -->
+  <!-- Main Building -->
+  <path d="M70 130 L70 70 L95 60 L95 130 Z" fill="url(#buildingGradient)" stroke="#0EA5E9" stroke-width="2"/>
+  <path d="M95 130 L95 55 L130 65 L130 130 Z" fill="url(#buildingGradient)" stroke="#0EA5E9" stroke-width="2"/>
+  
+  <!-- Windows -->
+  <rect x="75" y="75" width="8" height="10" fill="#0EA5E9" opacity="0.6"/>
+  <rect x="75" y="90" width="8" height="10" fill="#0EA5E9" opacity="0.6"/>
+  <rect x="75" y="105" width="8" height="10" fill="#0EA5E9" opacity="0.6"/>
+  
+  <rect x="100" y="70" width="8" height="10" fill="#0EA5E9" opacity="0.6"/>
+  <rect x="100" y="85" width="8" height="10" fill="#0EA5E9" opacity="0.6"/>
+  <rect x="100" y="100" width="8" height="10" fill="#0EA5E9" opacity="0.6"/>
+  <rect x="100" y="115" width="8" height="10" fill="#0EA5E9" opacity="0.6"/>
+  
+  <rect x="115" y="75" width="8" height="10" fill="#0EA5E9" opacity="0.6"/>
+  <rect x="115" y="90" width="8" height="10" fill="#0EA5E9" opacity="0.6"/>
+  <rect x="115" y="105" width="8" height="10" fill="#0EA5E9" opacity="0.6"/>
+  
+  <!-- Accent Roof/Top -->
+  <path d="M65 70 L95 58 L100 60 L70 72 Z" fill="url(#accentGradient)"/>
+  <path d="M90 55 L130 63 L135 65 L95 57 Z" fill="url(#accentGradient)"/>
+  
+  <!-- Foundation/Base Line -->
+  <rect x="65" y="130" width="70" height="4" fill="url(#accentGradient)"/>
+  
+  <!-- Letters "SB" Overlay (for Solid Build) -->
+  <text x="85" y="160" font-family="'Playfair Display', serif" font-size="24" font-weight="bold" fill="#0EA5E9" text-anchor="middle">S</text>
+  <text x="115" y="160" font-family="'Playfair Display', serif" font-size="24" font-weight="bold" fill="#D2B48C" text-anchor="middle">B</text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="50" cy="50" r="3" fill="#D2B48C" opacity="0.4"/>
+  <circle cx="150" cy="50" r="3" fill="#D2B48C" opacity="0.4"/>
+  <circle cx="50" cy="150" r="3" fill="#D2B48C" opacity="0.4"/>
+  <circle cx="150" cy="150" r="3" fill="#D2B48C" opacity="0.4"/>
+</svg>
