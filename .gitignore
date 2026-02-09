@@ -52,3 +52,11 @@ tmp/
 # Misc
 *.md.bak
 .claude/settings.local.json
+
+# Environment variables
+backend/.env
+frontend-react/.env
+frontend-react/.env.production
+.env
+*.env
+!.env.example
